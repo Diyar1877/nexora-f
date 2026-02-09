@@ -1,0 +1,11 @@
+Dieser Ordner enthält Konfigurationen
+für verschiedene Umgebungen.
+
+Beispiele:
+- Development
+- Production
+
+Hier liegen:
+- API URLs
+- Feature Flags
+- keine Geheimnisse!

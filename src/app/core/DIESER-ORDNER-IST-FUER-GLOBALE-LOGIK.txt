@@ -1,0 +1,10 @@
+Der core-Ordner enthält globalen Code,
+der in der gesamten App nur EINMAL existiert.
+
+Beispiele:
+- API-Services
+- HTTP-Interceptor
+- Auth-Guards
+
+Regel:
+Code aus core darf NICHT mehrfach importiert werden.

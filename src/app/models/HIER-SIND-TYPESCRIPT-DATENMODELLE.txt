@@ -1,0 +1,12 @@
+Dieser Ordner enthält TypeScript Interfaces / Models.
+
+Models beschreiben:
+- wie Daten aussehen
+- die vom Backend kommen oder gesendet werden
+
+Beispiele:
+- Developer
+- Company
+- ContactForm
+
+Hier kommt KEINE Logik rein, nur Typen.

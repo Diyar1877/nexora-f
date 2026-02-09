@@ -1,0 +1,8 @@
+Dieser Ordner enthält die Home-/Startseite.
+
+Hier kommt:
+- Hero Section
+- Vorstellung von Nexora Solutions
+- Call-to-Action
+
+Alles, was nur zur Startseite gehört, bleibt hier.

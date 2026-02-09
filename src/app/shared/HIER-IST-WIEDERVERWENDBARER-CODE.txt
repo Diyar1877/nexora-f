@@ -1,0 +1,12 @@
+Der shared-Ordner enthält wiederverwendbaren Code,
+der in mehreren Seiten benutzt wird.
+
+Beispiele:
+- Navbar
+- Footer
+- Buttons
+- Pipes
+- Directives
+
+Regel:
+Kein Business-Code hier!

@@ -1,0 +1,11 @@
+In diesem Ordner liegen alle Angular Services,
+die mit dem Backend (Symfony API) sprechen.
+
+Beispiele:
+- API-Service
+- Contact-Service
+- Developer-Service
+
+Hier wird:
+- HTTP aufgerufen
+- keine UI gebaut

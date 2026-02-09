@@ -1,0 +1,9 @@
+Der assets-Ordner enthält statische Dateien.
+
+Beispiele:
+- Bilder
+- Icons
+- Fonts
+
+Diese Dateien werden nicht von Angular kompiliert,
+sondern direkt ausgeliefert.

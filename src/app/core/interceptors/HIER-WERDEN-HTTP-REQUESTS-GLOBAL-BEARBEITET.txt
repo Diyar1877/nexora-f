@@ -1,0 +1,9 @@
+Interceptor fangen HTTP-Anfragen ab,
+bevor sie an das Backend gesendet werden.
+
+Typische Aufgaben:
+- API Base URL setzen
+- Auth Token anhängen
+- Logging
+
+Dieser Code läuft automatisch bei jedem HTTP-Request.

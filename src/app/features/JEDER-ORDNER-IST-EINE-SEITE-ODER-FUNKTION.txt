@@ -1,0 +1,11 @@
+Der features-Ordner enthält die eigentlichen Seiten der Website.
+
+Jeder Unterordner ist:
+- eine Seite
+- oder ein funktionaler Bereich
+
+Beispiele:
+- home
+- for-companies
+- for-developers
+- contact
