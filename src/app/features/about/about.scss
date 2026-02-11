@@ -1,0 +1,132 @@
+.about-hero {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+
+    .badge {
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+
+        .highlight {
+            color: var(--color-primary-yellow);
+        }
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+        color: var(--color-gray-600);
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .mission-text {
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: var(--color-gray-700);
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .mission-visual {
+        position: relative;
+        height: 300px;
+        background-color: var(--color-gray-200);
+        border-radius: var(--radius-lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .stat-box {
+            background: var(--color-white);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+
+            .number {
+                display: block;
+                font-size: 2.5rem;
+                font-weight: 800;
+                color: var(--color-primary-yellow);
+            }
+
+            .label {
+                color: var(--color-gray-600);
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.value-card {
+    text-align: center;
+    padding: 2rem;
+
+    .value-icon {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            width: 56px;
+            height: 56px;
+            color: var(--color-primary-yellow);
+            stroke-width: 1.5px;
+        }
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    p {
+        color: var(--color-gray-600);
+    }
+}
+
+.cta {
+    background-color: var(--color-primary-yellow);
+    padding: 6rem 0;
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+}

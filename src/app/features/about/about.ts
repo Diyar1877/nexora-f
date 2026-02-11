@@ -1,15 +1,13 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
+import { Button } from '../../shared/components/button/button';
 
 @Component({
-    selector: 'app-about',
-    standalone: true,
-    imports: [CommonModule],
-    template: `
-    <div class="container py-3xl">
-      <h1>Über uns</h1>
-      <p>Hier erfahren Sie mehr über Nexora Solutions.</p>
-    </div>
-  `
+  selector: 'app-about',
+  standalone: true,
+  imports: [CommonModule, RouterLink, Button],
+  templateUrl: './about.html',
+  styleUrl: './about.scss'
 })
 export class About { }

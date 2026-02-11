@@ -1,0 +1,176 @@
+.companies-hero {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+
+    .badge {
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        display: inline-block;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+
+        .highlight {
+            color: var(--color-primary-yellow);
+        }
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+        color: var(--color-gray-600);
+        max-width: 700px;
+        margin: 0 auto 2.5rem;
+    }
+
+    .hero-actions {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.benefit-card {
+    background: var(--color-white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-base);
+    border: 1px solid var(--color-gray-100);
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+        border-color: var(--color-primary-yellow);
+
+        .icon svg {
+            transform: scale(1.1);
+        }
+    }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            width: 48px;
+            height: 48px;
+            color: var(--color-primary-yellow);
+            stroke-width: 1.5px;
+            transition: transform var(--transition-base);
+        }
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+    }
+
+    p {
+        color: var(--color-gray-600);
+        line-height: 1.6;
+        margin-bottom: 0;
+    }
+}
+
+.process {
+    .process-steps {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 4rem;
+        position: relative;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
+            text-align: center;
+
+            .step-connector {
+                display: none;
+            }
+        }
+    }
+
+    .step {
+        flex: 1;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        padding: 0 1rem;
+
+        .step-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--color-primary-yellow);
+            opacity: 0.3;
+            margin-bottom: -1rem;
+            position: relative;
+            z-index: -1;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+        }
+
+        p {
+            color: var(--color-gray-600);
+        }
+    }
+
+    .step-connector {
+        flex: 1;
+        height: 2px;
+        background: var(--color-gray-200);
+        margin-top: 2rem;
+    }
+}
+
+.cta {
+    background-color: var(--color-primary-yellow);
+    color: var(--color-gray-900);
+    padding: 6rem 0;
+
+    h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .companies-hero {
+        .hero-title {
+            font-size: 2.5rem;
+        }
+    }
+}
