@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { FindOptionPipe } from '../../shared/pipes/find-option.pipe';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
@@ -7,7 +8,7 @@ import { Button } from '../../shared/components/button/button';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, Button],
+  imports: [CommonModule, FormsModule, Button, FindOptionPipe],
   templateUrl: './contact.html',
   styleUrl: './contact.scss'
 })
@@ -23,7 +24,35 @@ export class Contact {
   submitSuccess = false;
   submitError = '';
 
+  isDropdownOpen = false;
+
+  subjectOptions = [
+    { value: 'company', label: 'Projektanfrage (Unternehmen)', icon: '' },
+    { value: 'developer', label: 'Bewerbung (Entwickler)', icon: '' },
+    { value: 'other', label: 'Sonstiges', icon: '' }
+  ];
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    this.closeDropdown();
+  }
+
   constructor(private http: HttpClient) { }
+
+  toggleDropdown(event: Event) {
+    event.stopPropagation();
+    this.isDropdownOpen = !this.isDropdownOpen;
+  }
+
+  selectOption(value: string) {
+    this.subject = value;
+    this.isDropdownOpen = false;
+  }
+
+  closeDropdown() {
+    this.isDropdownOpen = false;
+  }
+
 
   submit() {
     if (!this.privacyAccepted) {
@@ -68,5 +97,6 @@ export class Contact {
     this.subject = '';
     this.message = '';
     this.privacyAccepted = false;
+    this.isDropdownOpen = false;
   }
 }

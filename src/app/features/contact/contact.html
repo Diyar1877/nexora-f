@@ -74,14 +74,22 @@
                         <input type="tel" id="phone" name="phone" [(ngModel)]="phoneNumber" placeholder="+49 123 45678">
                     </div>
 
-                    <div class="form-group">
-                        <label for="subject">Betreff</label>
-                        <select id="subject" name="subject" [(ngModel)]="subject" required>
-                            <option value="" disabled selected>Bitte wählen</option>
-                            <option value="company">Projektanfrage (Unternehmen)</option>
-                            <option value="developer">Bewerbung (Entwickler)</option>
-                            <option value="other">Sonstiges</option>
-                        </select>
+                    <div class="form-group custom-select-wrapper" [class.open]="isDropdownOpen">
+                        <label>Betreff</label>
+                        <div class="custom-select-trigger" (click)="toggleDropdown($event)">
+                            <span>{{ subject ? (subjectOptions | findOption:subject)?.label : 'Bitte wählen Sie ein
+                                Thema' }}</span>
+                            <div class="arrow"></div>
+                        </div>
+                        <div class="custom-options">
+                            <div class="option" *ngFor="let option of subjectOptions"
+                                (click)="selectOption(option.value)" [class.selected]="subject === option.value">
+                                <span class="option-icon">{{ option.icon }}</span>
+                                <span class="option-label">{{ option.label }}</span>
+                            </div>
+                        </div>
+                        <!-- Hidden input for form validation compatibility if needed, though we use subject variable directly -->
+                        <input type="hidden" name="subject" [(ngModel)]="subject" required>
                     </div>
 
                     <div class="form-group">
