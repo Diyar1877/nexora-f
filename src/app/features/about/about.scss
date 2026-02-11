@@ -29,6 +29,14 @@
 }
 
 .mission-grid {
+    margin-top: -110px;
+}
+
+.values-grid {
+    margin-top: -110px;
+}
+
+.mission-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;

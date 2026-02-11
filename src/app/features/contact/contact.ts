@@ -14,6 +14,7 @@ import { Button } from '../../shared/components/button/button';
 export class Contact {
   name = '';
   email = '';
+  phoneNumber = '';
   subject = '';
   message = '';
   privacyAccepted = false;
@@ -37,11 +38,12 @@ export class Contact {
     const payload = {
       name: this.name,
       email: this.email,
+      phoneNumber: this.phoneNumber,
       subject: this.subject,
       message: this.message
     };
 
-    this.http.post('http://localhost:8000/api/contact', payload).subscribe({
+    this.http.post('http://localhost:8085/api/contact', payload).subscribe({
       next: (response) => {
         this.isSubmitting = false;
         this.submitSuccess = true;
@@ -49,7 +51,11 @@ export class Contact {
       },
       error: (error) => {
         this.isSubmitting = false;
-        this.submitError = 'Es gab einen Fehler beim Senden. Bitte versuchen Sie es später erneut.';
+        if (error.error && error.error.details) {
+          this.submitError = `Fehler: ${error.error.details}`;
+        } else {
+          this.submitError = 'Es gab einen Fehler beim Senden. Bitte versuchen Sie es später erneut.';
+        }
         console.error('Submission error:', error);
       }
     });
@@ -58,6 +64,7 @@ export class Contact {
   resetForm() {
     this.name = '';
     this.email = '';
+    this.phoneNumber = '';
     this.subject = '';
     this.message = '';
     this.privacyAccepted = false;

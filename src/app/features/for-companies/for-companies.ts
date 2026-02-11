@@ -8,6 +8,6 @@ import { Button } from '../../shared/components/button/button';
   standalone: true,
   imports: [CommonModule, RouterLink, Button],
   templateUrl: './for-companies.html',
-  styleUrl: './for-companies.scss'
+  styleUrls: ['./for-companies.scss']
 })
 export class ForCompanies { }
