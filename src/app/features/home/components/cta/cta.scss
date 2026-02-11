@@ -1,0 +1,38 @@
+.cta-section {
+    background-color: var(--color-primary-yellow);
+    color: var(--color-text-on-yellow);
+    padding: 6rem 0;
+}
+
+.cta-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text-on-yellow);
+}
+
+.cta-subtitle {
+    font-size: 1.25rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    color: var(--color-text-on-yellow);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-action {
+    display: flex;
+    justify-content: center;
+}
+
+/* Override button styles for this specific context */
+:host ::ng-deep .cta-btn button {
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+    box-shadow: var(--shadow-md);
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-lg);
+    }
+}
