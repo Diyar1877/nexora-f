@@ -3,7 +3,7 @@
         <div class="contact-grid">
             <!-- Contact Info -->
             <div class="contact-info">
-                <span class="badge"></span>
+                <span class="badge">Kontakt</span>
                 <h1 class="section-title">Lassen Sie uns <br><span class="highlight">gemeinsam starten</span></h1>
                 <p class="section-desc">
                     Haben Sie Fragen oder möchten Sie ein Projekt besprechen?
@@ -13,7 +13,6 @@
                 <div class="info-items">
                     <div class="info-item">
                         <div class="icon">
-                            <!-- Mail Icon -->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
@@ -28,7 +27,6 @@
                     </div>
                     <div class="info-item">
                         <div class="icon">
-                            <!-- Phone Icon -->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path
@@ -43,7 +41,6 @@
                     </div>
                     <div class="info-item">
                         <div class="icon">
-                            <!-- Map Pin Icon -->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
@@ -60,20 +57,21 @@
 
             <!-- Contact Form -->
             <div class="contact-form-wrapper">
-                <form class="contact-form">
+                <form class="contact-form" (ngSubmit)="submit()" #contactForm="ngForm">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Ihr Name" required>
+                        <input type="text" id="name" name="name" [(ngModel)]="name" placeholder="Ihr Name" required>
                     </div>
 
                     <div class="form-group">
                         <label for="email">E-Mail</label>
-                        <input type="email" id="email" placeholder="ihre@email.de" required>
+                        <input type="email" id="email" name="email" [(ngModel)]="email" placeholder="ihre@email.de"
+                            required email>
                     </div>
 
                     <div class="form-group">
                         <label for="subject">Betreff</label>
-                        <select id="subject">
+                        <select id="subject" name="subject" [(ngModel)]="subject" required>
                             <option value="" disabled selected>Bitte wählen</option>
                             <option value="company">Projektanfrage (Unternehmen)</option>
                             <option value="developer">Bewerbung (Entwickler)</option>
@@ -83,15 +81,27 @@
 
                     <div class="form-group">
                         <label for="message">Nachricht</label>
-                        <textarea id="message" rows="5" placeholder="Wie können wir helfen?" required></textarea>
+                        <textarea id="message" name="message" [(ngModel)]="message" rows="5"
+                            placeholder="Wie können wir helfen?" required></textarea>
                     </div>
 
                     <div class="form-check">
-                        <input type="checkbox" id="privacy" required>
+                        <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="privacyAccepted" required>
                         <label for="privacy">Ich stimme der Datenschutzerklärung zu.</label>
                     </div>
 
-                    <app-button variant="primary" type="submit" [fullWidth]="true">Nachricht senden</app-button>
+                    <div class="form-alert success" *ngIf="submitSuccess">
+                        Nachricht erfolgreich gesendet! Wir melden uns in Kürze.
+                    </div>
+
+                    <div class="form-alert error" *ngIf="submitError">
+                        {{ submitError }}
+                    </div>
+
+                    <app-button variant="primary" type="submit" [fullWidth]="true"
+                        [disabled]="contactForm.invalid || isSubmitting">
+                        {{ isSubmitting ? 'Wird gesendet...' : 'Nachricht senden' }}
+                    </app-button>
                 </form>
             </div>
         </div>
