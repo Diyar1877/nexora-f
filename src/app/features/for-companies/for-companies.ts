@@ -6,7 +6,7 @@ import { Button } from '../../shared/components/button/button';
 @Component({
   selector: 'app-for-companies',
   standalone: true,
-  imports: [CommonModule, RouterLink, Button],
+  imports: [CommonModule, RouterLink, Button] ,
   templateUrl: './for-companies.html',
   styleUrls: ['./for-companies.scss']
 })
