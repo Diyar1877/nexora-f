@@ -1,0 +1,67 @@
+.process-section { padding: 5rem 0; }
+.bg-gray { background-color: var(--color-gray-50); }
+
+.section-header { margin-bottom: 3rem; }
+.section-title { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; margin-bottom: 0.75rem; }
+.section-label { display: block; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-primary-yellow); margin-bottom: 0.75rem; }
+
+.highlight-inline {
+    color: var(--color-primary-yellow);
+    position: relative;
+    &::after { content: ''; position: absolute; bottom: 2px; left: 0; width: 100%; height: 8px; background-color: rgba(255, 193, 7, 0.25); z-index: -1; }
+}
+
+.process-grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.5rem;
+
+    @media (max-width: 900px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.process-card {
+    background: var(--color-white);
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    flex: 1;
+    max-width: 340px;
+    text-align: center;
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    &:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+
+    h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; }
+    p { color: var(--color-gray-700); line-height: 1.6; font-size: 0.95rem; margin-bottom: 0; }
+}
+
+.process-number {
+    width: 56px;
+    height: 56px;
+    background: var(--color-primary-yellow);
+    color: var(--color-text-on-yellow);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: 0 auto 1.25rem;
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}
+
+.process-arrow {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    flex-shrink: 0;
+    svg { width: 28px; height: 28px; color: var(--color-gray-300); }
+
+    @media (max-width: 900px) {
+        transform: rotate(90deg);
+        padding-top: 0;
+    }
+}

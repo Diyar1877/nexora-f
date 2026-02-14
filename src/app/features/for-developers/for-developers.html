@@ -1,29 +1,75 @@
+<!-- Hero Section -->
 <section class="dev-hero section">
     <div class="container">
-        <div class="hero-content text-center">
-            <span class="badge"></span>
-            <h1 class="hero-title">Deine Karriere im <br><span class="highlight">internationalen Umfeld</span></h1>
-            <p class="hero-subtitle">
-                Arbeite an spannenden Projekten für Top-Unternehmen aus der DACH-Region.
-                100% Remote, faire Bezahlung und volle Flexibilität.
-            </p>
-            <div class="hero-actions">
-                <app-button variant="primary" routerLink="/contact">Jetzt bewerben</app-button>
-                <app-button variant="secondary" routerLink="/about">Über Nexora</app-button>
+        <div class="hero-grid">
+            <div class="hero-text">
+                <span class="badge">Für Entwickler</span>
+                <h1 class="hero-title">Deine Karriere im <br><span class="highlight">internationalen Umfeld</span></h1>
+                <p class="hero-subtitle">
+                    Arbeite an spannenden Projekten für Top-Unternehmen aus der DACH-Region.
+                    100% Remote, faire Bezahlung und volle Flexibilität.
+                </p>
+                <div class="hero-actions">
+                    <app-button variant="primary" routerLink="/contact">Jetzt bewerben</app-button>
+                    <app-button variant="secondary" routerLink="/about">Über Nexora</app-button>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <span>100% Remote</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <span>Deutsche Verträge</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <span>Top Gehälter</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-bg"></div>
+                <div class="code-window">
+                    <div class="window-bar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="window-body">
+                        <div class="code-line"><span class="code-keyword">const</span> developer = &#123;</div>
+                        <div class="code-line indent"><span class="code-key">name</span>: <span class="code-string">"Du"</span>,</div>
+                        <div class="code-line indent"><span class="code-key">remote</span>: <span class="code-bool">true</span>,</div>
+                        <div class="code-line indent"><span class="code-key">salary</span>: <span class="code-string">"Top"</span>,</div>
+                        <div class="code-line indent"><span class="code-key">team</span>: <span class="code-string">"Nexora"</span></div>
+                        <div class="code-line">&#125;;</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Perks Section -->
 <section class="perks section bg-gray">
     <div class="container">
-        <h2 class="section-title text-center">Deine Vorteile bei Nexora</h2>
+        <div class="section-header text-center">
+            <h2 class="section-title">Deine Vorteile <span class="highlight-inline">bei Nexora</span></h2>
+            <p class="section-subtitle">Wir bieten dir mehr als nur einen Job</p>
+        </div>
         <div class="perks-grid">
             <div class="perk-card">
-                <div class="icon">
-                    <!-- Home Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="perk-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                         <polyline points="9 22 9 12 15 12 15 22"></polyline>
                     </svg>
@@ -32,22 +78,18 @@
                 <p>Arbeite von wo du willst. Wir glauben an Ergebnisse, nicht an Anwesenheitspflicht.</p>
             </div>
             <div class="perk-card">
-                <div class="icon">
-                    <!-- Wallet/Money Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
-                        <line x1="1" y1="10" x2="23" y2="10"></line>
+                <div class="perk-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                     </svg>
                 </div>
                 <h3>Top Gehälter</h3>
                 <p>Überdurchschnittliche Bezahlung, pünktlich und sicher dank deutscher Verträge.</p>
             </div>
             <div class="perk-card">
-                <div class="icon">
-                    <!-- Trending Up Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="perk-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
                         <polyline points="17 6 23 6 23 12"></polyline>
                     </svg>
@@ -56,10 +98,8 @@
                 <p>Zugang zu Weiterbildungen, Konferenzen und modernsten Tech-Stacks.</p>
             </div>
             <div class="perk-card">
-                <div class="icon">
-                    <!-- Sun/Balance Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <div class="perk-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="5"></circle>
                         <line x1="12" y1="1" x2="12" y2="3"></line>
                         <line x1="12" y1="21" x2="12" y2="23"></line>
@@ -72,48 +112,229 @@
                     </svg>
                 </div>
                 <h3>Work-Life-Balance</h3>
-                <p>Flexible Arbeitszeiten, die sich deinem Leben anpassen. Kein Burnout-Kultur.</p>
+                <p>Flexible Arbeitszeiten, die sich deinem Leben anpassen. Keine Burnout-Kultur.</p>
+            </div>
+            <div class="perk-card">
+                <div class="perk-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+                <h3>Starkes Team</h3>
+                <p>Arbeite mit talentierten Entwicklern zusammen und lerne voneinander in spannenden Projekten.</p>
+            </div>
+            <div class="perk-card">
+                <div class="perk-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                </div>
+                <h3>Sicherheit</h3>
+                <p>Deutsche Verträge, pünktliche Zahlung und langfristige Zusammenarbeit statt Freelancer-Unsicherheit.</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- Tech Stack Section -->
+<section class="tech section">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title">Unser Tech-Stack</h2>
+            <p class="section-subtitle">Mit diesen Technologien arbeiten unsere Teams</p>
+        </div>
+        <div class="tech-grid">
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                </div>
+                <span>Angular</span>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                </div>
+                <span>React</span>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                    </svg>
+                </div>
+                <span>Symfony</span>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                    </svg>
+                </div>
+                <span>Node.js</span>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                </div>
+                <span>TypeScript</span>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                    </svg>
+                </div>
+                <span>MySQL</span>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                    </svg>
+                </div>
+                <span>Docker</span>
+            </div>
+            <div class="tech-item">
+                <div class="tech-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                    </svg>
+                </div>
+                <span>AWS</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Section -->
+<section class="process section bg-gray">
+    <div class="container">
+        <div class="section-header text-center">
+            <h2 class="section-title">So kommst du ins Team</h2>
+            <p class="section-subtitle">In vier Schritten zu deinem neuen Job</p>
+        </div>
+        <div class="process-steps">
+            <div class="process-step">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h3>Bewerbung einreichen</h3>
+                    <p>Schick uns deinen CV oder dein Portfolio. Kein langes Anschreiben nötig – dein Code spricht für sich.</p>
+                </div>
+            </div>
+            <div class="process-connector"></div>
+            <div class="process-step">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h3>Technisches Interview</h3>
+                    <p>Ein entspanntes Gespräch über deine Erfahrung und ein kurzes technisches Assessment – kein Whiteboard-Stress.</p>
+                </div>
+            </div>
+            <div class="process-connector"></div>
+            <div class="process-step">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h3>Projekt-Matching</h3>
+                    <p>Wir finden das Projekt, das perfekt zu deinen Skills und Interessen passt. Du entscheidest mit.</p>
+                </div>
+            </div>
+            <div class="process-connector"></div>
+            <div class="process-step">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                    <h3>Onboarding & Start</h3>
+                    <p>Vertrag, Tooling, Team-Intro – wir machen den Start so einfach wie möglich. Los geht's!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Jobs Section -->
 <section class="jobs section">
     <div class="container">
-        <h2 class="section-title text-center">Aktuelle Positionen</h2>
+        <div class="section-header text-center">
+            <h2 class="section-title">Aktuelle <span class="highlight-inline">Positionen</span></h2>
+            <p class="section-subtitle">Finde die Rolle, die zu dir passt</p>
+        </div>
         <div class="jobs-list">
-            <!-- Job 1 -->
             <div class="job-card">
                 <div class="job-info">
                     <h3>Senior Angular Developer</h3>
-                    <span class="job-tags">Remote • Full-time • English/German</span>
+                    <p class="job-desc">Entwicklung komplexer Enterprise-Anwendungen mit Angular 17+ für deutsche Kunden.</p>
+                    <div class="job-tags">
+                        <span class="tag">Remote</span>
+                        <span class="tag">Full-time</span>
+                        <span class="tag">Deutsch/Englisch</span>
+                    </div>
                 </div>
                 <app-button variant="secondary" routerLink="/contact">Bewerben</app-button>
             </div>
-            <!-- Job 2 -->
             <div class="job-card">
                 <div class="job-info">
                     <h3>Symfony Backend Expert</h3>
-                    <span class="job-tags">Remote • Full-time • English</span>
+                    <p class="job-desc">Backend-Entwicklung mit Symfony, API-Design und Datenbankarchitektur.</p>
+                    <div class="job-tags">
+                        <span class="tag">Remote</span>
+                        <span class="tag">Full-time</span>
+                        <span class="tag">Englisch</span>
+                    </div>
                 </div>
                 <app-button variant="secondary" routerLink="/contact">Bewerben</app-button>
             </div>
-            <!-- Job 3 -->
             <div class="job-card">
                 <div class="job-info">
                     <h3>Fullstack Developer (JS/TS)</h3>
-                    <span class="job-tags">Remote • Part-time/Full-time • English</span>
+                    <p class="job-desc">End-to-End Entwicklung mit modernen JavaScript/TypeScript Frameworks.</p>
+                    <div class="job-tags">
+                        <span class="tag">Remote</span>
+                        <span class="tag">Part-/Full-time</span>
+                        <span class="tag">Englisch</span>
+                    </div>
+                </div>
+                <app-button variant="secondary" routerLink="/contact">Bewerben</app-button>
+            </div>
+            <div class="job-card">
+                <div class="job-info">
+                    <h3>UI/UX Designer</h3>
+                    <p class="job-desc">Design nutzerfreundlicher Interfaces in Figma für Web- und Mobile-Anwendungen.</p>
+                    <div class="job-tags">
+                        <span class="tag">Remote</span>
+                        <span class="tag">Full-time</span>
+                        <span class="tag">Deutsch/Englisch</span>
+                    </div>
                 </div>
                 <app-button variant="secondary" routerLink="/contact">Bewerben</app-button>
             </div>
         </div>
+        <div class="jobs-note text-center">
+            <p>Keine passende Stelle dabei? Schick uns eine <a routerLink="/contact">Initiativbewerbung</a>.</p>
+        </div>
     </div>
 </section>
 
-<section class="cta section bg-dark text-white">
+<!-- CTA Section -->
+<section class="cta section">
     <div class="container text-center">
-        <h2>Bereit durchzustarten?</h2>
-        <p>Schick uns deinen CV. Wir melden uns innerhalb von 24h.</p>
-        <app-button variant="primary" routerLink="/contact">Initiativbewerbung senden</app-button>
+        <h2 class="cta-title">Bereit durchzustarten?</h2>
+        <p class="cta-subtitle">Schick uns deinen CV. Wir melden uns innerhalb von 24h.</p>
+        <app-button variant="white" routerLink="/contact">Initiativbewerbung senden</app-button>
     </div>
 </section>
