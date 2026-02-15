@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { FindOptionPipe } from '../../shared/pipes/find-option.pipe';
+import { TranslatePipe } from '../../shared/pipes/translate.pipe';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, FindOptionPipe],
+  imports: [CommonModule, FormsModule, FindOptionPipe, TranslatePipe],
   templateUrl: './contact.html',
   styleUrl: './contact.scss'
 })

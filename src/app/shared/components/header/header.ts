@@ -2,11 +2,13 @@ import { Component, HostListener, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { Button } from '../button/button';
+import { LanguageSwitcher } from '../language-switcher/language-switcher';
+import { TranslatePipe } from '../../pipes/translate.pipe';
 
 @Component({
     selector: 'app-header',
     standalone: true,
-    imports: [CommonModule, RouterLink, RouterLinkActive, Button],
+    imports: [CommonModule, RouterLink, RouterLinkActive, Button, LanguageSwitcher, TranslatePipe],
     templateUrl: './header.html',
     styleUrl: './header.scss'
 })

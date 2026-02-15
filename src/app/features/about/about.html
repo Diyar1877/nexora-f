@@ -3,15 +3,14 @@
     <div class="container">
         <div class="hero-grid">
             <div class="hero-text">
-                <span class="badge">Über Nexora</span>
-                <h1 class="hero-title">Wir verbinden <br><span class="highlight">Vision & Technologie</span></h1>
+                <span class="badge">{{ 'about.badge' | translate }}</span>
+                <h1 class="hero-title" [innerHTML]="'about.heroTitle' | translate"></h1>
                 <p class="hero-subtitle">
-                    Nexora Solutions ist Ihre Brücke zu erstklassigen Entwicklungsressourcen.
-                    Wir glauben daran, dass großartige Software keine Grenzen kennt.
+                    {{ 'about.heroSubtitle' | translate }}
                 </p>
                 <div class="hero-actions">
-                    <app-button variant="primary" routerLink="/contact">Kontakt aufnehmen</app-button>
-                    <app-button variant="secondary" routerLink="/companies">Unsere Leistungen</app-button>
+                    <app-button variant="primary" routerLink="/contact">{{ 'about.cta1' | translate }}</app-button>
+                    <app-button variant="secondary" routerLink="/companies">{{ 'about.cta2' | translate }}</app-button>
                 </div>
             </div>
             <div class="hero-visual">
@@ -36,22 +35,22 @@
         <div class="stats-grid">
             <div class="stat-item">
                 <span class="stat-number">50+</span>
-                <span class="stat-label">Entwickler im Netzwerk</span>
+                <span class="stat-label">{{ 'about.stat1' | translate }}</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
                 <span class="stat-number">30+</span>
-                <span class="stat-label">Abgeschlossene Projekte</span>
+                <span class="stat-label">{{ 'about.stat2' | translate }}</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
                 <span class="stat-number">3+</span>
-                <span class="stat-label">Jahre Erfahrung</span>
+                <span class="stat-label">{{ 'about.stat3' | translate }}</span>
             </div>
             <div class="stat-divider"></div>
             <div class="stat-item">
                 <span class="stat-number">98%</span>
-                <span class="stat-label">Kundenzufriedenheit</span>
+                <span class="stat-label">{{ 'about.stat4' | translate }}</span>
             </div>
         </div>
     </div>
@@ -62,29 +61,26 @@
     <div class="container">
         <div class="mission-grid">
             <div class="mission-text">
-                <span class="section-label">Unsere Mission</span>
-                <h2 class="section-title">Technologische Exzellenz <span class="highlight-inline">ohne Grenzen</span></h2>
+                <span class="section-label">{{ 'about.missionLabel' | translate }}</span>
+                <h2 class="section-title" [innerHTML]="'about.missionTitle' | translate"></h2>
                 <p>
-                    In einer Welt, in der technologische Exzellenz den Unterschied macht, unterstützen wir Unternehmen
-                    dabei, ihre digitalen Ziele schneller zu erreichen. Wir stellen agile, hochqualifizierte Remote-Teams
-                    bereit, die sich nahtlos in Ihre Prozesse integrieren.
+                    {{ 'about.missionText1' | translate }}
                 </p>
                 <p>
-                    Dabei setzen wir auf Transparenz, Fairness und höchste Qualitätsstandards – sowohl für unsere Kunden
-                    als auch für unsere Entwickler.
+                    {{ 'about.missionText2' | translate }}
                 </p>
                 <div class="mission-highlights">
                     <div class="mission-highlight">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        <span>Deutsche Qualitätsstandards</span>
+                        <span>{{ 'about.missionHighlight1' | translate }}</span>
                     </div>
                     <div class="mission-highlight">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        <span>Internationale Talente</span>
+                        <span>{{ 'about.missionHighlight2' | translate }}</span>
                     </div>
                     <div class="mission-highlight">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                        <span>Nahtlose Integration</span>
+                        <span>{{ 'about.missionHighlight3' | translate }}</span>
                     </div>
                 </div>
             </div>
@@ -98,8 +94,8 @@
                         </svg>
                     </div>
                     <div>
-                        <strong>Global vernetzt</strong>
-                        <span>Talente aus aller Welt</span>
+                        <strong>{{ 'about.missionCard1Title' | translate }}</strong>
+                        <span>{{ 'about.missionCard1Desc' | translate }}</span>
                     </div>
                 </div>
                 <div class="visual-card card-bottom">
@@ -109,8 +105,8 @@
                         </svg>
                     </div>
                     <div>
-                        <strong>100% Rechtssicher</strong>
-                        <span>Deutsche Verträge & DSGVO</span>
+                        <strong>{{ 'about.missionCard2Title' | translate }}</strong>
+                        <span>{{ 'about.missionCard2Desc' | translate }}</span>
                     </div>
                 </div>
             </div>
@@ -122,9 +118,9 @@
 <section class="values section bg-gray">
     <div class="container">
         <div class="section-header text-center">
-            <span class="section-label">Wofür wir stehen</span>
-            <h2 class="section-title">Unsere <span class="highlight-inline">Werte</span></h2>
-            <p class="section-subtitle">Diese Prinzipien leiten unser Handeln – jeden Tag, in jedem Projekt</p>
+            <span class="section-label">{{ 'about.valuesLabel' | translate }}</span>
+            <h2 class="section-title" [innerHTML]="'about.valuesTitle' | translate"></h2>
+            <p class="section-subtitle">{{ 'about.valuesSubtitle' | translate }}</p>
         </div>
         <div class="values-grid">
             <div class="value-card">
@@ -136,8 +132,8 @@
                         <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                     </svg>
                 </div>
-                <h3>Partnerschaft</h3>
-                <p>Wir sind mehr als Dienstleister. Wir denken mit und handeln proaktiv für Ihren Erfolg.</p>
+                <h3>{{ 'about.value1Title' | translate }}</h3>
+                <p>{{ 'about.value1Desc' | translate }}</p>
             </div>
             <div class="value-card">
                 <div class="value-icon">
@@ -146,8 +142,8 @@
                         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                     </svg>
                 </div>
-                <h3>Transparenz</h3>
-                <p>Offene Kommunikation, klare Prozesse und keine versteckten Kosten sind unser Standard.</p>
+                <h3>{{ 'about.value2Title' | translate }}</h3>
+                <p>{{ 'about.value2Desc' | translate }}</p>
             </div>
             <div class="value-card">
                 <div class="value-icon">
@@ -158,8 +154,8 @@
                         <path d="M9 13a3 3 0 0 0 6 0"></path>
                     </svg>
                 </div>
-                <h3>Innovation</h3>
-                <p>Wir setzen auf moderne Technologien und Best Practices, um zukunftssichere Lösungen zu bauen.</p>
+                <h3>{{ 'about.value3Title' | translate }}</h3>
+                <p>{{ 'about.value3Desc' | translate }}</p>
             </div>
             <div class="value-card">
                 <div class="value-icon">
@@ -167,8 +163,8 @@
                         <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
                     </svg>
                 </div>
-                <h3>Qualität</h3>
-                <p>Jede Zeile Code wird nach höchsten Standards entwickelt. Code Reviews und Testing sind Pflicht.</p>
+                <h3>{{ 'about.value4Title' | translate }}</h3>
+                <p>{{ 'about.value4Desc' | translate }}</p>
             </div>
             <div class="value-card">
                 <div class="value-icon">
@@ -177,8 +173,8 @@
                         <polyline points="22 4 12 14.01 9 11.01"></polyline>
                     </svg>
                 </div>
-                <h3>Zuverlässigkeit</h3>
-                <p>Deadlines halten, Versprechen einlösen. Auf uns können Sie sich verlassen – garantiert.</p>
+                <h3>{{ 'about.value5Title' | translate }}</h3>
+                <p>{{ 'about.value5Desc' | translate }}</p>
             </div>
             <div class="value-card">
                 <div class="value-icon">
@@ -186,8 +182,8 @@
                         <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                     </svg>
                 </div>
-                <h3>Menschlichkeit</h3>
-                <p>Hinter jedem Projekt stehen Menschen. Wir behandeln alle mit Respekt, Fairness und Wertschätzung.</p>
+                <h3>{{ 'about.value6Title' | translate }}</h3>
+                <p>{{ 'about.value6Desc' | translate }}</p>
             </div>
         </div>
     </div>
@@ -197,40 +193,40 @@
 <section class="story section">
     <div class="container">
         <div class="section-header text-center">
-            <span class="section-label">Unsere Geschichte</span>
-            <h2 class="section-title">Von der Idee zur <span class="highlight-inline">Realität</span></h2>
+            <span class="section-label">{{ 'about.storyLabel' | translate }}</span>
+            <h2 class="section-title" [innerHTML]="'about.storyTitle' | translate"></h2>
         </div>
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
                     <span class="timeline-year">2022</span>
-                    <h3>Gründung</h3>
-                    <p>Nexora Solutions wird mit einer klaren Vision gegründet: Deutsche Unternehmen mit den besten Remote-Entwicklern weltweit verbinden.</p>
+                    <h3>{{ 'about.story2022Title' | translate }}</h3>
+                    <p>{{ 'about.story2022Desc' | translate }}</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
                     <span class="timeline-year">2023</span>
-                    <h3>Wachstum</h3>
-                    <p>Erste Großkunden aus der DACH-Region. Aufbau eines Netzwerks von über 20 geprüften Entwicklern in verschiedenen Technologien.</p>
+                    <h3>{{ 'about.story2023Title' | translate }}</h3>
+                    <p>{{ 'about.story2023Desc' | translate }}</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
                     <span class="timeline-year">2024</span>
-                    <h3>Expansion</h3>
-                    <p>Erweiterung des Teams auf 50+ Entwickler. Neue Geschäftsbereiche: UI/UX Design, Cloud-Architektur und Cybersecurity.</p>
+                    <h3>{{ 'about.story2024Title' | translate }}</h3>
+                    <p>{{ 'about.story2024Desc' | translate }}</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-marker"></div>
                 <div class="timeline-content">
                     <span class="timeline-year">Heute</span>
-                    <h3>Zukunft gestalten</h3>
-                    <p>Wir wachsen weiter – mit dem Ziel, der führende Partner für Remote-Entwicklung in der DACH-Region zu werden.</p>
+                    <h3>{{ 'about.storyTodayTitle' | translate }}</h3>
+                    <p>{{ 'about.storyTodayDesc' | translate }}</p>
                 </div>
             </div>
         </div>
@@ -241,29 +237,29 @@
 <section class="diff section bg-dark">
     <div class="container">
         <div class="section-header text-center">
-            <span class="section-label light">Was uns ausmacht</span>
-            <h2 class="section-title light">Warum Unternehmen uns vertrauen</h2>
+            <span class="section-label light">{{ 'about.diffLabel' | translate }}</span>
+            <h2 class="section-title light">{{ 'about.diffTitle' | translate }}</h2>
         </div>
         <div class="diff-grid">
             <div class="diff-card">
                 <div class="diff-number">01</div>
-                <h3>Deutsche Verträge</h3>
-                <p>Alle Verträge nach deutschem Recht. Volle Rechtssicherheit, DSGVO-Konformität und klare Bedingungen.</p>
+                <h3>{{ 'about.diff1Title' | translate }}</h3>
+                <p>{{ 'about.diff1Desc' | translate }}</p>
             </div>
             <div class="diff-card">
                 <div class="diff-number">02</div>
-                <h3>Geprüfte Qualität</h3>
-                <p>Mehrstufiger Auswahlprozess mit technischen Assessments. Nur die besten Entwickler schaffen es in unser Netzwerk.</p>
+                <h3>{{ 'about.diff2Title' | translate }}</h3>
+                <p>{{ 'about.diff2Desc' | translate }}</p>
             </div>
             <div class="diff-card">
                 <div class="diff-number">03</div>
-                <h3>Schnelle Vermittlung</h3>
-                <p>Innerhalb von 48 Stunden passende Profile. Kein monatelanges Recruiting – starten Sie sofort durch.</p>
+                <h3>{{ 'about.diff3Title' | translate }}</h3>
+                <p>{{ 'about.diff3Desc' | translate }}</p>
             </div>
             <div class="diff-card">
                 <div class="diff-number">04</div>
-                <h3>Volle Transparenz</h3>
-                <p>Keine versteckten Kosten, regelmäßige Reports und ein persönlicher Ansprechpartner für jedes Projekt.</p>
+                <h3>{{ 'about.diff4Title' | translate }}</h3>
+                <p>{{ 'about.diff4Desc' | translate }}</p>
             </div>
         </div>
     </div>
@@ -272,11 +268,11 @@
 <!-- CTA Section -->
 <section class="cta section">
     <div class="container text-center">
-        <h2 class="cta-title">Lernen Sie uns kennen</h2>
-        <p class="cta-subtitle">Wir freuen uns darauf, mehr über Ihr Projekt zu erfahren und gemeinsam die beste Lösung zu finden.</p>
+        <h2 class="cta-title">{{ 'about.ctaTitle' | translate }}</h2>
+        <p class="cta-subtitle">{{ 'about.ctaSubtitle' | translate }}</p>
         <div class="cta-actions">
-            <app-button variant="white" routerLink="/contact">Kontakt aufnehmen</app-button>
-            <app-button variant="secondary" routerLink="/companies">Unsere Leistungen</app-button>
+            <app-button variant="white" routerLink="/contact">{{ 'about.ctaButton1' | translate }}</app-button>
+            <app-button variant="secondary" routerLink="/companies">{{ 'about.ctaButton2' | translate }}</app-button>
         </div>
     </div>
 </section>

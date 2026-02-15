@@ -4,9 +4,9 @@
         <!-- Header -->
         <div class="contact-header">
             <div class="contact-header__left">
-                <h1>Kontakt</h1>
-                <p class="subtitle-bold">Lassen Sie uns miteinander sprechen!</p>
-                <p class="subtitle">Wir freuen uns darauf, von Ihnen zu hören.</p>
+                <h1>{{ 'contact.title' | translate }}</h1>
+                <p class="subtitle-bold">{{ 'contact.subtitleBold' | translate }}</p>
+                <p class="subtitle">{{ 'contact.subtitle' | translate }}</p>
             </div>
             <div class="contact-header__right">
                 <svg class="contact-illustration" viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,13 +57,13 @@
             <div class="contact-form-col">
                 <form (ngSubmit)="submit()" #contactForm="ngForm">
                     <div class="form-field">
-                        <input type="text" placeholder="Ihr Name*" name="name" [(ngModel)]="name" required>
+                        <input type="text" placeholder="{{ 'contact.name' | translate }}*" name="name" [(ngModel)]="name" required>
                     </div>
                     <div class="form-field">
-                        <input type="email" placeholder="Ihre E-Mail-Adresse*" name="email" [(ngModel)]="email" required>
+                        <input type="email" placeholder="{{ 'contact.email' | translate }}*" name="email" [(ngModel)]="email" required>
                     </div>
                     <div class="form-field">
-                        <input type="tel" placeholder="Ihre Telefonnummer*" name="phone" [(ngModel)]="phoneNumber">
+                        <input type="tel" placeholder="{{ 'contact.phone' | translate }}*" name="phone" [(ngModel)]="phoneNumber">
                     </div>
                     <div class="form-field custom-select-wrapper" [class.open]="isDropdownOpen">
                         <div class="custom-select-trigger" (click)="toggleDropdown($event)">
@@ -83,7 +83,7 @@
                         <input type="hidden" name="subject" [(ngModel)]="subject" required>
                     </div>
                     <div class="form-field">
-                        <textarea placeholder="Ihre Nachricht" name="message" [(ngModel)]="message" required rows="7"></textarea>
+                        <textarea placeholder="{{ 'contact.message' | translate }}" name="message" [(ngModel)]="message" required rows="7"></textarea>
                     </div>
 
                     <!-- Success -->
@@ -93,7 +93,7 @@
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                             <polyline points="22 4 12 14.01 9 11.01"></polyline>
                         </svg>
-                        <span>Ihre Nachricht wurde erfolgreich gesendet! Wir melden uns innerhalb von 24 Stunden.</span>
+                        <span>{{ 'contact.success' | translate }}</span>
                     </div>
 
                     <!-- Error -->
@@ -109,7 +109,7 @@
 
                     <button type="submit" class="submit-btn" [disabled]="contactForm.invalid || isSubmitting">
                         <span class="spinner" *ngIf="isSubmitting"></span>
-                        {{ isSubmitting ? 'Wird gesendet...' : 'Nachricht senden' }}
+                        {{ isSubmitting ? ('contact.sending' | translate) : ('contact.send' | translate) }}
                     </button>
                 </form>
 

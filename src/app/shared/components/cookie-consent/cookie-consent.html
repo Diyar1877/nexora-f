@@ -2,8 +2,8 @@
   <div class="cookie-consent-overlay">
     <div class="cookie-consent-dialog">
       <div class="cookie-consent-header">
-        <h3>Cookie-Einstellungen</h3>
-        <button class="close-btn" (click)="showConsent = false" aria-label="Schließen">
+        <h3>{{ 'cookie.title' | translate }}</h3>
+        <button class="close-btn" (click)="showConsent = false" aria-label="Close">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="18" y1="6" x2="6" y2="18"></line>
             <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -13,7 +13,7 @@
       
       <div class="cookie-consent-content">
         <p>
-          Wir verwenden Cookies für die optimale Website-Nutzung, Analyse und personalisierte Inhalte.
+          {{ 'cookie.description' | translate }}
         </p>
         
         <div class="cookie-categories">
@@ -21,8 +21,8 @@
             <label class="category-label">
               <input type="checkbox" [checked]="consentSettings.necessary" disabled>
               <div class="category-info">
-                <strong>Notwendig</strong>
-                <small>Essenziell für den Betrieb</small>
+                <strong>{{ 'cookie.necessary' | translate }}</strong>
+                <small>{{ 'cookie.necessaryDesc' | translate }}</small>
               </div>
             </label>
           </div>
@@ -31,8 +31,8 @@
             <label class="category-label">
               <input type="checkbox" [checked]="consentSettings.analytics" (change)="updateConsent('analytics', $event)">
               <div class="category-info">
-                <strong>Analytics</strong>
-                <small>Hilft uns die Website zu verbessern</small>
+                <strong>{{ 'cookie.analytics' | translate }}</strong>
+                <small>{{ 'cookie.analyticsDesc' | translate }}</small>
               </div>
             </label>
           </div>
@@ -41,8 +41,8 @@
             <label class="category-label">
               <input type="checkbox" [checked]="consentSettings.marketing" (change)="updateConsent('marketing', $event)">
               <div class="category-info">
-                <strong>Marketing</strong>
-                <small>Für personalisierte Werbung</small>
+                <strong>{{ 'cookie.marketing' | translate }}</strong>
+                <small>{{ 'cookie.marketingDesc' | translate }}</small>
               </div>
             </label>
           </div>
@@ -50,9 +50,9 @@
       </div>
       
       <div class="cookie-consent-actions">
-        <button class="btn btn-secondary" (click)="showConsent = false">Später</button>
-        <button class="btn btn-primary" (click)="acceptSelected()">Auswahl</button>
-        <button class="btn btn-accept-all" (click)="acceptAll()">Alle akzeptieren</button>
+        <button class="btn btn-secondary" (click)="showConsent = false">{{ 'cookie.later' | translate }}</button>
+        <button class="btn btn-primary" (click)="acceptSelected()">{{ 'cookie.acceptSelected' | translate }}</button>
+        <button class="btn btn-primary" (click)="acceptAll()">{{ 'cookie.acceptAll' | translate }}</button>
       </div>
     </div>
   </div>

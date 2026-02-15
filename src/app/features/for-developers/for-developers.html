@@ -3,15 +3,14 @@
     <div class="container">
         <div class="hero-grid">
             <div class="hero-text">
-                <span class="badge">Für Entwickler</span>
-                <h1 class="hero-title">Deine Karriere im <br><span class="highlight">internationalen Umfeld</span></h1>
+                <span class="badge">{{ 'developers.badge' | translate }}</span>
+                <h1 class="hero-title">{{ 'developers.heroTitle1' | translate }} <br><span class="highlight">{{ 'developers.heroTitle2' | translate }}</span></h1>
                 <p class="hero-subtitle">
-                    Arbeite an spannenden Projekten für Top-Unternehmen aus der DACH-Region.
-                    100% Remote, faire Bezahlung und volle Flexibilität.
+                    {{ 'developers.heroSubtitle' | translate }}
                 </p>
                 <div class="hero-actions">
-                    <app-button variant="primary" routerLink="/contact">Jetzt bewerben</app-button>
-                    <app-button variant="secondary" routerLink="/about">Über Nexora</app-button>
+                    <app-button variant="primary" routerLink="/contact">{{ 'developers.cta1' | translate }}</app-button>
+                    <app-button variant="secondary" routerLink="/about">{{ 'developers.cta2' | translate }}</app-button>
                 </div>
                 <div class="hero-trust">
                     <div class="trust-item">
@@ -19,21 +18,21 @@
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                             <polyline points="22 4 12 14.01 9 11.01"></polyline>
                         </svg>
-                        <span>100% Remote</span>
+                        <span>{{ 'developers.trust1' | translate }}</span>
                     </div>
                     <div class="trust-item">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                             <polyline points="22 4 12 14.01 9 11.01"></polyline>
                         </svg>
-                        <span>Deutsche Verträge</span>
+                        <span>{{ 'developers.trust2' | translate }}</span>
                     </div>
                     <div class="trust-item">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                             <polyline points="22 4 12 14.01 9 11.01"></polyline>
                         </svg>
-                        <span>Top Gehälter</span>
+                        <span>{{ 'developers.trust3' | translate }}</span>
                     </div>
                 </div>
             </div>
@@ -63,8 +62,8 @@
 <section class="perks section bg-gray">
     <div class="container">
         <div class="section-header text-center">
-            <h2 class="section-title">Deine Vorteile <span class="highlight-inline">bei Nexora</span></h2>
-            <p class="section-subtitle">Wir bieten dir mehr als nur einen Job</p>
+            <h2 class="section-title" [innerHTML]="'developers.perksTitle' | translate"></h2>
+            <p class="section-subtitle">{{ 'developers.perksSubtitle' | translate }}</p>
         </div>
         <div class="perks-grid">
             <div class="perk-card">
@@ -74,8 +73,8 @@
                         <polyline points="9 22 9 12 15 12 15 22"></polyline>
                     </svg>
                 </div>
-                <h3>100% Remote</h3>
-                <p>Arbeite von wo du willst. Wir glauben an Ergebnisse, nicht an Anwesenheitspflicht.</p>
+                <h3>{{ 'developers.perk1Title' | translate }}</h3>
+                <p>{{ 'developers.perk1Desc' | translate }}</p>
             </div>
             <div class="perk-card">
                 <div class="perk-icon">
@@ -84,8 +83,8 @@
                         <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                     </svg>
                 </div>
-                <h3>Top Gehälter</h3>
-                <p>Überdurchschnittliche Bezahlung, pünktlich und sicher dank deutscher Verträge.</p>
+                <h3>{{ 'developers.perk2Title' | translate }}</h3>
+                <p>{{ 'developers.perk2Desc' | translate }}</p>
             </div>
             <div class="perk-card">
                 <div class="perk-icon">
@@ -94,8 +93,8 @@
                         <polyline points="17 6 23 6 23 12"></polyline>
                     </svg>
                 </div>
-                <h3>Wachstum</h3>
-                <p>Zugang zu Weiterbildungen, Konferenzen und modernsten Tech-Stacks.</p>
+                <h3>{{ 'developers.perk3Title' | translate }}</h3>
+                <p>{{ 'developers.perk3Desc' | translate }}</p>
             </div>
             <div class="perk-card">
                 <div class="perk-icon">
@@ -111,8 +110,8 @@
                         <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
                     </svg>
                 </div>
-                <h3>Work-Life-Balance</h3>
-                <p>Flexible Arbeitszeiten, die sich deinem Leben anpassen. Keine Burnout-Kultur.</p>
+                <h3>{{ 'developers.perk4Title' | translate }}</h3>
+                <p>{{ 'developers.perk4Desc' | translate }}</p>
             </div>
             <div class="perk-card">
                 <div class="perk-icon">
@@ -123,8 +122,8 @@
                         <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                     </svg>
                 </div>
-                <h3>Starkes Team</h3>
-                <p>Arbeite mit talentierten Entwicklern zusammen und lerne voneinander in spannenden Projekten.</p>
+                <h3>{{ 'developers.perk5Title' | translate }}</h3>
+                <p>{{ 'developers.perk5Desc' | translate }}</p>
             </div>
             <div class="perk-card">
                 <div class="perk-icon">
@@ -132,8 +131,8 @@
                         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                     </svg>
                 </div>
-                <h3>Sicherheit</h3>
-                <p>Deutsche Verträge, pünktliche Zahlung und langfristige Zusammenarbeit statt Freelancer-Unsicherheit.</p>
+                <h3>{{ 'developers.perk6Title' | translate }}</h3>
+                <p>{{ 'developers.perk6Desc' | translate }}</p>
             </div>
         </div>
     </div>
@@ -143,8 +142,8 @@
 <section class="tech section">
     <div class="container">
         <div class="section-header text-center">
-            <h2 class="section-title">Unser Tech-Stack</h2>
-            <p class="section-subtitle">Mit diesen Technologien arbeiten unsere Teams</p>
+            <h2 class="section-title">{{ 'developers.techTitle' | translate }}</h2>
+            <p class="section-subtitle">{{ 'developers.techSubtitle' | translate }}</p>
         </div>
         <div class="tech-grid">
             <div class="tech-item">
@@ -228,39 +227,39 @@
 <section class="process section bg-gray">
     <div class="container">
         <div class="section-header text-center">
-            <h2 class="section-title">So kommst du ins Team</h2>
-            <p class="section-subtitle">In vier Schritten zu deinem neuen Job</p>
+            <h2 class="section-title">{{ 'developers.processTitle' | translate }}</h2>
+            <p class="section-subtitle">{{ 'developers.processSubtitle' | translate }}</p>
         </div>
         <div class="process-steps">
             <div class="process-step">
                 <div class="step-number">01</div>
                 <div class="step-content">
-                    <h3>Bewerbung einreichen</h3>
-                    <p>Schick uns deinen CV oder dein Portfolio. Kein langes Anschreiben nötig – dein Code spricht für sich.</p>
+                    <h3>{{ 'developers.process1Title' | translate }}</h3>
+                    <p>{{ 'developers.process1Desc' | translate }}</p>
                 </div>
             </div>
             <div class="process-connector"></div>
             <div class="process-step">
                 <div class="step-number">02</div>
                 <div class="step-content">
-                    <h3>Technisches Interview</h3>
-                    <p>Ein entspanntes Gespräch über deine Erfahrung und ein kurzes technisches Assessment – kein Whiteboard-Stress.</p>
+                    <h3>{{ 'developers.process2Title' | translate }}</h3>
+                    <p>{{ 'developers.process2Desc' | translate }}</p>
                 </div>
             </div>
             <div class="process-connector"></div>
             <div class="process-step">
                 <div class="step-number">03</div>
                 <div class="step-content">
-                    <h3>Projekt-Matching</h3>
-                    <p>Wir finden das Projekt, das perfekt zu deinen Skills und Interessen passt. Du entscheidest mit.</p>
+                    <h3>{{ 'developers.process3Title' | translate }}</h3>
+                    <p>{{ 'developers.process3Desc' | translate }}</p>
                 </div>
             </div>
             <div class="process-connector"></div>
             <div class="process-step">
                 <div class="step-number">04</div>
                 <div class="step-content">
-                    <h3>Onboarding & Start</h3>
-                    <p>Vertrag, Tooling, Team-Intro – wir machen den Start so einfach wie möglich. Los geht's!</p>
+                    <h3>{{ 'developers.process4Title' | translate }}</h3>
+                    <p>{{ 'developers.process4Desc' | translate }}</p>
                 </div>
             </div>
         </div>
@@ -271,61 +270,61 @@
 <section class="jobs section">
     <div class="container">
         <div class="section-header text-center">
-            <h2 class="section-title">Aktuelle <span class="highlight-inline">Positionen</span></h2>
-            <p class="section-subtitle">Finde die Rolle, die zu dir passt</p>
+            <h2 class="section-title" [innerHTML]="'developers.jobsTitle' | translate"></h2>
+            <p class="section-subtitle">{{ 'developers.jobsSubtitle' | translate }}</p>
         </div>
         <div class="jobs-list">
             <div class="job-card">
                 <div class="job-info">
-                    <h3>Senior Angular Developer</h3>
-                    <p class="job-desc">Entwicklung komplexer Enterprise-Anwendungen mit Angular 17+ für deutsche Kunden.</p>
+                    <h3>{{ 'developers.job1Title' | translate }}</h3>
+                    <p class="job-desc">{{ 'developers.job1Desc' | translate }}</p>
                     <div class="job-tags">
                         <span class="tag">Remote</span>
                         <span class="tag">Full-time</span>
                         <span class="tag">Deutsch/Englisch</span>
                     </div>
                 </div>
-                <app-button variant="secondary" routerLink="/contact">Bewerben</app-button>
+                <app-button variant="secondary" routerLink="/contact">{{ 'developers.jobApply' | translate }}</app-button>
             </div>
             <div class="job-card">
                 <div class="job-info">
-                    <h3>Symfony Backend Expert</h3>
-                    <p class="job-desc">Backend-Entwicklung mit Symfony, API-Design und Datenbankarchitektur.</p>
+                    <h3>{{ 'developers.job2Title' | translate }}</h3>
+                    <p class="job-desc">{{ 'developers.job2Desc' | translate }}</p>
                     <div class="job-tags">
                         <span class="tag">Remote</span>
                         <span class="tag">Full-time</span>
                         <span class="tag">Englisch</span>
                     </div>
                 </div>
-                <app-button variant="secondary" routerLink="/contact">Bewerben</app-button>
+                <app-button variant="secondary" routerLink="/contact">{{ 'developers.jobApply' | translate }}</app-button>
             </div>
             <div class="job-card">
                 <div class="job-info">
-                    <h3>Fullstack Developer (JS/TS)</h3>
-                    <p class="job-desc">End-to-End Entwicklung mit modernen JavaScript/TypeScript Frameworks.</p>
+                    <h3>{{ 'developers.job3Title' | translate }}</h3>
+                    <p class="job-desc">{{ 'developers.job3Desc' | translate }}</p>
                     <div class="job-tags">
                         <span class="tag">Remote</span>
                         <span class="tag">Part-/Full-time</span>
                         <span class="tag">Englisch</span>
                     </div>
                 </div>
-                <app-button variant="secondary" routerLink="/contact">Bewerben</app-button>
+                <app-button variant="secondary" routerLink="/contact">{{ 'developers.jobApply' | translate }}</app-button>
             </div>
             <div class="job-card">
                 <div class="job-info">
-                    <h3>UI/UX Designer</h3>
-                    <p class="job-desc">Design nutzerfreundlicher Interfaces in Figma für Web- und Mobile-Anwendungen.</p>
+                    <h3>{{ 'developers.job4Title' | translate }}</h3>
+                    <p class="job-desc">{{ 'developers.job4Desc' | translate }}</p>
                     <div class="job-tags">
                         <span class="tag">Remote</span>
                         <span class="tag">Full-time</span>
                         <span class="tag">Deutsch/Englisch</span>
                     </div>
                 </div>
-                <app-button variant="secondary" routerLink="/contact">Bewerben</app-button>
+                <app-button variant="secondary" routerLink="/contact">{{ 'developers.jobApply' | translate }}</app-button>
             </div>
         </div>
         <div class="jobs-note text-center">
-            <p>Keine passende Stelle dabei? Schick uns eine <a routerLink="/contact">Initiativbewerbung</a>.</p>
+            <p [innerHTML]="'developers.jobsNote' | translate"></p>
         </div>
     </div>
 </section>
@@ -333,8 +332,8 @@
 <!-- CTA Section -->
 <section class="cta section">
     <div class="container text-center">
-        <h2 class="cta-title">Bereit durchzustarten?</h2>
-        <p class="cta-subtitle">Schick uns deinen CV. Wir melden uns innerhalb von 24h.</p>
-        <app-button variant="white" routerLink="/contact">Initiativbewerbung senden</app-button>
+        <h2 class="cta-title">{{ 'developers.ctaTitle' | translate }}</h2>
+        <p class="cta-subtitle">{{ 'developers.ctaSubtitle' | translate }}</p>
+        <app-button variant="white" routerLink="/contact">{{ 'developers.ctaButton' | translate }}</app-button>
     </div>
 </section>

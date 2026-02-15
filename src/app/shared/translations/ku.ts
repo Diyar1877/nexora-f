@@ -1,0 +1,360 @@
+export const ku = {
+  // Navigation
+  'nav.home': 'سەرەتە',
+  'nav.forCompanies': 'بۆ کۆمپانیاکان',
+  'nav.forDevelopers': 'بۆ گەشەپێدەران',
+  'nav.about': 'دەربارەی ئێمە',
+  'nav.contact': 'پەیوەندی',
+  'nav.requestNow': 'ئێستا داواکاری بکە',
+
+  // Footer
+  'footer.brand.name': 'NEXORA',
+  'footer.brand.suffix': 'SOLUTIONS',
+  'footer.brand.description': 'هاوکارەکەت بۆ تیمە تەکنیکییەکان و چارەسەرەکانی نەرمەکاڵای پلە بەرز. ئێمە کۆمپانیاکانی ئەڵمانیا بە بەهرەمەندترین بەهرەکەکان دەبەستێنەوە.',
+  'footer.brand.secure': '١٠٠% یاسایی و پارێزراو',
+  'footer.navigation': 'ڕێنیشاندەر',
+  'footer.contact': 'پەیوەندی',
+  'footer.legal': 'یاسایی',
+  'footer.imprint': 'چاپ',
+  'footer.privacy': 'تایبەتمەندی',
+  'footer.agb': 'مەرجەکان',
+  'footer.cookiePolicy': 'سیاساتی کوکی',
+  'footer.copyright': '© {{year}} Nexora Solutions UG (haftungsbeschränkt).',
+  'footer.madeWith': 'دروستکراو بۆ کارایی.',
+
+  // Hero Section
+  'hero.title': 'پەرەپێدانی دوور',
+  'hero.subtitle': 'بۆ کۆمپانیاکانی ئەڵمانیا',
+  'hero.description': 'هاوکارێک بۆ چارەسەری وێب و سۆفتوێەر. ئێمە ستانداردەکانی کوالێتی ئەڵمانی بە زانیاری دوور پێکەوە دەخەین.',
+  'hero.services': 'خزمەتگوزارییەکانی ئێمە',
+  'hero.contactUs': 'پەیوەندی بە ئێمەوە بکە',
+
+  // Technologies
+  'technologies.title': 'خزمەتگوزارییەکان کە بەکاردەهێنین و پێشکەش دەکەین',
+
+  // Stats
+  'stats.label': 'ئەوەی ئێمە دەیخوڕێنێت',
+  'stats.quote1': 'ئێمە باوەڕمان بە سۆفتوێەری گەورە هەیە',
+  'stats.quote2': 'دەچێتە دەرەوەی تیمە گەورەکان',
+  'stats.quote3': '.',
+  'stats.description': 'نێکسۆرا کۆمپانیاکانی ئەڵمانیا بە گەشەپێدەرانی دووری بەهرەمەند دەبەستێتەوە — ڕوون، دڵسۆز و لە ئاستی چاو.',
+  'stats.experts': 'شارەزایان لە تۆڕەکەدا',
+  'stats.projects': 'پرۆژە سەرکەوتووەکان',
+  'stats.experience': 'ساڵان ئەزموون',
+
+  // For Companies
+  'companies.badge': 'بۆ کۆمپانیاکان',
+  'companies.heroTitle1': 'گەشەپێدەرانی بەهرەمەند',
+  'companies.heroTitle2': 'بۆ کۆمپانیایەکەت',
+  'companies.heroSubtitle': 'تیمی خۆت بە گەشەپێدەرانی دووری بە ئەزموون فراوان بکە. پەیماننامەی ئەڵمانی، بەهەرەمەندە پەسەندکراوەکان، و ڕوونی تەواو.',
+  'companies.cta1': 'ڕاوێژکاری خۆڕایی وەربگرە',
+  'companies.cta2': 'زیاتر بزانە',
+
+  // For Developers
+  'developers.badge': 'بۆ گەشەپێدەران',
+  'developers.heroTitle1': 'کارەکەت لە',
+  'developers.heroTitle2': 'ژینگەی نێودەوڵەتی',
+  'developers.heroSubtitle': 'لەسەر پرۆژە سەرنجڕاکێشەکان بۆ کۆمپانیاکانی سەرەوەی ناوچەی DACH کار بکە. 100% دوور، موچەی دادپەروەری و ئازادی تەواو.',
+  'developers.cta1': 'ئێستا داواکاری بکە',
+  'developers.cta2': 'دەربارەی Nexora',
+
+  // For Developers - Hero Trust Badges
+  'developers.trust1': '١٠٠% دوور',
+  'developers.trust2': 'پەیماننامەکانی ئەڵمانیا',
+  'developers.trust3': 'مووچەی سەرەوە',
+
+  // For Developers - Perks Section
+  'developers.perksTitle': 'سوودەکانی تۆ <span class="highlight-inline">لە Nexora</span>',
+  'developers.perksSubtitle': 'ئێمە زیاتر لە کارێک پێشکەش دەکەین',
+  'developers.perk1Title': '١٠٠% دوور',
+  'developers.perk1Desc': 'لە هەر شوێنێک کە دەتەوێت کار بکە. ئێمە باوەڕمان بە ئەنجامەکان هەیە، نەک بە بوون لە شوێنەکەدا.',
+  'developers.perk2Title': 'مووچەی سەرەوە',
+  'developers.perk2Desc': 'مووچەی سەرووسەر ئاسایی، بە کاتی و پارێزراو بەهۆی پەیماننامەکانی ئەڵمانیا.',
+  'developers.perk3Title': 'گەشەسەندن',
+  'developers.perk3Desc': 'دەستڕاگەیشتن بە خولەکانی فێرکردن، کۆنفرانسەکان و نوێترین تەکنەلۆژیاکان.',
+  'developers.perk4Title': 'هاوسەنگی کار و ژیان',
+  'developers.perk4Desc': 'کاتی کاری انعطافپێر کە بە ژیانی تۆ دەگونجێت. هیچ کولتوورێکی سوتاندن نییە.',
+  'developers.perk5Title': 'تیمی بەهێز',
+  'developers.perk5Desc': 'لەگەڵ گەشەپێدەرانی بەهرەمەند کار بکە و لە پرۆژە سەرنجڕاکێشەکان یەکترەوە فێربە.',
+  'developers.perk6Title': 'پارێزەری',
+  'developers.perk6Desc': 'پەیماننامەکانی ئەڵمانیا، پارەدان بە کاتی و هاوکاری درێژخایەن بەجێی نائارامیی فریلانس.',
+
+  // For Developers - Tech Stack Section
+  'developers.techTitle': 'تەکنەلۆژیای ئێمە',
+  'developers.techSubtitle': 'لەگەڵ ئەم تەکنەلۆژیایانەدا تیمەکانی ئێمە کار دەکەن',
+
+  // For Developers - Process Section
+  'developers.processTitle': 'چۆنە دەچیتە ناو تیمەکە',
+  'developers.processSubtitle': 'لە چوار هەنگاوەوە بۆ کارە نوێەکەت',
+  'developers.process1Title': 'داواکاری ناردن',
+  'developers.process1Desc': 'CV یان پۆرتفۆلیۆکەت بۆ ئێمە بنێرە. هیچ نامەیەکی درێژ پێویست نییە — کۆدی تۆ قسە دەکات.',
+  'developers.process2Title': 'چاوپێکەوتنی تەکنیکی',
+  'developers.process2Desc': 'قسەیەکی ئارام دەربارەی ئەزموونەکەت و تاقیکردنەوەری تەکنیکی کورت — هیچ فشاری وایتبۆرد نییە.',
+  'developers.process3Title': 'هاوتێری پرۆژە',
+  'developers.process3Desc': 'ئێمە پرۆژەکە دەدۆزینەوە کە تەواو بە شارەزایی و سەرنجەکانی تۆ دەگونجێت. تە بڕیار دەدەیت.',
+  'developers.process4Title': 'خۆپێکردن & دەستپێکردن',
+  'developers.process4Desc': 'پەیماننامە، ئامراز، ناساندنی تیم — ئێمە دەستپێکردنەکە ئاسان دەکەین. دەست پێ دەکەین!',
+
+  // For Developers - Jobs Section
+  'developers.jobsTitle': 'پێگەکانەی <span class="highlight-inline">ئێستا</span>',
+  'developers.jobsSubtitle': 'ئەو ڕۆلە بدۆزەرەوە کە بۆ تۆ دەگونجێت',
+  'developers.job1Title': 'گەشەپێدەری Angularی سەرەکی',
+  'developers.job1Desc': 'گەشەپێدانی ئەپڵیکیشنەکانی ئینتەرپرایزی ئاڵۆز لەگەڵ Angular 17+ بۆ کڕیارە ئەڵمانیەکان.',
+  'developers.job2Title': 'شارەزای Symfonyی بەکەندەر',
+  'developers.job2Desc': 'گەشەپێدانی بەکەندەر لەگەڵ Symfony، دیزاینی API و تەلاری پێکھاتەی داتابەیس.',
+  'developers.job3Title': 'گەشەپێدەری Fullstack (JS/TS)',
+  'developers.job3Desc': 'گەشەپێدانی End-to-End لەگەڵ چوارچێوەی مۆدێرنی JavaScript/TypeScript.',
+  'developers.job4Title': 'دیزاینەری UI/UX',
+  'developers.job4Desc': 'دیزاینی ئینتەرفەیسە بەکاربەرە دۆستەکان لە Figma بۆ ئەپڵیکیشنەکانی وێب و مۆبایل.',
+  'developers.jobApply': 'داواکاری بکە',
+  'developers.jobsNote': 'هیچ پێگەیەکی گونجاو نییە؟ <a routerLink="/contact">داواکاری سەرەتایی</a> بنێرە.',
+
+  // For Developers - CTA Section
+  'developers.ctaTitle': 'ئامادەیت بۆ دەستپێکردن؟',
+  'developers.ctaSubtitle': 'CV یان بنێرە. ئێمە لەناو ٢٤ کاتژمێردا پەیوەندیت دەکەین.',
+  'developers.ctaButton': 'داواکاری سەرەتایی بنێرە',
+
+  // About Page
+  // Hero Section
+  'about.badge': 'دەربارەی Nexora',
+  'about.heroTitle': 'ئێمە <br><span class="highlight">Vision & Technologie</span> دەبەستێنینەوە',
+  'about.heroSubtitle': 'Nexora Solutions پەیوەندیەکەتە بۆ سەرچاوەکانی گەشەپێدانی پلە یەک. ئێمە باوەڕمان وایە کە نەرمەکاڵای نایاب سنوور ناناسێت.',
+  'about.cta1': 'پەیوەندی بکە',
+  'about.cta2': 'خزمەتگوزارییەکانی ئێمە',
+
+  // Stats Bar
+  'about.stat1': 'گەشەپێدەران لە تۆڕەکەدا',
+  'about.stat2': 'پرۆژە تەواوبووەکان',
+  'about.stat3': 'ساڵەکانی ئەزموون',
+  'about.stat4': 'ڕازیبوونی کڕیار',
+
+  // Mission Section
+  'about.missionLabel': 'ئامانجی ئێمە',
+  'about.missionTitle': 'پێشەنگی تەکنیکی <span class="highlight-inline">بێ سنوور</span>',
+  'about.missionText1': 'لە جیهانێکدا کە پێشەنگی تەکنیکی جیاواز دەکاتەوە، ئێمە پاڵپشتی کۆمپانیاکان دەکەین بۆ گەیشتن بە ئامانجە دیجیتاڵیەکانیان خێراتر. ئێمە تیمە دوورە چالاک و بەئەزموون دابین دەکەین کە بێ سەرنج لە پرۆسەکانی تۆ دەچنە ناو.',
+  'about.missionText2': 'لەمەوە ئێمە لەسەر ڕوونی، دادپەروەری و پێوانە بەرزەکانی کوالیتی دامەرێنین – هەم بۆ کڕیارەکانمان و هەم بۆ گەشەپێدەرەکانمان.',
+  'about.missionHighlight1': 'پێوانەکانی کوالیتی ئەڵمانیا',
+  'about.missionHighlight2': 'بەهرەمەندە نێودەوڵەتییەکان',
+  'about.missionHighlight3': 'تێکەڵکردنی بێ سەرنج',
+  'about.missionCard1Title': 'پەیوەندیی جیهانی',
+  'about.missionCard1Desc': 'بەهرەمەندەکان لە هەموو جیهانەوە',
+  'about.missionCard2Title': '١٠٠% یاسایی و پارێزراو',
+  'about.missionCard2Desc': 'پەیماننامەکانی ئەڵمانیا & DSGVO',
+
+  // Values Section
+  'about.valuesLabel': 'ئەوەی بۆی دەجەنگین',
+  'about.valuesTitle': 'بەها <span class="highlight-inline">کانی ئێمە</span>',
+  'about.valuesSubtitle': 'ئەم بنەمایانە کارەکانی ئێمە ڕابەر دەکەن – هەر ڕۆژێک، لە هەموو پرۆژەیەکدا',
+  'about.value1Title': 'هاوکاری',
+  'about.value1Desc': 'ئێمە زیاتر لە دابینکەرین. بیری دەکەینەوە و فرمانە چالاکانە بۆ سەرکەوتنی تۆ ئەنجام دەدەین.',
+  'about.value2Title': 'ڕوونی',
+  'about.value2Desc': 'پەیوەندی کراوە، پرۆسە ڕوونەکان و هیچ تێچوونێکی شاردراوە ستانداردی ئێمەن.',
+  'about.value3Title': 'نەوەدەری',
+  'about.value3Desc': 'ئێمە لەسەر تەکنەلۆژیای مۆدێرن و باشترین پراکتیس دامەرێنین بۆ دروستکردنی چارەسەری داهاتوو.',
+  'about.value4Title': 'کوالیتی',
+  'about.value4Desc': 'هەر دێڕێکی کۆد بە پێوانە بەرزەکان دەنووسرێت. پێداچوونەوەری کۆد و تاقیکردنەوە پێویستن.',
+  'about.value5Title': 'متمانەپێکراوی',
+  'about.value5Desc': 'کاتی کۆتایی هێڵگرین، بەڵێنەکان جێبەجێ دەکەین. دەتوانیت بە متمانە پشت بە ئێمە ببەستیتەوە – دڵنیا.',
+  'about.value6Title': 'مرۆییەتی',
+  'about.value6Desc': 'لە پشتی هەموو پرۆژەیەکدا مرۆڤەکان هەن. ئێمە هەمووان بە ڕێز، دادپەروەری و بەها بەسەر دەهێنین.',
+
+  // Story Section
+  'about.storyLabel': 'مێژووی ئێمە',
+  'about.storyTitle': 'لە بیرۆکەوە بۆ <span class="highlight-inline">ڕاستی</span>',
+  'about.story2022Title': 'دامەزراندن',
+  'about.story2022Desc': 'Nexora Solutions لەگەڵ بینینێکی ڕوون دەمەزرێنرێت: کۆمپانیاکانی ئەڵمانیا بە باشترین گەشەپێدەرانی دووری لە جیهاندا دەبەستێنەوە.',
+  'about.story2023Title': 'گەشەسەندن',
+  'about.story2023Desc': 'یەکەم کڕیارە گەورەکانی ناوچەی DACH. دروستکردنی تۆڕێک لە زیاتر لە ٢٠ گەشەپێدەری پشکنراو لە جۆرەها تەکنەلۆژیادا.',
+  'about.story2024Title': 'فراوانبوون',
+  'about.story2024Desc': 'فراوانکردنی تیمەکە بۆ ٥٠+ گەشەپێدەر. بوارە بازرگانییە نوێیەکان: دیزاینی UI/UX، تەلاری ڕەوش و سەلامەتی سایبەر.',
+  'about.storyTodayTitle': 'داهاتوو دروست دەکەین',
+  'about.storyTodayDesc': 'ئێمە بەردەوام دەگەڕین – لەگەڵ ئامانجی بوون بە هاوکارە سەرەکیەکەی گەشەپێدانی دوور لە ناوچەی DACH.',
+
+  // Differentiators Section
+  'about.diffLabel': 'ئەوەی ئێمە جیادەکەینەوە',
+  'about.diffTitle': 'بۆچوو کۆمپانیاکان متمانە بە ئێمە دەکەن',
+  'about.diff1Title': 'پەیماننامەکانی ئەڵمانیا',
+  'about.diff1Desc': 'هەموو پەیماننامەکان بە یاسای ئەڵمانیا. پارێزەری یاسایی تەواو، گونجاندنی DSGVO و مەرجە ڕوونەکان.',
+  'about.diff2Title': 'کوالیتی پشکنراو',
+  'about.diff2Desc': 'پرۆسەی هەڵبژاردنی فرە قۆناغی لەگەڵ تاقیکردنەوەری تەکنیکی. تەنها باشترین گەشەپێدەران دەچنە ناو تۆڕەکەی ئێمە.',
+  'about.diff3Title': 'فرەچەونی خێرا',
+  'about.diff3Desc': 'لەناو ٤٨ کاتژمێردا پرۆفایلە گونجاوەکان. هیچ فرەچەونێکی درێژخایەن – دەست پێ بکە فورا.',
+  'about.diff4Title': 'ڕوونی تەواو',
+  'about.diff4Desc': 'هیچ تێچوونێکی شاردراوە، ڕاپۆرتی بەردەوام و هاوکارێکی کەسی بۆ هەموو پرۆژەیەک.',
+
+  // CTA Section
+  'about.ctaTitle': 'ئامادەیت ناسمان بکەیت؟',
+  'about.ctaSubtitle': 'ئێمە حەز دەکەین زیاتر دەربارەی پرۆژەکەت بزانین و باشترین چارەسەر بەیەکەوە دەدۆزینەوە.',
+  'about.ctaButton1': 'پەیوەندی بکە',
+  'about.ctaButton2': 'خزمەتگوزارییەکانی ئێمە',
+
+  // Imprint Page
+  'imprint.badge': 'یاسایی',
+  'imprint.title': 'چاپ',
+  'imprint.subtitle': 'زانیاری بەپێی § 5 TMG و § 18 Abs. 2 MStV',
+  'imprint.companyTitle': 'زانیاری کۆمپانیا',
+  'imprint.contactTitle': 'پەیوەندی',
+  'imprint.managementTitle': 'بەڕێوەبەرایەتی بەرێوەبەرایەتی',
+  'imprint.registryTitle': 'تۆمارکردنی تۆمار',
+  'imprint.vatTitle': 'ژمارەی ناسنامەی باجی فرۆشتن',
+  'imprint.vatText': 'ژمارەی ناسنامەی باجی فرۆشتن بەپێی § 27a یاسای باجی فرۆشتن:',
+  'imprint.responsibleTitle': 'بەرپرس بۆ ناوەڕۆک بەپێی § 18 Abs. 2 MStV',
+  'imprint.euDisputeTitle': 'ملەکێنی ئەوروپی',
+  'imprint.euDisputeText1': 'کۆمسیۆنی ئەوروپی پلاتفۆرمێک بۆ ملەکێنی سەرھێڵی (OS) دابین دەکات:',
+  'imprint.euDisputeText2': 'ناونیشانی ئیمەیڵی لە سەرەوە لە چاپدا دەدۆزیتەوە.',
+  'imprint.consumerDisputeTitle': 'ملەکێنی بەکاربەر / ناوەندی ملەکێنی گشتی',
+  'imprint.consumerDisputeText': 'ئێمە ئامادە نین یان بەرپرس نین بە بەشداری کردن لە پرۆسەی ملەکێنی لە بەرپرسایەتی بەکاربەرەوە.',
+  'imprint.liabilityContentTitle': 'بەرپرسیاریەتی بۆ ناوەڕۆک',
+  'imprint.liabilityContentText1': 'وەک دابینکەری خزمەتگوزاری، ئێمە بەپێی § 7 Abs. 1 TMG بەرپرسین لە ناوەڕۆکی خۆمان لەسەر ئەم پەڕانە بەپێی یاسا گشتییەکان. بەپێی §§ 8 بۆ 10 TMG ئێمە وەک دابینکەری خزمەتگوزاری بەرپرس نین بۆ چاودێرکردن یان گەڕان بەدوای زانیاری ناردە یان هەڵگیراو کە ئاماژە بە چالاکی یاسایی نادروست بکات.',
+  'imprint.liabilityContentText2': 'ئەو بەرپرسیاریەتیانەی سڕینەوە یان ڕاگرتنی بەکارهێنانی زانیاری بەپێی یاسا گشتییەکان لێرەوە بێ ئەنجام دەمێننەوە. بەڵام ئەم بەرپرسیاریەتییە تەنها لە کاتی زانینی سەرنجدانی یاسایی دیاریکراوەوە دەکرێت. لە کاتی زانینی سەرنجدانی یاساییەکان، ئێمە ئەم ناوەڕۆکانە فورا دەسڕینەوە.',
+  'imprint.liabilityLinksTitle': 'بەرپرسیاریەتی بۆ بەستەرەکان',
+  'imprint.liabilityLinksText1': 'پێشکەشکردنی ئێمە بەستەری بۆ ماڵپەڕە دەرەکییەکانی سێیەم هەیە، کە ئێمە هیچ کاریگەریی لەسەر ناوەڕۆکەکانیان نییە. بۆیە ناتوانین بۆ ئەم ناوەڕۆکە دەرەکییانە هیچ دڵنیاییەک پێشکەش بکەین. بۆ ناوەڕۆکی پەڕە بەستەرکراوەکان هەمیشە دابینکەر یان بەڕێوەبەری پەڕەکان بەرپرسن. پەڕە بەستەرکراوەکان لە کاتی بەستەرکردندا بۆ سەرنجدانی یاسایی دیاریکراوەکان پشکنراون. ناوەڕۆکی یاسایی لە کاتی بەستەرکردندا نەدەبینرا.',
+  'imprint.liabilityLinksText2': 'بەڵام چاودێری ناوەڕۆکی بەردەوامی پەڕە بەستەرکراوەکان بێ ئاماژەی دیاریکراوی سەرنجدانی یاسایی نادروست نییە. لە کاتی زانینی سەرنجدانی یاسایی، ئێمە ئەم جۆرە بەستەرانە فورا دەسڕینەوە.',
+  'imprint.copyrightTitle': 'مافی بەرهەمهێنان',
+  'imprint.copyrightText1': 'ناوەڕۆک و کارەکان کە لەلایەن بەڕێوەبەرانی پەڕەکان دروستکراوە لەسەر ئەم پەڕانە بە مافی بەرهەمهێنانی ئەڵمانیا دەچن. فرەکردن، دەستکاریکردن، بڵاودەکردن و هەر جۆرە بەکارهێنانێک لە دەرەوەی سنوورەکانی مافی بەرهەمهێنانەوە پێویستی بە ڕەزامەندی نووسراوی نووسەری یان دروستکەرەکە هەیە. دابەزاندن و لەبەرگرتنەوەی ئەم پەڕە تەنها بۆ بەکارهێنانی تایبەتی، ناکاراییی ڕێگەپێدراوە.',
+  'imprint.copyrightText2': 'تا ئەوەی ناوەڕۆکەکانی سەر ئەم پەڕە لەلایەن بەڕێوەبەر دروست نەکراون، مافی بەرهەمهێنانی سێیەم ڕێز دەگیرێت. بەتایبەتی ناوەڕۆکی سێیەم وەک هەوە دیاری دەکرێت. ئەگەر تۆ سەرنج دەدەیتە سەر پێشێلێکردنی مافی بەرهەمهێنان، تکایە ئاماژەیەکی گونجاو پێشکەش بکە. لە کاتی زانینی سەرنجدانی یاسایی، ئێمە ئەم جۆرە ناوەڕۆکانە فورا دەسڕینەوە.',
+  'imprint.date': 'ستاند: شوبات ٢٠٢٦',
+
+  // For Companies - Hero Trust Badges
+  'companies.trust1': '١٠٠% یاسایی و پارێزراو',
+  'companies.trust2': 'پەیماننامەکانی ئەڵمانیا',
+  'companies.trust3': 'گەشەپێدەرانی پشکنراو',
+  'companies.stat1': 'گەشەپێدەران لە تۆڕەکەدا',
+  'companies.stat2': 'ڕازیبوونی کڕیار',
+  'companies.stat3': 'فرەچەونی خێرا',
+
+  // For Companies - Services Section
+  'companies.servicesLabel': 'ئەوەی دەیپێشکەشین',
+  'companies.servicesTitle': 'خزمەتگوزارییەکانی ئێمە بۆ تۆ',
+  'companies.servicesDesc': 'ئێمە تەواو سپێکترۆمی گەشەپێدانی نەرمەکاڵای مۆدێرن پێشکەش دەکەین — لە یەکەم دێڕی کۆدەوە تا کارکردنی بەردەوام.',
+  'companies.service1Title': 'گەشەپێدانی وێب & ئەپ',
+  'companies.service1Desc': 'ئەپڵیکیشنە مۆدێرنەکان لەگەڵ Angular, React, Symfony و Node.js — کارایی و فراوانبوون.',
+  'companies.service2Title': 'تیمە دیاریکراوەکان',
+  'companies.service2Desc': 'گەشەپێدەران کە بێ سەرنج لە تیمەکەت دەچنە ناو وەک کارمەندی خۆی کاردەکەن.',
+  'companies.service3Title': 'دیزاینی UI/UX',
+  'companies.service3Desc': 'ئینتەرفەیسە بەکاربەرە دۆستەکان لە کۆنسێپشنەوە تا سیستەمی دیزاینی تەواو.',
+  'companies.service4Title': 'ڕەوش & DevOps',
+  'companies.service4Desc': 'تەلاری فراوانبوون، CI/CD-پایپڵاینەکان و دابەشکردنی ئۆتۆماتیکی.',
+  'companies.service5Title': 'بەکەندەر & APIەکان',
+  'companies.service5Desc': 'APIە بەهێزەکان، مایکرۆسێرڤیسەکان و تەلاری پێکھاتەی داتابەیسە کاراییەکان.',
+  'companies.service6Title': 'سەلامەتی سایبەر',
+  'companies.service6Desc': 'ئەودیتەکانی سەلامەتی، تاقیکردنەوەری دەرچوون و چارەسەرە گونجاوەکانی DSGVO.',
+
+  // For Companies - Process Section
+  'companies.processTitle': 'چۆنە کار دەکات',
+  'companies.processSubtitle': 'لە چوار هەنگاوی سادەوە بۆ تیمە گەشەپێدەرەکەت',
+  'companies.process1Title': 'باسکردنی پێویستەکان',
+  'companies.process1Desc': 'لە یەکەم دانیشتنێکی بێبەرامبەردا پێویستەکان، تەکنەلۆژیا و کاتی داواکراو 分析 دەکەین.',
+  'companies.process2Title': 'هەڵبژاردنی گەشەپێدەرانی گونجاو',
+  'companies.process2Desc': 'ئێمە پرۆفایلە دەستی ھەڵگیراوەکان پێشکەش دەکەین کە تەواو بۆ پرۆژە و کولتووری کۆمپانیاکەت دەگونجێن.',
+  'companies.process3Title': 'خۆپێکردن & تێکەڵکردن',
+  'companies.process3Desc': 'ئەندامی نوێی تیمەکەت لە پرۆسە، ئامرازەکان و کارەکانت دەخرێتە ناو — وەک لە شوێنەکەدایە.',
+  'companies.process4Title': 'چاودێری بەردەوام',
+  'companies.process4Desc': 'ئێمە لەگەڵ تۆ دەمینینەوە. پشکنینی بەردەوام، دڵنیایی کوالیتی و گۆڕانکاری خێرا لە کاتی پێویستدا.',
+
+  // For Companies - Benefits Section
+  'companies.benefitsTitle': 'بۆچوو <span class="highlight-inline">Nexora</span>؟',
+  'companies.benefitsSubtitle': 'ئەوەی ئێمە لە ئەژانسە کلاسیکییەکان جیادەکەینەوە',
+  'companies.benefit1Title': 'پەیماننامەکانی ئەڵمانیا',
+  'companies.benefit1Desc': 'هەموو پەیماننامەکان بە یاسای ئەڵمانیا. پارێزەری یاسایی تەواو و گونجاندنی دڵنیایی – دڵنیا.',
+  'companies.benefit2Title': 'فراوانبوونی خێرا',
+  'companies.benefit2Desc': 'لەناو ٤٨ کاتژمێردا گەشەپێدەرانی گونجاو. هیچ فرەچەونێکی درێژخایەن، هیچ کاتی چاوەڕوانی نییە.',
+  'companies.benefit3Title': 'نرخی دادپەروەرانە',
+  'companies.benefit3Desc': 'پێکھاتەی تێچوونی ڕوون بێ هیچ تێچوونێکی شاردراوە. تەنها بۆ کارایی ڕاستی دەپارێزیت.',
+  'companies.benefit4Title': 'کوالیتی پشکنراو',
+  'companies.benefit4Desc': 'هەر گەشەپێدەرێک پرۆسەی هەڵبژاردنی فرە قۆناغی لەگەڵ تاقیکردنەوەری تەکنیکی دەپەڕێنێت.',
+  'companies.benefit5Title': 'ئەڵمانی & ئینگلیزی',
+  'companies.benefit5Desc': 'هەموو گەشەپێدەرانی ئێمە قسە بە ئەڵمانی یان ئینگلیزی بە شێوەیەکی ڕێک دەکەن بۆ هاوکاری بێ سەرنج.',
+  'companies.benefit6Title': 'هاوکارێکی کەسی',
+  'companies.benefit6Desc': 'بەڕێوەبەری هەژماری تۆ دیاریکراو سەرنج بە هەموو شتێک دەدات — لە خۆپێکردنەوە تا دڵنیایی کوالیتی.',
+
+  // For Companies - FAQ Section
+  'companies.faqLabel': 'پرسیارە باوەکان',
+  'companies.faqTitle': 'ئەوەی دەبێت زانی',
+  'companies.faqDesc': 'وەڵامەکان بۆ گرنگترین پرسیارەکان دەربارەی هاوکاری لەگەڵ Nexora.',
+
+  // For Companies - CTA Section
+  'companies.ctaTitle': 'ئامادەیت تیمەکەت بەهێز بکەیت؟',
+  'companies.ctaSubtitle': 'بەڵێن ئێمە لە یەکەم دانیشتنێکی بێبەرامبەردا بدۆزینەوە چۆنە دەتوانین یارمەتیت بدەین.',
+  'companies.ctaButton': 'ئێستا ڕاوێژکاری بێبەرامبەر وەربگرە',
+
+  // Services Overview
+  'services.label': 'ئەوەی ئێمە دەیتوانین',
+  'services.title': 'شارەزاییی ئێمە',
+  'services.description': 'لە بیرۆکەوە تا بەرھەمە تەواوە — ئێمە تەواو سپێکترۆمی گەشەپێدانی نەرمەکاڵای مۆدێرن داپۆشین.',
+  'services.web.title': 'گەشەپێدانی وێب',
+  'services.web.description': 'ئەپڵیکیشنە وێبییە مۆدێرنەکان لەگەڵ Angular, React و Vue.js — کارایی، فراوانبوون و چاکردن.',
+  'services.mobile.title': 'ئەپەکانی مۆبایل',
+  'services.mobile.description': 'ئەپە نەیتیڤ و کرۆس-پلاتفۆرم بۆ iOS و Android کە بەکاربەرەکانی ت�� سەرسام دەکەن.',
+  'services.cloud.title': 'ڕەوش & ژێرخە',
+  'services.cloud.description': 'تەلاری ڕەوشی فراوانبوون، CI/CD-پایپڵاینەکان و دابەشکردنی ئۆتۆماتیکی لەسەر AWS, Azure یان GCP.',
+  'services.design.title': 'دیزاینی UI/UX',
+  'services.design.description': 'ئینتەرفەیسە بەکاربەرە دۆستەکان کە دەگۆڕن — لە کۆنسێپشنەوە تا دیزاینی پێکسڵ-پێرفێکت.',
+  'services.consulting.title': 'ڕاوێژکاری & ستراتیژی',
+  'services.consulting.description': 'ڕاوێژکاری تەکنیکی، پێداچوونەوەری تەلاری و پلاندانینی ستراتیژی بۆ پڕۆژە دیجیتاڵیەکەت.',
+
+  // Process Overview
+  'process.label': 'ژمارە & داتاکان',
+  'process.satisfaction': 'ڕازیبوونی کڕیار',
+  'process.responseTime': 'کاتی وەڵامدانەوە',
+  'process.technologies': 'تەکنەلۆژیاکان',
+  'process.gdpr': 'گونجاندنی DSGVO',
+
+  // Testimonials
+  'testimonials.label': 'دەنگەکانی کڕیار',
+  'testimonials.title': 'ئەوەی هاوکارەکانمان دەیڵێن',
+  'testimonials.quote1': 'Nexora لەناو ٤٨ کاتژمێردا دوو گەشەپێدەری Angularی نایابی پێشکەش بە ئێمە کرد. تێکەڵکردن لەگەڵ تیمەکە بێ سەرنج بوو.',
+  'testimonials.name1': 'مایکل باوەر',
+  'testimonials.role1': 'CTO',
+  'testimonials.company1': 'TechVenture GmbH',
+  'testimonials.quote2': 'کوالیتی هاوکارییەکە زیاتر لە هەموو ئەوەیە کە لەگەڵ فریلانسەرەکان تا ئێستا ئەزموون کردووە. پەیوەندی ڕوون، ئەنجامی متمانەپێکراو.',
+  'testimonials.name2': 'ساندرا کلاین',
+  'testimonials.role2': 'سەرپەرشتی ئەندازیاری',
+  'testimonials.company2': 'FinBridge AG',
+  'testimonials.quote3': 'لە کۆتاییدا هاوکارێک کە تێدەگات کە کۆمپانیاکانی ئەڵمانیا چی پێویستیانە: پارێزەری یاسایی، کوالیتی و بەشداری ڕاستی.',
+  'testimonials.name3': 'تۆماس وێبەر',
+  'testimonials.role3': 'بەڕێوەبەری جێبەجێ',
+  'testimonials.company3': 'DataFlow Solutions',
+
+  // CTA
+  'cta.title': 'ئامادەیت بۆ هەنگاوی داهاتوو؟',
+  'cta.subtitle': 'بێدەنگین دەربارەی پرۆژەکەت قسە بکەین — بێبەرامبەر و بێبەرامبەر.',
+  'cta.button': 'دانیشتن دابنێ',
+  'cta.note': 'بێبەرامبەر & بێبەرامبەر',
+
+  // Cookie Consent
+  'cookie.title': 'ڕێکخستنی کووکی',
+  'cookie.description': 'ئێمە کووکی بەکاردەهێنین بۆ بەکارهێنانی بەهەترین ماڵپەڕ، شیکاری و ناوەڕۆکی کەسی.',
+  'cookie.necessary': 'پێویستە',
+  'cookie.necessaryDesc': 'زۆر گرنگ بۆ کارکردن',
+  'cookie.analytics': 'شیکاری',
+  'cookie.analyticsDesc': 'یارمەتیدەرێک بۆ باشترکردنی ماڵپەڕ',
+  'cookie.marketing': 'بازاڕگەری',
+  'cookie.marketingDesc': 'بۆ بانگەشەی کەسی',
+  'cookie.functionalDesc': 'تایبەتمەندی زیاتر',
+  'cookie.later': 'دواتر',
+  'cookie.acceptSelected': 'هەڵبژاردن',
+  'cookie.acceptAll': 'هەمووی قبوڵ بکە',
+
+  // Contact Form
+  'contact.title': 'پەیوەندی',
+  'contact.subtitleBold': 'بێدەنگین لەگەڵ یەکتر قسە بکەین!',
+  'contact.subtitle': 'ئێمە حەز دەکەین بیستین لە تۆ.',
+  'contact.name': 'ناو',
+  'contact.email': 'ئیمەیڵ',
+  'contact.phone': 'تەلەفۆن',
+  'contact.subject': 'بابەت',
+  'contact.message': 'پەیام',
+  'contact.send': 'داواکاری بنێرە',
+  'contact.sending': 'دەنێرێت...',
+  'contact.success': 'داواکاری سەرکەوتووانە نێردرا!',
+
+  // Language Switcher
+  'language.switch': 'زمان',
+  'language.english': 'English',
+  'language.german': 'Deutsch',
+  'language.kurdish': 'کوردی سۆرانی',
+  'language.arabic': 'العربية',
+  'language.french': 'Français',
+  'language.spanish': 'Español'
+};

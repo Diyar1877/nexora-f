@@ -1,0 +1,361 @@
+export const de = {
+  // Navigation
+  'nav.home': 'Home',
+  'nav.forCompanies': 'Für Unternehmen',
+  'nav.forDevelopers': 'Für Entwickler',
+  'nav.about': 'Über uns',
+  'nav.contact': 'Kontakt',
+  'nav.requestNow': 'Jetzt Anfragen',
+
+  // Footer
+  'footer.brand.name': 'NEXORA',
+  'footer.brand.suffix': 'SOLUTIONS',
+  'footer.brand.description': 'Ihr Partner für skalierbare Tech-Teams und erstklassige Softwarelösungen. Wir verbinden deutsche Unternehmen mit Top-Talenten.',
+  'footer.brand.secure': '100% Rechtssicher',
+  'footer.navigation': 'Navigation',
+  'footer.contact': 'Kontakt',
+  'footer.legal': 'Rechtliches',
+  'footer.imprint': 'Impressum',
+  'footer.privacy': 'Datenschutz',
+  'footer.agb': 'AGB',
+  'footer.cookiePolicy': 'Cookie-Richtlinie',
+  'footer.copyright': '© {{year}} Nexora Solutions UG (haftungsbeschränkt).',
+  'footer.madeWith': 'Made for Performance.',
+
+  // Hero Section
+  'hero.title': 'Remote Development',
+  'hero.subtitle': 'für deutsche Unternehmen',
+  'hero.description': 'Ihr Partner für Web & Software-Lösungen. Wir verbinden deutsche Qualitätsansprüche mit flexibler Remote-Expertise.',
+  'hero.services': 'Unsere Leistungen',
+  'hero.contactUs': 'Kontaktieren Sie uns',
+
+  // Technologies
+  'technologies.title': 'Leistungen, die wir nutzen & anbieten',
+
+  // Stats
+  'stats.label': 'Was uns antreibt',
+  'stats.quote1': 'Wir glauben daran, dass großartige Software',
+  'stats.quote2': 'durch großartige Teams',
+  'stats.quote3': ' entsteht.',
+  'stats.description': 'Nexora verbindet deutsche Unternehmen mit erstklassigen Remote-Entwicklern — transparent, verlässlich und auf Augenhöhe.',
+  'stats.experts': 'Experten im Netzwerk',
+  'stats.projects': 'Erfolgreiche Projekte',
+  'stats.experience': 'Jahre Erfahrung',
+
+  // For Companies
+  'companies.badge': 'Für Unternehmen',
+  'companies.heroTitle1': 'Erstklassige Entwickler',
+  'companies.heroTitle2': 'für Ihr Unternehmen',
+  'companies.heroSubtitle': 'Skalieren Sie Ihr Team mit erfahrenen Remote-Entwicklern. Deutsche Verträge, geprüfte Talente und volle Transparenz.',
+  'companies.cta1': 'Kostenlos beraten lassen',
+  'companies.cta2': 'Mehr erfahren',
+
+  // For Developers
+  'developers.badge': 'Für Entwickler',
+  'developers.heroTitle1': 'Deine Karriere im',
+  'developers.heroTitle2': 'internationalen Umfeld',
+  'developers.heroSubtitle': 'Arbeite an spannenden Projekten für Top-Unternehmen aus der DACH-Region. 100% Remote, faire Bezahlung und volle Flexibilität.',
+  'developers.cta1': 'Jetzt bewerben',
+  'developers.cta2': 'Über Nexora',
+
+  // For Developers - Hero Trust Badges
+  'developers.trust1': '100% Remote',
+  'developers.trust2': 'Deutsche Verträge',
+  'developers.trust3': 'Top Gehälter',
+
+  // For Developers - Perks Section
+  'developers.perksTitle': 'Deine Vorteile <span class="highlight-inline">bei Nexora</span>',
+  'developers.perksSubtitle': 'Wir bieten dir mehr als nur einen Job',
+  'developers.perk1Title': '100% Remote',
+  'developers.perk1Desc': 'Arbeite von wo du willst. Wir glauben an Ergebnisse, nicht an Anwesenheitspflicht.',
+  'developers.perk2Title': 'Top Gehälter',
+  'developers.perk2Desc': 'Überdurchschnittliche Bezahlung, pünktlich und sicher dank deutscher Verträge.',
+  'developers.perk3Title': 'Wachstum',
+  'developers.perk3Desc': 'Zugang zu Weiterbildungen, Konferenzen und modernsten Tech-Stacks.',
+  'developers.perk4Title': 'Work-Life-Balance',
+  'developers.perk4Desc': 'Flexible Arbeitszeiten, die sich deinem Leben anpassen. Keine Burnout-Kultur.',
+  'developers.perk5Title': 'Starkes Team',
+  'developers.perk5Desc': 'Arbeite mit talentierten Entwicklern zusammen und lerne voneinander in spannenden Projekten.',
+  'developers.perk6Title': 'Sicherheit',
+  'developers.perk6Desc': 'Deutsche Verträge, pünktliche Zahlung und langfristige Zusammenarbeit statt Freelancer-Unsicherheit.',
+
+  // For Developers - Tech Stack Section
+  'developers.techTitle': 'Unser Tech-Stack',
+  'developers.techSubtitle': 'Mit diesen Technologien arbeiten unsere Teams',
+
+  // For Developers - Process Section
+  'developers.processTitle': 'So kommst du ins Team',
+  'developers.processSubtitle': 'In vier Schritten zu deinem neuen Job',
+  'developers.process1Title': 'Bewerbung einreichen',
+  'developers.process1Desc': 'Schick uns deinen CV oder dein Portfolio. Kein langes Anschreiben nötig – dein Code spricht für sich.',
+  'developers.process2Title': 'Technisches Interview',
+  'developers.process2Desc': 'Ein entspanntes Gespräch über deine Erfahrung und ein kurzes technisches Assessment – kein Whiteboard-Stress.',
+  'developers.process3Title': 'Projekt-Matching',
+  'developers.process3Desc': 'Wir finden das Projekt, das perfekt zu deinen Skills und Interessen passt. Du entscheidest mit.',
+  'developers.process4Title': 'Onboarding & Start',
+  'developers.process4Desc': 'Vertrag, Tooling, Team-Intro – wir machen den Start so einfach wie möglich. Los geht\'s!',
+
+  // For Developers - Jobs Section
+  'developers.jobsTitle': 'Aktuelle <span class="highlight-inline">Positionen</span>',
+  'developers.jobsSubtitle': 'Finde die Rolle, die zu dir passt',
+  'developers.job1Title': 'Senior Angular Developer',
+  'developers.job1Desc': 'Entwicklung komplexer Enterprise-Anwendungen mit Angular 17+ für deutsche Kunden.',
+  'developers.job2Title': 'Symfony Backend Expert',
+  'developers.job2Desc': 'Backend-Entwicklung mit Symfony, API-Design und Datenbankarchitektur.',
+  'developers.job3Title': 'Fullstack Developer (JS/TS)',
+  'developers.job3Desc': 'End-to-End Entwicklung mit modernen JavaScript/TypeScript Frameworks.',
+  'developers.job4Title': 'UI/UX Designer',
+  'developers.job4Desc': 'Design nutzerfreundlicher Interfaces in Figma für Web- und Mobile-Anwendungen.',
+  'developers.jobApply': 'Bewerben',
+  'developers.jobsNote': 'Keine passende Stelle dabei? Schick uns eine <a routerLink="/contact">Initiativbewerbung</a>.',
+
+  // For Developers - CTA Section
+  'developers.ctaTitle': 'Bereit durchzustarten?',
+  'developers.ctaSubtitle': 'Schick uns deinen CV. Wir melden uns innerhalb von 24h.',
+  'developers.ctaButton': 'Initiativbewerbung senden',
+
+  // About Page
+  // Hero Section
+  'about.badge': 'Über Nexora',
+  'about.heroTitle': 'Wir verbinden <br><span class="highlight">Vision & Technologie</span>',
+  'about.heroSubtitle': 'Nexora Solutions ist Ihre Brücke zu erstklassigen Entwicklungsressourcen. Wir glauben daran, dass großartige Software keine Grenzen kennt.',
+  'about.cta1': 'Kontakt aufnehmen',
+  'about.cta2': 'Unsere Leistungen',
+
+  // Stats Bar
+  'about.stat1': 'Entwickler im Netzwerk',
+  'about.stat2': 'Abgeschlossene Projekte',
+  'about.stat3': 'Jahre Erfahrung',
+  'about.stat4': 'Kundenzufriedenheit',
+
+  // Mission Section
+  'about.missionLabel': 'Unsere Mission',
+  'about.missionTitle': 'Technologische Exzellenz <span class="highlight-inline">ohne Grenzen</span>',
+  'about.missionText1': 'In einer Welt, in der technologische Exzellenz den Unterschied macht, unterstützen wir Unternehmen dabei, ihre digitalen Ziele schneller zu erreichen. Wir stellen agile, hochqualifizierte Remote-Teams bereit, die sich nahtlos in Ihre Prozesse integrieren.',
+  'about.missionText2': 'Dabei setzen wir auf Transparenz, Fairness und höchste Qualitätsstandards – sowohl für unsere Kunden als auch für unsere Entwickler.',
+  'about.missionHighlight1': 'Deutsche Qualitätsstandards',
+  'about.missionHighlight2': 'Internationale Talente',
+  'about.missionHighlight3': 'Nahtlose Integration',
+  'about.missionCard1Title': 'Global vernetzt',
+  'about.missionCard1Desc': 'Talente aus aller Welt',
+  'about.missionCard2Title': '100% Rechtssicher',
+  'about.missionCard2Desc': 'Deutsche Verträge & DSGVO',
+
+  // Values Section
+  'about.valuesLabel': 'Wofür wir stehen',
+  'about.valuesTitle': 'Unsere <span class="highlight-inline">Werte</span>',
+  'about.valuesSubtitle': 'Diese Prinzipien leiten unser Handeln – jeden Tag, in jedem Projekt',
+  'about.value1Title': 'Partnerschaft',
+  'about.value1Desc': 'Wir sind mehr als Dienstleister. Wir denken mit und handeln proaktiv für Ihren Erfolg.',
+  'about.value2Title': 'Transparenz',
+  'about.value2Desc': 'Offene Kommunikation, klare Prozesse und keine versteckten Kosten sind unser Standard.',
+  'about.value3Title': 'Innovation',
+  'about.value3Desc': 'Wir setzen auf moderne Technologien und Best Practices, um zukunftssichere Lösungen zu bauen.',
+  'about.value4Title': 'Qualität',
+  'about.value4Desc': 'Jede Zeile Code wird nach höchsten Standards entwickelt. Code Reviews und Testing sind Pflicht.',
+  'about.value5Title': 'Zuverlässigkeit',
+  'about.value5Desc': 'Deadlines halten, Versprechen einlösen. Auf uns können Sie sich verlassen – garantiert.',
+  'about.value6Title': 'Menschlichkeit',
+  'about.value6Desc': 'Hinter jedem Projekt stehen Menschen. Wir behandeln alle mit Respekt, Fairness und Wertschätzung.',
+
+  // Story Section
+  'about.storyLabel': 'Unsere Geschichte',
+  'about.storyTitle': 'Von der Idee zur <span class="highlight-inline">Realität</span>',
+  'about.story2022Title': 'Gründung',
+  'about.story2022Desc': 'Nexora Solutions wird mit einer klaren Vision gegründet: Deutsche Unternehmen mit den besten Remote-Entwicklern weltweit verbinden.',
+  'about.story2023Title': 'Wachstum',
+  'about.story2023Desc': 'Erste Großkunden aus der DACH-Region. Aufbau eines Netzwerks von über 20 geprüften Entwicklern in verschiedenen Technologien.',
+  'about.story2024Title': 'Expansion',
+  'about.story2024Desc': 'Erweiterung des Teams auf 50+ Entwickler. Neue Geschäftsbereiche: UI/UX Design, Cloud-Architektur und Cybersecurity.',
+  'about.storyTodayTitle': 'Zukunft gestalten',
+  'about.storyTodayDesc': 'Wir wachsen weiter – mit dem Ziel, der führende Partner für Remote-Entwicklung in der DACH-Region zu werden.',
+
+  // Differentiators Section
+  'about.diffLabel': 'Was uns ausmacht',
+  'about.diffTitle': 'Warum Unternehmen uns vertrauen',
+  'about.diff1Title': 'Deutsche Verträge',
+  'about.diff1Desc': 'Alle Verträge nach deutschem Recht. Volle Rechtssicherheit, DSGVO-Konformität und klare Bedingungen.',
+  'about.diff2Title': 'Geprüfte Qualität',
+  'about.diff2Desc': 'Mehrstufiger Auswahlprozess mit technischen Assessments. Nur die besten Entwickler schaffen es in unser Netzwerk.',
+  'about.diff3Title': 'Schnelle Vermittlung',
+  'about.diff3Desc': 'Innerhalb von 48 Stunden passende Profile. Kein monatelanges Recruiting – starten Sie sofort durch.',
+  'about.diff4Title': 'Volle Transparenz',
+  'about.diff4Desc': 'Keine versteckten Kosten, regelmäßige Reports und ein persönlicher Ansprechpartner für jedes Projekt.',
+
+  // CTA Section
+  'about.ctaTitle': 'Lernen Sie uns kennen',
+  'about.ctaSubtitle': 'Wir freuen uns darauf, mehr über Ihr Projekt zu erfahren und gemeinsam die beste Lösung zu finden.',
+  'about.ctaButton1': 'Kontakt aufnehmen',
+  'about.ctaButton2': 'Unsere Leistungen',
+
+  // Imprint Page
+  'imprint.badge': 'Rechtliches',
+  'imprint.title': 'Impressum',
+  'imprint.subtitle': 'Angaben gemäß § 5 TMG und § 18 Abs. 2 MStV',
+  'imprint.companyTitle': 'Angaben zum Unternehmen',
+  'imprint.contactTitle': 'Kontakt',
+  'imprint.managementTitle': 'Vertretungsberechtigte Geschäftsführung',
+  'imprint.registryTitle': 'Registereintrag',
+  'imprint.vatTitle': 'Umsatzsteuer-Identifikationsnummer',
+  'imprint.vatText': 'Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:',
+  'imprint.responsibleTitle': 'Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV',
+  'imprint.euDisputeTitle': 'EU-Streitschlichtung',
+  'imprint.euDisputeText1': 'Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:',
+  'imprint.euDisputeText2': 'Unsere E-Mail-Adresse finden Sie oben im Impressum.',
+  'imprint.consumerDisputeTitle': 'Verbraucherstreitbeilegung / Universalschlichtungsstelle',
+  'imprint.consumerDisputeText': 'Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.',
+  'imprint.liabilityContentTitle': 'Haftung für Inhalte',
+  'imprint.liabilityContentText1': 'Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.',
+  'imprint.liabilityContentText2': 'Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.',
+  'imprint.liabilityLinksTitle': 'Haftung für Links',
+  'imprint.liabilityLinksText1': 'Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.',
+  'imprint.liabilityLinksText2': 'Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.',
+  'imprint.copyrightTitle': 'Urheberrecht',
+  'imprint.copyrightText1': 'Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.',
+  'imprint.copyrightText2': 'Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.',
+  'imprint.date': 'Stand: Februar 2026',
+
+  // For Companies - Hero Trust Badges
+  'companies.trust1': '100% Rechtssicher',
+  'companies.trust2': 'Deutsche Verträge',
+  'companies.trust3': 'Geprüfte Entwickler',
+  'companies.stat1': 'Entwickler im Netzwerk',
+  'companies.stat2': 'Kundenzufriedenheit',
+  'companies.stat3': 'Schnelle Vermittlung',
+
+  // For Companies - Services Section
+  'companies.servicesLabel': 'Was wir liefern',
+  'companies.servicesTitle': 'Unsere Leistungen für Sie',
+  'companies.servicesDesc': 'Wir bieten das gesamte Spektrum moderner Softwareentwicklung — von der ersten Zeile Code bis zum laufenden Betrieb.',
+  'companies.service1Title': 'Web- & App-Entwicklung',
+  'companies.service1Desc': 'Moderne Anwendungen mit Angular, React, Symfony und Node.js — performant und skalierbar.',
+  'companies.service2Title': 'Dedizierte Teams',
+  'companies.service2Desc': 'Entwickler, die sich nahtlos in Ihr Team integrieren und wie eigene Mitarbeiter arbeiten.',
+  'companies.service3Title': 'UI/UX Design',
+  'companies.service3Desc': 'Nutzerfreundliche Interfaces von der Konzeption bis zum fertigen Design System.',
+  'companies.service4Title': 'Cloud & DevOps',
+  'companies.service4Desc': 'Skalierbare Infrastruktur, CI/CD-Pipelines und automatisierte Deployments.',
+  'companies.service5Title': 'Backend & APIs',
+  'companies.service5Desc': 'Robuste APIs, Microservices und performante Datenbankarchitekturen.',
+  'companies.service6Title': 'Cybersecurity',
+  'companies.service6Desc': 'Sicherheitsaudits, Penetration Testing und DSGVO-konforme Lösungen.',
+
+  // For Companies - Process Section
+  'companies.processTitle': 'So funktioniert\'s',
+  'companies.processSubtitle': 'In vier einfachen Schritten zu Ihrem Entwickler-Team',
+  'companies.process1Title': 'Anforderungen besprechen',
+  'companies.process1Desc': 'In einem kostenlosen Erstgespräch analysieren wir Ihre Anforderungen, den Tech-Stack und den gewünschten Zeitrahmen.',
+  'companies.process2Title': 'Passende Entwickler auswählen',
+  'companies.process2Desc': 'Wir stellen Ihnen handverlesene Profile vor, die perfekt zu Ihrem Projekt und Ihrer Unternehmenskultur passen.',
+  'companies.process3Title': 'Onboarding & Integration',
+  'companies.process3Desc': 'Ihr neues Teammitglied wird in Ihre Prozesse, Tools und Workflows eingearbeitet – als wäre es vor Ort.',
+  'companies.process4Title': 'Laufende Betreuung',
+  'companies.process4Desc': 'Wir bleiben an Ihrer Seite. Regelmäßige Check-ins, Qualitätssicherung und schnelle Anpassungen bei Bedarf.',
+
+  // For Companies - Benefits Section
+  'companies.benefitsTitle': 'Warum <span class="highlight-inline">Nexora</span>?',
+  'companies.benefitsSubtitle': 'Was uns von klassischen Agenturen unterscheidet',
+  'companies.benefit1Title': 'Deutsche Verträge',
+  'companies.benefit1Desc': 'Alle Verträge nach deutschem Recht. Volle Rechtssicherheit und Compliance – garantiert.',
+  'companies.benefit2Title': 'Schnelle Skalierung',
+  'companies.benefit2Desc': 'Innerhalb von 48 Stunden passende Entwickler. Kein langes Recruiting, keine Wartezeiten.',
+  'companies.benefit3Title': 'Faire Preise',
+  'companies.benefit3Desc': 'Transparente Kostenstruktur ohne versteckte Gebühren. Sie zahlen nur für echte Leistung.',
+  'companies.benefit4Title': 'Geprüfte Qualität',
+  'companies.benefit4Desc': 'Jeder Entwickler durchläuft einen mehrstufigen Auswahlprozess mit technischen Assessments.',
+  'companies.benefit5Title': 'Deutsch & Englisch',
+  'companies.benefit5Desc': 'Alle unsere Entwickler sprechen fließend Deutsch oder Englisch für reibungslose Zusammenarbeit.',
+  'companies.benefit6Title': 'Persönlicher Ansprechpartner',
+  'companies.benefit6Desc': 'Ihr dedizierter Account Manager kümmert sich um alles – von Onboarding bis Qualitätssicherung.',
+
+  // For Companies - FAQ Section
+  'companies.faqLabel': 'Häufige Fragen',
+  'companies.faqTitle': 'Das sollten Sie wissen',
+  'companies.faqDesc': 'Antworten auf die wichtigsten Fragen rund um die Zusammenarbeit mit Nexora.',
+
+  // For Companies - CTA Section
+  'companies.ctaTitle': 'Bereit, Ihr Team zu verstärken?',
+  'companies.ctaSubtitle': 'Lassen Sie uns in einem kostenlosen Erstgespräch herausfinden, wie wir Ihnen helfen können.',
+  'companies.ctaButton': 'Jetzt kostenlos beraten lassen',
+
+  // Services Overview
+  'services.label': 'Was wir können',
+  'services.title': 'Unsere Expertise',
+  'services.description': 'Von der Idee bis zum fertigen Produkt — wir decken das gesamte Spektrum moderner Softwareentwicklung ab.',
+  'services.web.title': 'Web-Entwicklung',
+  'services.web.description': 'Moderne Webanwendungen mit Angular, React und Vue.js — performant, skalierbar und wartbar.',
+  'services.mobile.title': 'Mobile Apps',
+  'services.mobile.description': 'Native und Cross-Platform Apps für iOS und Android, die Ihre Nutzer begeistern.',
+  'services.cloud.title': 'Cloud & Infrastructure',
+  'services.cloud.description': 'Skalierbare Cloud-Architekturen, CI/CD-Pipelines und automatisierte Deployments auf AWS, Azure oder GCP.',
+  'services.design.title': 'UI/UX Design',
+  'services.design.description': 'Nutzerfreundliche Interfaces, die konvertieren — von der Konzeption bis zum Pixel-perfekten Design.',
+  'services.consulting.title': 'Consulting & Strategie',
+  'services.consulting.description': 'Technische Beratung, Architektur-Reviews und strategische Planung für Ihr digitales Vorhaben.',
+
+  // Process Overview
+  'process.label': 'Zahlen & Fakten',
+  'process.satisfaction': 'Kundenzufriedenheit',
+  'process.responseTime': 'Reaktionszeit',
+  'process.technologies': 'Technologien',
+  'process.gdpr': 'DSGVO-konform',
+
+  // Testimonials
+  'testimonials.label': 'Kundenstimmen',
+  'testimonials.title': 'Was unsere Partner sagen',
+  'testimonials.quote1': 'Nexora hat uns innerhalb von 48 Stunden zwei hervorragende Angular-Entwickler vermittelt. Die Integration ins Team war nahtlos.',
+  'testimonials.name1': 'Michael Bauer',
+  'testimonials.role1': 'CTO',
+  'testimonials.company1': 'TechVenture GmbH',
+  'testimonials.quote2': 'Die Qualität der Zusammenarbeit übertrifft alles, was wir bisher mit Freelancern erlebt haben. Klare Kommunikation, verlässliche Ergebnisse.',
+  'testimonials.name2': 'Sandra Klein',
+  'testimonials.role2': 'Head of Engineering',
+  'testimonials.company2': 'FinBridge AG',
+  'testimonials.quote3': 'Endlich ein Partner, der versteht, was deutsche Unternehmen brauchen: Rechtssicherheit, Qualität und echtes Engagement.',
+  'testimonials.name3': 'Thomas Weber',
+  'testimonials.role3': 'Geschäftsführer',
+  'testimonials.company3': 'DataFlow Solutions',
+
+  // CTA
+  'cta.title': 'Bereit für den nächsten Schritt?',
+  'cta.subtitle': 'Lassen Sie uns über Ihr Projekt sprechen — unverbindlich und kostenfrei.',
+  'cta.button': 'Gespräch vereinbaren',
+  'cta.note': 'Kostenlos & unverbindlich',
+
+  // Cookie Consent
+  'cookie.title': 'Cookie-Einstellungen',
+  'cookie.description': 'Wir verwenden Cookies für die optimale Website-Nutzung, Analyse und personalisierte Inhalte.',
+  'cookie.necessary': 'Notwendig',
+  'cookie.necessaryDesc': 'Essenziell für den Betrieb',
+  'cookie.analytics': 'Analytics',
+  'cookie.analyticsDesc': 'Hilft uns die Website zu verbessern',
+  'cookie.marketing': 'Marketing',
+  'cookie.marketingDesc': 'Für personalisierte Werbung',
+  'cookie.functional': 'Funktional',
+  'cookie.functionalDesc': 'Zusätzliche Funktionen',
+  'cookie.later': 'Später',
+  'cookie.acceptSelected': 'Auswahl',
+  'cookie.acceptAll': 'Alle akzeptieren',
+
+  // Contact Form
+  'contact.title': 'Kontakt',
+  'contact.subtitleBold': 'Lassen Sie uns miteinander sprechen!',
+  'contact.subtitle': 'Wir freuen uns darauf, von Ihnen zu hören.',
+  'contact.name': 'Name',
+  'contact.email': 'E-Mail',
+  'contact.phone': 'Telefon',
+  'contact.subject': 'Betreff',
+  'contact.message': 'Nachricht',
+  'contact.send': 'Anfrage senden',
+  'contact.sending': 'Wird gesendet...',
+  'contact.success': 'Anfrage erfolgreich gesendet!',
+
+  // Language Switcher
+  'language.switch': 'Sprache',
+  'language.english': 'English',
+  'language.german': 'Deutsch',
+  'language.kurdish': 'کوردی سۆرانی',
+  'language.arabic': 'العربية',
+  'language.french': 'Français',
+  'language.spanish': 'Español'
+};
