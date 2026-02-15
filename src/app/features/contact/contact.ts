@@ -25,11 +25,12 @@ export class Contact {
   submitError = '';
 
   isDropdownOpen = false;
+  subjectTouched = false;
 
   subjectOptions = [
-    { value: 'company', label: 'Projektanfrage (Unternehmen)', icon: '' },
-    { value: 'developer', label: 'Bewerbung (Entwickler)', icon: '' },
-    { value: 'other', label: 'Sonstiges', icon: '' }
+    { value: 'company', label: 'Projektanfrage (Unternehmen)', icon: '', description: 'Sie möchten ein Projekt mit uns starten' },
+    { value: 'developer', label: 'Bewerbung (Entwickler)', icon: '', description: 'Sie möchten Teil unseres Teams werden' },
+    { value: 'other', label: 'Sonstiges', icon: '', description: 'Allgemeine Anfragen & Feedback' }
   ];
 
   @HostListener('document:click', ['$event'])
@@ -42,17 +43,18 @@ export class Contact {
   toggleDropdown(event: Event) {
     event.stopPropagation();
     this.isDropdownOpen = !this.isDropdownOpen;
+    this.subjectTouched = true;
   }
 
   selectOption(value: string) {
     this.subject = value;
     this.isDropdownOpen = false;
+    this.subjectTouched = true;
   }
 
   closeDropdown() {
     this.isDropdownOpen = false;
   }
-
 
   submit() {
     if (!this.privacyAccepted) {
@@ -98,5 +100,6 @@ export class Contact {
     this.message = '';
     this.privacyAccepted = false;
     this.isDropdownOpen = false;
+    this.subjectTouched = false;
   }
 }

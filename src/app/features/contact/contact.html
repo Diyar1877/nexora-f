@@ -1,96 +1,252 @@
-<section class="contact-section">
-  <div class="glow-blob"></div>
-
-  <div class="container">
-    <div class="contact-grid">
-
-      <div class="contact-info">
-        <span class="badge-premium">Kontakt</span>
-        <h1 class="display-title">
-          Lassen Sie uns <br>
-          <span class="text-outline">gemeinsam</span> <br>
-          <span class="text-highlight">durchstarten</span>
-        </h1>
-        <p class="description">
-          Haben Sie Fragen oder möchten Sie ein Projekt besprechen? Unser Team steht Ihnen zur Seite.
-        </p>
-
-        <div class="info-list">
-          <div class="info-card">
-            <div class="icon-box">@</div>
-            <div class="info-text">
-              <label>E-Mail</label>
-              <a href="mailto:contact@nexora.solutions">contact@nexora.solutions</a>
-            </div>
-          </div>
-          <div class="info-card">
-            <div class="icon-box">#</div>
-            <div class="info-text">
-              <label>Telefon</label>
-              <a href="tel:+49123456789">+49 (0) 123 456 789</a>
-            </div>
-          </div>
+<section class="contact-hero">
+    <div class="container">
+        <div class="hero-content">
+            <span class="badge">Kontakt</span>
+            <h1 class="hero-title">Lassen Sie uns ins <span class="highlight">Gespräch kommen</span></h1>
+            <p class="hero-subtitle">
+                Ob Projektanfrage, Bewerbung oder allgemeine Fragen — wir freuen uns auf Ihre Nachricht
+                und melden uns innerhalb von 24 Stunden bei Ihnen.
+            </p>
         </div>
-      </div>
-
-      <div class="form-container">
-        <form class="premium-form" (ngSubmit)="submit()" #contactForm="ngForm">
-
-          <div class="form-row">
-            <div class="input-group">
-              <input type="text" name="name" [(ngModel)]="name" required placeholder=" ">
-              <label>Vollständiger Name</label>
-              <div class="focus-line"></div>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="input-group">
-              <input type="email" name="email" [(ngModel)]="email" required placeholder=" ">
-              <label>E-Mail Adresse</label>
-              <div class="focus-line"></div>
-            </div>
-          </div>
-
-          <div class="custom-select-wrapper" [class.is-open]="isDropdownOpen">
-            <label class="select-field-label">Ich bin...</label>
-            <div class="select-trigger" (click)="toggleDropdown($event)">
-              <span>{{ subject ? (subjectOptions | findOption:subject)?.label : 'Bitte wählen...' }}</span>
-              <div class="arrow"></div>
-            </div>
-
-            <div class="select-dropdown">
-              <div class="select-option"
-                   *ngFor="let option of subjectOptions"
-                   (click)="selectOption(option.value)"
-                   [class.selected]="subject === option.value">
-                <span class="option-icon">{{ option.icon }}</span>
-                <span class="option-label">{{ option.label }}</span>
-              </div>
-            </div>
-            <input type="hidden" name="subject" [(ngModel)]="subject" required>
-          </div>
-
-          <div class="form-row">
-            <div class="input-group">
-              <textarea name="message" [(ngModel)]="message" rows="4" required placeholder=" "></textarea>
-              <label>Wie können wir helfen?</label>
-              <div class="focus-line"></div>
-            </div>
-          </div>
-
-          <div class="privacy-area">
-            <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="privacyAccepted" required>
-            <label for="privacy">Ich stimme der Datenschutzerklärung zu.</label>
-          </div>
-
-          <button type="submit" class="submit-btn" [disabled]="contactForm.invalid || isSubmitting">
-            <span class="btn-text">{{ isSubmitting ? 'Wird gesendet...' : 'Nachricht senden' }}</span>
-            <span class="btn-icon">→</span>
-          </button>
-        </form>
-      </div>
-
     </div>
-  </div>
+</section>
+
+<section class="contact-section">
+    <div class="container">
+        <!-- Trust Indicators -->
+        <div class="trust-bar">
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                </div>
+                <span>Antwort innerhalb 24h</span>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                </div>
+                <span>DSGVO-konform</span>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+                <span>Unverbindlich & kostenlos</span>
+            </div>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <div class="form-header">
+                    <h2>Nachricht senden</h2>
+                    <p>Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen.</p>
+                </div>
+
+                <form class="contact-form" (ngSubmit)="submit()" #contactForm="ngForm">
+                    <div class="form-row">
+                        <div class="form-group" [class.has-value]="name" [class.has-error]="contactName.invalid && contactName.touched">
+                            <label for="name">Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" [(ngModel)]="name" #contactName="ngModel"
+                                placeholder="Max Mustermann" required>
+                            <span class="field-hint" *ngIf="contactName.invalid && contactName.touched">Bitte geben Sie Ihren Namen ein</span>
+                        </div>
+                        <div class="form-group" [class.has-value]="email" [class.has-error]="contactEmail.invalid && contactEmail.touched">
+                            <label for="email">E-Mail <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" [(ngModel)]="email" #contactEmail="ngModel"
+                                placeholder="max@unternehmen.de" required email>
+                            <span class="field-hint" *ngIf="contactEmail.invalid && contactEmail.touched">Bitte geben Sie eine gültige E-Mail ein</span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group" [class.has-value]="phoneNumber">
+                            <label for="phone">Telefon <span class="optional">(Optional)</span></label>
+                            <input type="tel" id="phone" name="phone" [(ngModel)]="phoneNumber"
+                                placeholder="+49 123 456 789">
+                        </div>
+                        <div class="form-group custom-select-wrapper" [class.open]="isDropdownOpen" [class.has-value]="subject"
+                            [class.has-error]="!subject && subjectTouched">
+                            <label>Betreff <span class="required">*</span></label>
+                            <div class="custom-select-trigger" (click)="toggleDropdown($event)">
+                                <span [class.placeholder]="!subject">{{ subject ? (subjectOptions | findOption:subject)?.label : 'Thema auswählen' }}</span>
+                                <div class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="custom-options">
+                                <div class="option" *ngFor="let option of subjectOptions"
+                                    (click)="selectOption(option.value)" [class.selected]="subject === option.value">
+                                    <span class="option-icon">{{ option.icon }}</span>
+                                    <div class="option-content">
+                                        <span class="option-label">{{ option.label }}</span>
+                                        <span class="option-desc">{{ option.description }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="subject" [(ngModel)]="subject" required>
+                            <span class="field-hint" *ngIf="!subject && subjectTouched">Bitte wählen Sie einen Betreff</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group" [class.has-value]="message" [class.has-error]="contactMessage.invalid && contactMessage.touched">
+                        <label for="message">Nachricht <span class="required">*</span></label>
+                        <textarea id="message" name="message" [(ngModel)]="message" #contactMessage="ngModel" rows="5"
+                            placeholder="Beschreiben Sie Ihr Anliegen oder Projekt..." required></textarea>
+                        <span class="field-hint" *ngIf="contactMessage.invalid && contactMessage.touched">Bitte geben Sie eine Nachricht ein</span>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="privacyAccepted" required>
+                        <label for="privacy">
+                            Ich stimme der <a href="/datenschutz" (click)="$event.stopPropagation()">Datenschutzerklärung</a> zu und bin mit der Verarbeitung meiner Daten einverstanden.
+                        </label>
+                    </div>
+
+                    <!-- Success Message -->
+                    <div class="form-alert success" *ngIf="submitSuccess">
+                        <div class="alert-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <div class="alert-content">
+                            <strong>Nachricht erfolgreich gesendet!</strong>
+                            <span>Wir melden uns innerhalb von 24 Stunden bei Ihnen.</span>
+                        </div>
+                    </div>
+
+                    <!-- Error Message -->
+                    <div class="form-alert error" *ngIf="submitError">
+                        <div class="alert-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="15" y1="9" x2="9" y2="15"></line>
+                                <line x1="9" y1="9" x2="15" y2="15"></line>
+                            </svg>
+                        </div>
+                        <div class="alert-content">
+                            <strong>Fehler beim Senden</strong>
+                            <span>{{ submitError }}</span>
+                        </div>
+                    </div>
+
+                    <app-button variant="primary" type="submit" [fullWidth]="true"
+                        [disabled]="contactForm.invalid || isSubmitting || !privacyAccepted">
+                        <span class="btn-content">
+                            <svg *ngIf="!isSubmitting" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                            <span class="spinner" *ngIf="isSubmitting"></span>
+                            {{ isSubmitting ? 'Wird gesendet...' : 'Nachricht senden' }}
+                        </span>
+                    </app-button>
+                </form>
+            </div>
+
+            <!-- Contact Info Sidebar -->
+            <div class="contact-sidebar">
+                <div class="info-card">
+                    <h3>Kontaktinformationen</h3>
+                    <p class="info-card-desc">Erreichen Sie uns auch direkt über folgende Kanäle.</p>
+
+                    <div class="info-items">
+                        <a href="mailto:contact@nexora.solutions" class="info-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">E-Mail</span>
+                                <span class="info-value">contact&#64;nexora.solutions</span>
+                            </div>
+                        </a>
+
+                        <a href="tel:+49123456789" class="info-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.12 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">Telefon</span>
+                                <span class="info-value">+49 (0) 123 456 789</span>
+                            </div>
+                        </a>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="info-text">
+                                <span class="info-label">Hauptsitz</span>
+                                <span class="info-value">Nexora Solutions UG<br>Musterstraße 1<br>10115 Berlin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="availability-card">
+                    <div class="availability-header">
+                        <div class="status-dot"></div>
+                        <span>Aktuell verfügbar</span>
+                    </div>
+                    <p>Wir nehmen derzeit neue Projekte an. Kontaktieren Sie uns für ein unverbindliches Erstgespräch.</p>
+                </div>
+
+                <div class="response-card">
+                    <div class="response-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h4>Lieber persönlich sprechen?</h4>
+                    <p>Vereinbaren Sie ein kostenloses Erstgespräch — wir beraten Sie gerne zu Ihrem Projekt.</p>
+                    <a href="tel:+49123456789" class="response-link">
+                        Jetzt anrufen
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
