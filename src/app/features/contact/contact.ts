@@ -60,7 +60,7 @@ export class Contact {
       message: this.message
     };
 
-    this.http.post('http://localhost:8085/api/contact', payload).subscribe({
+    this.http.post('/api/contact', payload).subscribe({
       next: (response) => {
         this.isSubmitting = false;
         this.submitSuccess = true;

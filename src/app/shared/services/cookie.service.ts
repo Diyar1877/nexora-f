@@ -14,7 +14,7 @@ export interface CookieConsentSettings {
 })
 export class CookieService {
   private readonly CONSENT_KEY = 'nexora_cookie_consent';
-  private readonly API_BASE_URL = 'http://localhost:8000/api'; // Adjust to your backend URL
+  private readonly API_BASE_URL = '/api'; // Adjust to your backend URL
 
   constructor(private http: HttpClient) {}
 
