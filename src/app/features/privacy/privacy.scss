@@ -1,0 +1,124 @@
+/* Shared legal page styles */
+.legal-page {
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    background: var(--color-white);
+    min-height: 80vh;
+}
+
+.legal-header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--color-gray-200);
+
+    .badge {
+        display: inline-block;
+        padding: 0.4rem 1rem;
+        background: rgba(255, 193, 7, 0.12);
+        color: #d97706;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 0.8rem;
+        letter-spacing: 0.03em;
+        margin-bottom: 1.25rem;
+    }
+
+    h1 {
+        font-size: clamp(2rem, 4vw, 2.75rem);
+        font-weight: 800;
+        color: var(--color-gray-900);
+        line-height: 1.15;
+        margin-bottom: 0.75rem;
+    }
+
+    .legal-subtitle {
+        font-size: 1rem;
+        color: var(--color-gray-700);
+        line-height: 1.6;
+        max-width: 600px;
+    }
+}
+
+.legal-content {
+    max-width: 800px;
+
+    h2 {
+        font-size: 1.35rem;
+        font-weight: 700;
+        color: var(--color-gray-900);
+        margin-top: 2.5rem;
+        margin-bottom: 0.75rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid rgba(255, 193, 7, 0.3);
+        display: inline-block;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    h3 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--color-gray-900);
+        margin-top: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+        color: var(--color-gray-700);
+        line-height: 1.75;
+        margin-bottom: 0.75rem;
+    }
+
+    ul {
+        margin: 0.5rem 0 1rem 1.5rem;
+        padding: 0;
+
+        li {
+            font-size: 0.95rem;
+            color: var(--color-gray-700);
+            line-height: 1.75;
+            margin-bottom: 0.35rem;
+        }
+    }
+
+    a {
+        color: #d97706;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .info-block {
+        background: var(--color-gray-50);
+        border: 1px solid var(--color-gray-200);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin: 1rem 0 1.5rem;
+
+        p {
+            margin-bottom: 0.25rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        strong {
+            color: var(--color-gray-900);
+        }
+    }
+
+    .legal-date {
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--color-gray-200);
+        font-size: 0.85rem;
+        color: var(--color-gray-700);
+    }
+}
