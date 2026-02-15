@@ -288,17 +288,34 @@
     p { color: var(--color-gray-700); line-height: 1.6; font-size: 0.95rem; margin-bottom: 0; }
 }
 
-// ─── Modelle (Minimal Cards) ────────────────────────────────────
+// ─── FAQ ────────────────────────────────────────────────────────
 
-.modelle-section {
+.faq-section {
     padding: 6rem 0;
 }
 
-.modelle-header {
-    margin-bottom: 3.5rem;
+.faq-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    align-items: start;
+
+    @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
 }
 
-.modelle-label {
+.faq-intro {
+    position: sticky;
+    top: 6rem;
+
+    @media (max-width: 900px) {
+        position: static;
+    }
+}
+
+.faq-label {
     font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -307,135 +324,82 @@
     margin-bottom: 1rem;
 }
 
-.modelle-title {
+.faq-title {
     font-size: clamp(1.75rem, 3.5vw, 2.5rem);
     font-weight: 700;
     color: var(--color-text-primary);
+    margin-bottom: 1rem;
 }
 
-.modelle-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-
-    @media (max-width: 900px) {
-        grid-template-columns: 1fr;
-        gap: 1.25rem;
-    }
+.faq-desc {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--color-gray-700);
+    max-width: 360px;
 }
 
-.modell-card {
-    background: var(--color-white);
-    border: 1px solid var(--color-gray-200);
-    border-radius: var(--radius-lg);
-    padding: 2.5rem 2rem;
+.faq-list {
     display: flex;
     flex-direction: column;
-    transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
 
-    &:hover {
-        box-shadow: var(--shadow-md);
-        transform: translateY(-2px);
-    }
+.faq-item {
+    border-bottom: 1px solid var(--color-gray-200);
 
-    &.modell-highlight {
-        border-color: var(--color-text-primary);
-        background: var(--color-gray-900);
-
-        .modell-tag {
-            color: var(--color-primary-yellow);
-        }
-
-        .modell-name {
-            color: var(--color-white);
-        }
-
-        .modell-desc {
-            color: var(--color-gray-300);
-        }
-
-        .detail-label {
-            color: var(--color-gray-500);
-        }
-
-        .detail-value {
-            color: var(--color-white);
-        }
-
-        .detail-row {
-            border-color: rgba(255, 255, 255, 0.1);
-        }
-
-        .modell-link {
-            color: var(--color-primary-yellow);
-
-            &:hover {
-                color: var(--color-white);
-            }
-        }
+    &:first-child {
+        border-top: 1px solid var(--color-gray-200);
     }
 }
 
-.modell-tag {
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--color-gray-700);
-    margin-bottom: 0.75rem;
-}
-
-.modell-name {
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: var(--color-text-primary);
-    margin-bottom: 0.5rem;
-}
-
-.modell-desc {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: var(--color-gray-700);
-    margin-bottom: 2rem;
-}
-
-.modell-details {
-    flex-grow: 1;
-    margin-bottom: 2rem;
-}
-
-.detail-row {
+.faq-question {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0.75rem 0;
-    border-bottom: 1px solid var(--color-gray-100);
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.25rem 0;
+    cursor: pointer;
+    transition: color var(--transition-base);
 
-    &:last-child {
-        border-bottom: none;
+    &:hover .faq-q-text {
+        color: var(--color-primary-yellow-dark);
     }
 }
 
-.detail-label {
-    font-size: 0.85rem;
-    color: var(--color-gray-700);
-}
-
-.detail-value {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--color-text-primary);
-}
-
-.modell-link {
-    display: inline-block;
-    font-size: 0.95rem;
+.faq-q-text {
+    font-size: 1.05rem;
     font-weight: 600;
     color: var(--color-text-primary);
     transition: color var(--transition-base);
+}
 
-    &:hover {
-        color: var(--color-primary-yellow-dark);
+.faq-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-gray-700);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+
+    &.open {
+        transform: rotate(45deg);
+    }
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+
+    &.open {
+        max-height: 300px;
+        padding-bottom: 1.25rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: var(--color-gray-700);
+        margin-bottom: 0;
     }
 }
 
