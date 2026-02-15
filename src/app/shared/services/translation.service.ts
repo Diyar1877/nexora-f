@@ -29,7 +29,7 @@ export class TranslationService {
   public readonly languages: LanguageOption[] = [
     { code: 'en', name: 'English', nativeName: 'English', flag: '🇺🇸' },
     { code: 'de', name: 'German', nativeName: 'Deutsch', flag: '🇩🇪' },
-    { code: 'ku', name: 'Kurdish Sorani', nativeName: 'کوردی سۆرانی', flag: '🏴' },
+    { code: 'ku', name: 'Kurdish Sorani', nativeName: 'کوردی سۆرانی', flag: 'kurdistan' },
     { code: 'ar', name: 'Arabic', nativeName: 'العربية', flag: '🇸🇦' },
     { code: 'fr', name: 'French', nativeName: 'Français', flag: '🇫🇷' },
     { code: 'es', name: 'Spanish', nativeName: 'Español', flag: '🇪🇸' }

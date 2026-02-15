@@ -16,55 +16,28 @@ export class ServicesOverview {
     constructor(private translationService: TranslationService) {}
 
     get expertiseItems() {
-        const lang = this.translationService.getCurrentLanguage();
-        
-        if (lang === 'de') {
-            return [
-                {
-                    title: 'Web-Entwicklung',
-                    description: 'Moderne Webanwendungen mit Angular, React und Vue.js — performant, skalierbar und wartbar.'
-                },
-                {
-                    title: 'Mobile Apps',
-                    description: 'Native und Cross-Platform Apps für iOS und Android, die Ihre Nutzer begeistern.'
-                },
-                {
-                    title: 'Cloud & Infrastructure',
-                    description: 'Skalierbare Cloud-Architekturen, CI/CD-Pipelines und automatisierte Deployments auf AWS, Azure oder GCP.'
-                },
-                {
-                    title: 'UI/UX Design',
-                    description: 'Nutzerfreundliche Interfaces, die konvertieren — von der Konzeption bis zum Pixel-perfekten Design.'
-                },
-                {
-                    title: 'Consulting & Strategie',
-                    description: 'Technische Beratung, Architektur-Reviews und strategische Planung für Ihr digitales Vorhaben.'
-                }
-            ];
-        } else {
-            return [
-                {
-                    title: 'Web Development',
-                    description: 'Modern web applications with Angular, React and Vue.js — performant, scalable and maintainable.'
-                },
-                {
-                    title: 'Mobile Apps',
-                    description: 'Native and cross-platform apps for iOS and Android that delight your users.'
-                },
-                {
-                    title: 'Cloud & Infrastructure',
-                    description: 'Scalable cloud architectures, CI/CD pipelines and automated deployments on AWS, Azure or GCP.'
-                },
-                {
-                    title: 'UI/UX Design',
-                    description: 'User-friendly interfaces that convert — from concept to pixel-perfect design.'
-                },
-                {
-                    title: 'Consulting & Strategy',
-                    description: 'Technical consulting, architecture reviews and strategic planning for your digital project.'
-                }
-            ];
-        }
+        return [
+            {
+                title: this.translationService.translate('services.web.title'),
+                description: this.translationService.translate('services.web.description')
+            },
+            {
+                title: this.translationService.translate('services.mobile.title'),
+                description: this.translationService.translate('services.mobile.description')
+            },
+            {
+                title: this.translationService.translate('services.cloud.title'),
+                description: this.translationService.translate('services.cloud.description')
+            },
+            {
+                title: this.translationService.translate('services.design.title'),
+                description: this.translationService.translate('services.design.description')
+            },
+            {
+                title: this.translationService.translate('services.consulting.title'),
+                description: this.translationService.translate('services.consulting.description')
+            }
+        ];
     }
 
     toggle(index: number): void {

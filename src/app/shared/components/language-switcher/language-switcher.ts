@@ -1,11 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslationService, LanguageOption } from '../../services/translation.service';
+import { KurdistanFlagComponent } from '../kurdistan-flag/kurdistan-flag.component';
 
 @Component({
   selector: 'app-language-switcher',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, KurdistanFlagComponent],
   templateUrl: './language-switcher.html',
   styleUrl: './language-switcher.scss'
 })

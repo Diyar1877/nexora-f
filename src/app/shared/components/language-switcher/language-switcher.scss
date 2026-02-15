@@ -34,6 +34,13 @@
     line-height: 1;
   }
 
+  app-kurdistan-flag {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    line-height: 1;
+  }
+
   .language-name {
     font-weight: var(--font-weight-medium);
   }
@@ -104,6 +111,14 @@
   }
 
   .flag {
+    font-size: 1.2rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  app-kurdistan-flag {
+    display: flex;
+    align-items: center;
     font-size: 1.2rem;
     line-height: 1;
     flex-shrink: 0;
