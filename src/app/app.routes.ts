@@ -34,6 +34,10 @@ export const routes: Routes = [
         loadComponent: () => import('./features/agb/agb').then(m => m.Agb)
     },
     {
+        path: 'cookie-policy',
+        loadComponent: () => import('./features/cookie-policy/cookie-policy').then(m => m.CookiePolicy)
+    },
+    {
         path: '**',
         redirectTo: ''
     }

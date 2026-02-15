@@ -57,13 +57,13 @@
             <div class="contact-form-col">
                 <form (ngSubmit)="submit()" #contactForm="ngForm">
                     <div class="form-field">
-                        <input type="text" placeholder="Ihr Name" name="name" [(ngModel)]="name" required>
+                        <input type="text" placeholder="Ihr Name*" name="name" [(ngModel)]="name" required>
                     </div>
                     <div class="form-field">
-                        <input type="email" placeholder="Ihre E-Mail-Adresse" name="email" [(ngModel)]="email" required>
+                        <input type="email" placeholder="Ihre E-Mail-Adresse*" name="email" [(ngModel)]="email" required>
                     </div>
                     <div class="form-field">
-                        <input type="tel" placeholder="Ihre Telefonnummer (optional)" name="phone" [(ngModel)]="phoneNumber">
+                        <input type="tel" placeholder="Ihre Telefonnummer*" name="phone" [(ngModel)]="phoneNumber">
                     </div>
                     <div class="form-field custom-select-wrapper" [class.open]="isDropdownOpen">
                         <div class="custom-select-trigger" (click)="toggleDropdown($event)">
