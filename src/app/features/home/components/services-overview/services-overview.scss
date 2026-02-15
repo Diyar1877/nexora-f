@@ -1,141 +1,127 @@
-.services-section { padding: 6rem 0; }
+.expertise-section {
+    padding: 6rem 0;
+    background: var(--color-gray-50);
+}
 
-.section-header { margin-bottom: 3.5rem; }
-.section-title { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; margin-bottom: 0.75rem; }
-.section-subtitle { font-size: 1.05rem; color: var(--color-gray-600); max-width: 520px; margin: 0 auto; line-height: 1.6; }
-.section-label {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 700;
+.expertise-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+
+    @media (max-width: 900px) {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}
+
+.expertise-intro {
+    position: sticky;
+    top: 6rem;
+
+    @media (max-width: 900px) {
+        position: static;
+    }
+}
+
+.expertise-label {
+    font-size: 0.8rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.15em;
-    color: var(--color-primary-yellow);
-    background: rgba(255, 193, 7, 0.1);
-    padding: 0.4rem 1rem;
-    border-radius: 100px;
+    color: var(--color-gray-700);
     margin-bottom: 1rem;
 }
 
-.highlight-inline {
-    color: var(--color-primary-yellow);
-    position: relative;
-    &::after { content: ''; position: absolute; bottom: 2px; left: 0; width: 100%; height: 8px; background-color: rgba(255, 193, 7, 0.25); z-index: -1; }
+.expertise-title {
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 1rem;
 }
 
-/* Bento Grid */
-.bento-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.25rem;
-
-    @media (max-width: 900px) { grid-template-columns: repeat(2, 1fr); }
-    @media (max-width: 600px) { grid-template-columns: 1fr; }
+.expertise-desc {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--color-gray-700);
+    max-width: 400px;
 }
 
-.bento-card {
-    background: var(--color-white);
-    border: 1px solid var(--color-gray-200);
-    border-radius: var(--radius-lg);
-    padding: 2rem;
-    position: relative;
-    overflow: hidden;
-    transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
-
-    &:hover {
-        transform: translateY(-4px);
-        box-shadow: var(--shadow-lg);
-        border-color: var(--color-primary-yellow);
-        .bento-icon-wrap svg { transform: scale(1.1); }
-    }
-
-    h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
-    p { color: var(--color-gray-600); line-height: 1.6; font-size: 0.92rem; margin-bottom: 0; }
-}
-
-/* Featured card spans full row */
-.bento-featured {
-    grid-column: 1 / -1;
-    background: var(--color-gray-900);
-    border-color: transparent;
-    padding: 2.5rem;
-
-    &:hover { border-color: var(--color-primary-yellow); }
-
-    .bento-card-inner {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        position: relative;
-        z-index: 1;
-
-        @media (max-width: 600px) { flex-direction: column; align-items: flex-start; }
-    }
-
-    h3 { color: var(--color-white); font-size: 1.35rem; margin-bottom: 0.5rem; }
-    p { color: var(--color-gray-400); font-size: 1rem; max-width: 500px; }
-
-    .featured-icon {
-        width: 72px;
-        height: 72px;
-        min-width: 72px;
-        background: var(--color-primary-yellow);
-        svg { width: 32px; height: 32px; color: var(--color-gray-900); }
-    }
-}
-
-.bento-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
-}
-
-.bento-tag {
-    font-size: 0.75rem;
-    font-weight: 600;
-    padding: 0.3rem 0.75rem;
-    border-radius: 100px;
-    background: rgba(255, 255, 255, 0.08);
-    color: var(--color-gray-300);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.bento-decoration {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 200px;
+.expertise-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 12px;
-    padding-right: 2rem;
-    opacity: 0.06;
-
-    .deco-line {
-        height: 3px;
-        background: var(--color-primary-yellow);
-        border-radius: 4px;
-        &:nth-child(1) { width: 100%; }
-        &:nth-child(2) { width: 70%; margin-left: auto; }
-        &:nth-child(3) { width: 85%; }
-    }
-
-    @media (max-width: 600px) { display: none; }
 }
 
-.bento-icon-wrap {
-    width: 52px;
-    height: 52px;
-    min-width: 52px;
-    background: rgba(255, 193, 7, 0.1);
-    border-radius: var(--radius-md);
+.expertise-item {
+    border-bottom: 1px solid var(--color-gray-200);
+
+    &:first-child {
+        border-top: 1px solid var(--color-gray-200);
+    }
+}
+
+.item-header {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 1.25rem;
-    svg { width: 24px; height: 24px; color: var(--color-primary-yellow); transition: transform var(--transition-base); }
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    cursor: pointer;
+    transition: color var(--transition-base);
+
+    &:hover {
+        .item-title {
+            color: var(--color-primary-yellow-dark);
+        }
+    }
 }
 
-.services-cta { margin-top: 3rem; }
+.item-left {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.item-number {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--color-gray-300);
+    font-variant-numeric: tabular-nums;
+}
+
+.item-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 0;
+    transition: color var(--transition-base);
+}
+
+.item-arrow {
+    display: flex;
+    align-items: center;
+    color: var(--color-gray-700);
+    transition: transform var(--transition-base);
+
+    &.open {
+        transform: rotate(180deg);
+    }
+}
+
+.item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 0 0 2.75rem;
+
+    &.open {
+        max-height: 200px;
+        padding-bottom: 1.5rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: var(--color-gray-700);
+        margin-bottom: 0;
+    }
+}
