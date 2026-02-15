@@ -1,252 +1,220 @@
-<section class="contact-hero">
+<section class="contact-page">
     <div class="container">
-        <div class="hero-content">
-            <span class="badge">Kontakt</span>
-            <h1 class="hero-title">Lassen Sie uns ins <span class="highlight">Gespräch kommen</span></h1>
-            <p class="hero-subtitle">
-                Ob Projektanfrage, Bewerbung oder allgemeine Fragen — wir freuen uns auf Ihre Nachricht
-                und melden uns innerhalb von 24 Stunden bei Ihnen.
-            </p>
+
+        <!-- Header -->
+        <div class="contact-header">
+            <div class="contact-header__left">
+                <span class="badge"># Für Unternehmen</span>
+                <h1>Kontakt</h1>
+                <p class="subtitle-bold">Lassen Sie uns miteinander sprechen!</p>
+                <p class="subtitle">Wir freuen uns darauf, von Ihnen zu hören.</p>
+            </div>
+            <div class="contact-header__right">
+                <svg class="contact-illustration" viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Clipboard -->
+                    <rect x="120" y="50" width="160" height="210" rx="16" fill="#fff" stroke="#e5e7eb" stroke-width="2"/>
+                    <rect x="170" y="38" width="60" height="24" rx="12" fill="#fbbf24"/>
+                    <rect x="148" y="95" width="104" height="10" rx="5" fill="#f3f4f6"/>
+                    <rect x="148" y="120" width="80" height="10" rx="5" fill="#f3f4f6"/>
+                    <rect x="148" y="145" width="104" height="10" rx="5" fill="#f3f4f6"/>
+                    <rect x="148" y="170" width="60" height="10" rx="5" fill="#f3f4f6"/>
+                    <rect x="148" y="200" width="104" height="28" rx="8" fill="#fbbf24" opacity="0.2"/>
+                    <rect x="162" y="206" width="76" height="16" rx="4" fill="#fbbf24"/>
+                    <!-- Envelope -->
+                    <g transform="translate(280, 80)">
+                        <rect width="80" height="56" rx="10" fill="#fbbf24"/>
+                        <path d="M0 10 L40 36 L80 10" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <!-- @ Symbol -->
+                    <g transform="translate(40, 60)">
+                        <circle cx="30" cy="30" r="30" fill="#fef3c7"/>
+                        <text x="30" y="40" text-anchor="middle" fill="#f59e0b" font-size="32" font-weight="700" font-family="Inter, sans-serif">&#64;</text>
+                    </g>
+                    <!-- Location Pin -->
+                    <g transform="translate(300, 180)">
+                        <circle cx="28" cy="28" r="28" fill="#fef3c7"/>
+                        <path d="M28 12 C20 12 14 18 14 26 C14 36 28 46 28 46 C28 46 42 36 42 26 C42 18 36 12 28 12Z" fill="#f59e0b"/>
+                        <circle cx="28" cy="25" r="5" fill="#fff"/>
+                    </g>
+                    <!-- Pencil -->
+                    <g transform="translate(50, 190)">
+                        <circle cx="24" cy="24" r="24" fill="#fef3c7"/>
+                        <path d="M18 36 L14 38 L16 34 L30 16 L34 20 Z" fill="#f59e0b"/>
+                        <path d="M30 16 L34 20" stroke="#d97706" stroke-width="1.5" stroke-linecap="round"/>
+                    </g>
+                    <!-- Decorative dots -->
+                    <circle cx="110" cy="280" r="4" fill="#fbbf24" opacity="0.4"/>
+                    <circle cx="330" cy="60" r="3" fill="#fbbf24" opacity="0.3"/>
+                    <circle cx="370" cy="160" r="5" fill="#fbbf24" opacity="0.2"/>
+                    <circle cx="80" cy="140" r="3" fill="#fbbf24" opacity="0.3"/>
+                </svg>
+            </div>
         </div>
-    </div>
-</section>
 
-<section class="contact-section">
-    <div class="container">
-        <!-- Trust Indicators -->
-        <div class="trust-bar">
-            <div class="trust-item">
-                <div class="trust-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <polyline points="12 6 12 12 16 14"></polyline>
-                    </svg>
-                </div>
-                <span>Antwort innerhalb 24h</span>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                    </svg>
-                </div>
-                <span>DSGVO-konform</span>
-            </div>
-            <div class="trust-item">
-                <div class="trust-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                    </svg>
-                </div>
-                <span>Unverbindlich & kostenlos</span>
-            </div>
-        </div>
+        <!-- Main Grid: Form + Sidebar -->
+        <div class="contact-main">
 
-        <div class="contact-grid">
-            <!-- Contact Form -->
-            <div class="contact-form-wrapper">
-                <div class="form-header">
-                    <h2>Nachricht senden</h2>
-                    <p>Füllen Sie das Formular aus und wir melden uns schnellstmöglich bei Ihnen.</p>
-                </div>
-
-                <form class="contact-form" (ngSubmit)="submit()" #contactForm="ngForm">
-                    <div class="form-row">
-                        <div class="form-group" [class.has-value]="name" [class.has-error]="contactName.invalid && contactName.touched">
-                            <label for="name">Name <span class="required">*</span></label>
-                            <input type="text" id="name" name="name" [(ngModel)]="name" #contactName="ngModel"
-                                placeholder="Max Mustermann" required>
-                            <span class="field-hint" *ngIf="contactName.invalid && contactName.touched">Bitte geben Sie Ihren Namen ein</span>
-                        </div>
-                        <div class="form-group" [class.has-value]="email" [class.has-error]="contactEmail.invalid && contactEmail.touched">
-                            <label for="email">E-Mail <span class="required">*</span></label>
-                            <input type="email" id="email" name="email" [(ngModel)]="email" #contactEmail="ngModel"
-                                placeholder="max@unternehmen.de" required email>
-                            <span class="field-hint" *ngIf="contactEmail.invalid && contactEmail.touched">Bitte geben Sie eine gültige E-Mail ein</span>
-                        </div>
+            <!-- Form Column -->
+            <div class="contact-form-col">
+                <form (ngSubmit)="submit()" #contactForm="ngForm">
+                    <div class="form-field">
+                        <input type="text" placeholder="Ihr Name" name="name" [(ngModel)]="name" required>
+                    </div>
+                    <div class="form-field">
+                        <input type="email" placeholder="Ihre E-Mail-Adresse" name="email" [(ngModel)]="email" required>
+                    </div>
+                    <div class="form-field">
+                        <input type="tel" placeholder="Ihre Telefonnummer (optional)" name="phone" [(ngModel)]="phoneNumber">
+                    </div>
+                    <div class="form-field">
+                        <textarea placeholder="Ihre Nachricht" name="message" [(ngModel)]="message" required rows="7"></textarea>
                     </div>
 
-                    <div class="form-row">
-                        <div class="form-group" [class.has-value]="phoneNumber">
-                            <label for="phone">Telefon <span class="optional">(Optional)</span></label>
-                            <input type="tel" id="phone" name="phone" [(ngModel)]="phoneNumber"
-                                placeholder="+49 123 456 789">
-                        </div>
-                        <div class="form-group custom-select-wrapper" [class.open]="isDropdownOpen" [class.has-value]="subject"
-                            [class.has-error]="!subject && subjectTouched">
-                            <label>Betreff <span class="required">*</span></label>
-                            <div class="custom-select-trigger" (click)="toggleDropdown($event)">
-                                <span [class.placeholder]="!subject">{{ subject ? (subjectOptions | findOption:subject)?.label : 'Thema auswählen' }}</span>
-                                <div class="arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <polyline points="6 9 12 15 18 9"></polyline>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="custom-options">
-                                <div class="option" *ngFor="let option of subjectOptions"
-                                    (click)="selectOption(option.value)" [class.selected]="subject === option.value">
-                                    <span class="option-icon">{{ option.icon }}</span>
-                                    <div class="option-content">
-                                        <span class="option-label">{{ option.label }}</span>
-                                        <span class="option-desc">{{ option.description }}</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <input type="hidden" name="subject" [(ngModel)]="subject" required>
-                            <span class="field-hint" *ngIf="!subject && subjectTouched">Bitte wählen Sie einen Betreff</span>
-                        </div>
-                    </div>
-
-                    <div class="form-group" [class.has-value]="message" [class.has-error]="contactMessage.invalid && contactMessage.touched">
-                        <label for="message">Nachricht <span class="required">*</span></label>
-                        <textarea id="message" name="message" [(ngModel)]="message" #contactMessage="ngModel" rows="5"
-                            placeholder="Beschreiben Sie Ihr Anliegen oder Projekt..." required></textarea>
-                        <span class="field-hint" *ngIf="contactMessage.invalid && contactMessage.touched">Bitte geben Sie eine Nachricht ein</span>
-                    </div>
-
-                    <div class="form-check">
-                        <input type="checkbox" id="privacy" name="privacy" [(ngModel)]="privacyAccepted" required>
-                        <label for="privacy">
-                            Ich stimme der <a href="/datenschutz" (click)="$event.stopPropagation()">Datenschutzerklärung</a> zu und bin mit der Verarbeitung meiner Daten einverstanden.
-                        </label>
-                    </div>
-
-                    <!-- Success Message -->
+                    <!-- Success -->
                     <div class="form-alert success" *ngIf="submitSuccess">
-                        <div class="alert-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
-                            </svg>
-                        </div>
-                        <div class="alert-content">
-                            <strong>Nachricht erfolgreich gesendet!</strong>
-                            <span>Wir melden uns innerhalb von 24 Stunden bei Ihnen.</span>
-                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <span>Ihre Nachricht wurde erfolgreich gesendet! Wir melden uns innerhalb von 24 Stunden.</span>
                     </div>
 
-                    <!-- Error Message -->
+                    <!-- Error -->
                     <div class="form-alert error" *ngIf="submitError">
-                        <div class="alert-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <line x1="15" y1="9" x2="9" y2="15"></line>
-                                <line x1="9" y1="9" x2="15" y2="15"></line>
-                            </svg>
-                        </div>
-                        <div class="alert-content">
-                            <strong>Fehler beim Senden</strong>
-                            <span>{{ submitError }}</span>
-                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="15" y1="9" x2="9" y2="15"></line>
+                            <line x1="9" y1="9" x2="15" y2="15"></line>
+                        </svg>
+                        <span>{{ submitError }}</span>
                     </div>
 
-                    <app-button variant="primary" type="submit" [fullWidth]="true"
-                        [disabled]="contactForm.invalid || isSubmitting || !privacyAccepted">
-                        <span class="btn-content">
-                            <svg *ngIf="!isSubmitting" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="22" y1="2" x2="11" y2="13"></line>
-                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                            </svg>
-                            <span class="spinner" *ngIf="isSubmitting"></span>
-                            {{ isSubmitting ? 'Wird gesendet...' : 'Nachricht senden' }}
-                        </span>
-                    </app-button>
+                    <button type="submit" class="submit-btn" [disabled]="contactForm.invalid || isSubmitting">
+                        <span class="spinner" *ngIf="isSubmitting"></span>
+                        {{ isSubmitting ? 'Wird gesendet...' : 'Nachricht senden' }}
+                    </button>
                 </form>
+
+                <p class="privacy-note">
+                    Ihre Daten werden verschlüsselt übertragen und nicht an Dritte weitergegeben.
+                    <a href="/datenschutz">Datenschutz.</a>
+                </p>
             </div>
 
-            <!-- Contact Info Sidebar -->
-            <div class="contact-sidebar">
+            <!-- Info Column -->
+            <div class="contact-info-col">
+                <!-- Small illustration -->
+                <div class="info-illustration">
+                    <svg viewBox="0 0 260 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="60" y="20" width="140" height="100" rx="14" fill="#fff" stroke="#e5e7eb" stroke-width="1.5"/>
+                        <path d="M60 34 L130 80 L200 34" stroke="#fbbf24" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="36" cy="50" r="20" fill="#fef3c7"/>
+                        <text x="36" y="58" text-anchor="middle" fill="#f59e0b" font-size="20" font-weight="700" font-family="Inter, sans-serif">&#64;</text>
+                        <g transform="translate(210, 70)">
+                            <circle cx="16" cy="16" r="16" fill="#fef3c7"/>
+                            <path d="M16 6 C11 6 7 10.5 7 16 C7 23 16 30 16 30 C16 30 25 23 25 16 C25 10.5 21 6 16 6Z" fill="#f59e0b"/>
+                            <circle cx="16" cy="15" r="3.5" fill="#fff"/>
+                        </g>
+                        <circle cx="20" cy="120" r="3" fill="#fbbf24" opacity="0.4"/>
+                        <circle cx="240" cy="40" r="4" fill="#fbbf24" opacity="0.3"/>
+                    </svg>
+                </div>
+
+                <!-- Contact Info Card -->
                 <div class="info-card">
                     <h3>Kontaktinformationen</h3>
-                    <p class="info-card-desc">Erreichen Sie uns auch direkt über folgende Kanäle.</p>
-
-                    <div class="info-items">
-                        <a href="mailto:contact@nexora.solutions" class="info-item">
+                    <div class="info-rows">
+                        <a href="mailto:info@nexora-solutions.de" class="info-row">
                             <div class="info-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
                                     <polyline points="22,6 12,13 2,6"></polyline>
                                 </svg>
                             </div>
-                            <div class="info-text">
-                                <span class="info-label">E-Mail</span>
-                                <span class="info-value">contact&#64;nexora.solutions</span>
-                            </div>
+                            <span>info&#64;nexora-solutions.de</span>
                         </a>
-
-                        <a href="tel:+49123456789" class="info-item">
+                        <a href="tel:+49123456789" class="info-row">
                             <div class="info-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.12 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                                 </svg>
                             </div>
-                            <div class="info-text">
-                                <span class="info-label">Telefon</span>
-                                <span class="info-value">+49 (0) 123 456 789</span>
-                            </div>
+                            <span>+49 123 456789</span>
                         </a>
-
-                        <div class="info-item">
+                        <div class="info-row">
                             <div class="info-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                                     <circle cx="12" cy="10" r="3"></circle>
                                 </svg>
                             </div>
-                            <div class="info-text">
-                                <span class="info-label">Hauptsitz</span>
-                                <span class="info-value">Nexora Solutions UG<br>Musterstraße 1<br>10115 Berlin</span>
-                            </div>
+                            <span>Musterstraße 123, 10115 Berlin</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="availability-card">
-                    <div class="availability-header">
-                        <div class="status-dot"></div>
-                        <span>Aktuell verfügbar</span>
+                <!-- Map Card -->
+                <div class="map-card">
+                    <div class="map-embed">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.9!2d13.388!3d52.5200!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDMxJzEyLjAiTiAxM8KwMjMnMTYuOCJF!5e0!3m2!1sde!2sde!4v1"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
-                    <p>Wir nehmen derzeit neue Projekte an. Kontaktieren Sie uns für ein unverbindliches Erstgespräch.</p>
-                </div>
-
-                <div class="response-card">
-                    <div class="response-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                        </svg>
-                    </div>
-                    <h4>Lieber persönlich sprechen?</h4>
-                    <p>Vereinbaren Sie ein kostenloses Erstgespräch — wir beraten Sie gerne zu Ihrem Projekt.</p>
-                    <a href="tel:+49123456789" class="response-link">
-                        Jetzt anrufen
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                    <a href="https://www.google.com/maps/search/Musterstraße+123+10115+Berlin" target="_blank" rel="noopener" class="map-link">
+                        Größere Karte ansehen
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
                         </svg>
                     </a>
                 </div>
             </div>
         </div>
+
+        <!-- Trust Section -->
+        <div class="trust-section">
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                </div>
+                <h4>100% Rechtssicher</h4>
+                <p>Alle Verträge nach deutschem Recht. Voller Datenschutz und Compliance – garantiert.</p>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+                <h4>Geprüfte Entwickler</h4>
+                <p>Erfahrene Entwickler, die strengen Auswahlprozessen und technischen Assessments unterzogen wurden.</p>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                </div>
+                <h4>Schnelle Reaktionszeit</h4>
+                <p>Wir melden uns in der Regel innerhalb eines Werktages bei Ihnen zurück.</p>
+            </div>
+        </div>
+
     </div>
 </section>
