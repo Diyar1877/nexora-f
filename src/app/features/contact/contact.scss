@@ -141,6 +141,119 @@
     }
 }
 
+/* Custom Select Dropdown */
+.custom-select-wrapper {
+    position: relative;
+    user-select: none;
+
+    &.open {
+        .custom-select-trigger {
+            border-color: var(--color-primary-yellow);
+            box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.12);
+        }
+
+        .custom-options {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+            transform: translateY(0);
+        }
+
+        .select-arrow {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+.custom-select-trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.9rem 1.15rem;
+    border: 1.5px solid var(--color-gray-300);
+    border-radius: 12px;
+    font-family: var(--font-family-base);
+    font-size: 0.95rem;
+    color: var(--color-gray-900);
+    background: var(--color-white);
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+
+    &:hover {
+        border-color: var(--color-gray-800);
+    }
+
+    span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &.placeholder {
+            color: var(--color-gray-700);
+            opacity: 0.55;
+        }
+    }
+
+    .select-arrow {
+        flex-shrink: 0;
+        color: var(--color-gray-700);
+        transition: transform 0.2s ease;
+    }
+}
+
+.custom-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    border: 1.5px solid var(--color-gray-200);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    background: var(--color-white);
+    transition: all 0.2s ease;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-6px);
+    z-index: 50;
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+.option {
+    padding: 0.8rem 1.15rem;
+    cursor: pointer;
+    color: var(--color-gray-700);
+    transition: all 0.15s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--color-gray-100);
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:hover {
+        background-color: var(--color-gray-50);
+        color: var(--color-gray-900);
+    }
+
+    &.selected {
+        background-color: rgba(255, 193, 7, 0.08);
+        color: #d97706;
+        font-weight: 600;
+    }
+
+    .option-icon {
+        font-size: 1.1rem;
+        flex-shrink: 0;
+    }
+}
+
 /* Submit Button */
 .submit-btn {
     width: 100%;
