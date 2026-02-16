@@ -1,9 +1,8 @@
-<section class="section cta-section">
+<section class="cta-section">
     <div class="container text-center">
-        <h2 class="cta-title">Bereit, Ihr Projekt zu starten?</h2>
-        <p class="cta-subtitle">Lassen Sie uns gemeinsam Ihre Vision verwirklichen. Kontaktieren Sie uns noch heute!</p>
-        <div class="cta-action">
-            <app-button variant="white" routerLink="/contact" class="cta-btn">Jetzt Anfragen</app-button>
-        </div>
+        <h2 class="cta-title">{{ 'cta.title' | translate }}</h2>
+        <p class="cta-subtitle">{{ 'cta.subtitle' | translate }}</p>
+        <a routerLink="/contact" class="cta-button">{{ 'cta.button' | translate }}</a>
+        <p class="cta-note">{{ 'cta.note' | translate }}</p>
     </div>
 </section>

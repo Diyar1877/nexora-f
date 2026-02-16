@@ -1,0 +1,36 @@
+<div class="language-switcher">
+  <button class="language-button" (click)="toggleDropdown()" aria-label="{{ translate('language.switch') }}">
+    @if (getCurrentLanguage().flag === 'kurdistan') {
+      <app-kurdistan-flag></app-kurdistan-flag>
+    } @else {
+      <span class="flag">{{ getCurrentLanguage().flag }}</span>
+    }
+    <span class="language-name">{{ getCurrentLanguage().nativeName }}</span>
+    <svg class="arrow" [class.open]="isOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6,9 12,15 18,9"></polyline>
+    </svg>
+  </button>
+
+  @if (isOpen) {
+    <div class="language-dropdown">
+      @for (lang of languages; track lang.code) {
+        <button 
+          class="language-option" 
+          [class.active]="lang.code === getCurrentLanguage().code"
+          (click)="selectLanguage(lang)"
+          aria-label="{{ lang.name }}"
+        >
+          @if (lang.flag === 'kurdistan') {
+            <app-kurdistan-flag></app-kurdistan-flag>
+          } @else {
+            <span class="flag">{{ lang.flag }}</span>
+          }
+          <span class="language-info">
+            <span class="native-name">{{ lang.nativeName }}</span>
+            <span class="english-name">{{ lang.name }}</span>
+          </span>
+        </button>
+      }
+    </div>
+  }
+</div>

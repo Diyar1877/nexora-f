@@ -3,17 +3,16 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    Remote Development <br>
-                    <span class="text-highlight">für deutsche Unternehmen</span>
+                    {{ 'hero.title' | translate }} <br>
+                    <span class="text-highlight">{{ 'hero.subtitle' | translate }}</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Ihr Partner für Web & Software-Lösungen. Wir verbinden deutsche Qualitätsansprüche mit flexibler
-                    Remote-Expertise.
+                    {{ 'hero.description' | translate }}
                 </p>
 
                 <div class="hero-actions">
-                    <app-button variant="primary" routerLink="/services">Unsere Leistungen</app-button>
-                    <app-button variant="secondary" routerLink="/contact">Kontaktieren Sie uns</app-button>
+                    <app-button variant="primary" routerLink="/services">{{ 'hero.services' | translate }}</app-button>
+                    <app-button variant="secondary" routerLink="/contact">{{ 'hero.contactUs' | translate }}</app-button>
                 </div>
             </div>
 

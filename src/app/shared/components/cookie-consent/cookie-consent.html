@@ -1,0 +1,59 @@
+@if (showConsent) {
+  <div class="cookie-consent-overlay">
+    <div class="cookie-consent-dialog">
+      <div class="cookie-consent-header">
+        <h3>{{ 'cookie.title' | translate }}</h3>
+        <button class="close-btn" (click)="showConsent = false" aria-label="{{ 'common.close' | translate }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="cookie-consent-content">
+        <p>
+          {{ 'cookie.description' | translate }}
+        </p>
+        
+        <div class="cookie-categories">
+          <div class="cookie-category">
+            <label class="category-label">
+              <input type="checkbox" [checked]="consentSettings.necessary" disabled>
+              <div class="category-info">
+                <strong>{{ 'cookie.necessary' | translate }}</strong>
+                <small>{{ 'cookie.necessaryDesc' | translate }}</small>
+              </div>
+            </label>
+          </div>
+          
+          <div class="cookie-category">
+            <label class="category-label">
+              <input type="checkbox" [checked]="consentSettings.analytics" (change)="updateConsent('analytics', $event)">
+              <div class="category-info">
+                <strong>{{ 'cookie.analytics' | translate }}</strong>
+                <small>{{ 'cookie.analyticsDesc' | translate }}</small>
+              </div>
+            </label>
+          </div>
+          
+          <div class="cookie-category">
+            <label class="category-label">
+              <input type="checkbox" [checked]="consentSettings.marketing" (change)="updateConsent('marketing', $event)">
+              <div class="category-info">
+                <strong>{{ 'cookie.marketing' | translate }}</strong>
+                <small>{{ 'cookie.marketingDesc' | translate }}</small>
+              </div>
+            </label>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cookie-consent-actions">
+        <button class="btn btn-secondary" (click)="showConsent = false">{{ 'cookie.later' | translate }}</button>
+        <button class="btn btn-primary" (click)="acceptSelected()">{{ 'cookie.acceptSelected' | translate }}</button>
+        <button class="btn btn-primary" (click)="acceptAll()">{{ 'cookie.acceptAll' | translate }}</button>
+      </div>
+    </div>
+  </div>
+}

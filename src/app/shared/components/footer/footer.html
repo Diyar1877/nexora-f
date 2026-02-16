@@ -4,12 +4,11 @@
             <!-- Brand Column -->
             <div class="footer-col brand-col">
                 <div class="footer-brand">
-                    <span class="logo-text">NEXORA</span>
-                    <span class="logo-suffix">SOLUTIONS</span>
+                    <span class="logo-text">{{ 'footer.brand.name' | translate }}</span>
+                    <span class="logo-suffix">{{ 'footer.brand.suffix' | translate }}</span>
                 </div>
                 <p class="brand-desc">
-                    Ihr Partner für skalierbare Tech-Teams und erstklassige Softwarelösungen.
-                    Wir verbinden deutsche Unternehmen mit Top-Talenten.
+                    {{ 'footer.brand.description' | translate }}
                 </p>
                 <div class="footer-badges">
                     <div class="badge-item">
@@ -17,26 +16,26 @@
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                         </svg>
-                        <span>100% Rechtssicher</span>
+                        <span>{{ 'footer.brand.secure' | translate }}</span>
                     </div>
                 </div>
             </div>
 
             <!-- Navigation Column -->
             <div class="footer-col">
-                <h4 class="footer-heading">Navigation</h4>
+                <h4 class="footer-heading">{{ 'footer.navigation' | translate }}</h4>
                 <ul class="footer-links">
-                    <li><a routerLink="/" class="footer-link">Home</a></li>
-                    <li><a routerLink="/for-companies" class="footer-link">Für Unternehmen</a></li>
-                    <li><a routerLink="/for-developers" class="footer-link">Für Entwickler</a></li>
-                    <li><a routerLink="/about" class="footer-link">Über uns</a></li>
-                    <li><a routerLink="/contact" class="footer-link">Kontakt</a></li>
+                    <li><a routerLink="/" class="footer-link">{{ 'nav.home' | translate }}</a></li>
+                    <li><a routerLink="/for-companies" class="footer-link">{{ 'nav.forCompanies' | translate }}</a></li>
+                    <li><a routerLink="/for-developers" class="footer-link">{{ 'nav.forDevelopers' | translate }}</a></li>
+                    <li><a routerLink="/about" class="footer-link">{{ 'nav.about' | translate }}</a></li>
+                    <li><a routerLink="/contact" class="footer-link">{{ 'nav.contact' | translate }}</a></li>
                 </ul>
             </div>
 
             <!-- Contact Column -->
             <div class="footer-col">
-                <h4 class="footer-heading">Kontakt</h4>
+                <h4 class="footer-heading">{{ 'footer.contact' | translate }}</h4>
                 <ul class="contact-list">
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -62,22 +61,23 @@
                             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
                             <circle cx="12" cy="10" r="3"></circle>
                         </svg>
-                        <span>Musterstraße 123<br>10115 Berlin</span>
+                        <span>{{ 'footer.address' | translate }}</span>
                     </li>
                 </ul>
             </div>
 
             <!-- Legal & Social Column -->
             <div class="footer-col">
-                <h4 class="footer-heading">Rechtliches</h4>
+                <h4 class="footer-heading">{{ 'footer.legal' | translate }}</h4>
                 <ul class="footer-links">
-                    <li><a routerLink="/imprint" class="footer-link">Impressum</a></li>
-                    <li><a routerLink="/privacy" class="footer-link">Datenschutz</a></li>
-                    <li><a routerLink="/agb" class="footer-link">AGB</a></li>
+                    <li><a routerLink="/imprint" class="footer-link">{{ 'footer.imprint' | translate }}</a></li>
+                    <li><a routerLink="/privacy" class="footer-link">{{ 'footer.privacy' | translate }}</a></li>
+                    <li><a routerLink="/agb" class="footer-link">{{ 'footer.agb' | translate }}</a></li>
+                    <li><a routerLink="/cookie-policy" class="footer-link">{{ 'footer.cookiePolicy' | translate }}</a></li>
                 </ul>
 
                 <div class="footer-social mt-md">
-                    <a href="#" target="_blank" aria-label="LinkedIn" class="social-icon">
+                    <a href="#" target="_blank" aria-label="{{ 'social.linkedin' | translate }}" class="social-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
@@ -86,7 +86,7 @@
                             <circle cx="4" cy="4" r="2"></circle>
                         </svg>
                     </a>
-                    <a href="#" target="_blank" aria-label="Twitter / X" class="social-icon">
+                    <a href="#" target="_blank" aria-label="{{ 'social.twitter' | translate }}" class="social-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path
@@ -94,7 +94,7 @@
                             </path>
                         </svg>
                     </a>
-                    <a href="#" target="_blank" aria-label="Instagram" class="social-icon">
+                    <a href="#" target="_blank" aria-label="{{ 'social.instagram' | translate }}" class="social-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
@@ -108,8 +108,8 @@
 
         <div class="footer-bottom">
             <p class="copyright">
-                &copy; {{ currentYear }} Nexora Solutions UG (haftungsbeschränkt).
-                <span class="made-with-love">Made for Performance.</span>
+                {{ 'footer.copyright' | translate: {year: currentYear.toString()} }}
+                <span class="made-with-love">{{ 'footer.madeWith' | translate }}</span>
             </p>
         </div>
     </div>

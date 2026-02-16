@@ -1,14 +1,15 @@
 import { Component, HostListener } from '@angular/core';
-import { FindOptionPipe } from '../../shared/pipes/find-option.pipe';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { Button } from '../../shared/components/button/button';
+import { FindOptionPipe } from '../../shared/pipes/find-option.pipe';
+import { TranslatePipe } from '../../shared/pipes/translate.pipe';
+import { TranslationService } from '../../shared/services/translation.service';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, Button, FindOptionPipe],
+  imports: [CommonModule, FormsModule, FindOptionPipe, TranslatePipe],
   templateUrl: './contact.html',
   styleUrl: './contact.scss'
 })
@@ -18,7 +19,6 @@ export class Contact {
   phoneNumber = '';
   subject = '';
   message = '';
-  privacyAccepted = false;
 
   isSubmitting = false;
   submitSuccess = false;
@@ -26,18 +26,24 @@ export class Contact {
 
   isDropdownOpen = false;
 
-  subjectOptions = [
-    { value: 'company', label: 'Projektanfrage (Unternehmen)', icon: '' },
-    { value: 'developer', label: 'Bewerbung (Entwickler)', icon: '' },
-    { value: 'other', label: 'Sonstiges', icon: '' }
-  ];
+  subjectOptions: { value: string; label: string; icon: string }[] = [];
+
+  constructor(private http: HttpClient, private translationService: TranslationService) { 
+    this.initializeSubjectOptions();
+  }
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
-    this.closeDropdown();
+    this.isDropdownOpen = false;
   }
 
-  constructor(private http: HttpClient) { }
+  private initializeSubjectOptions(): void {
+    this.subjectOptions = [
+      { value: 'company', label: this.translateText('contact.subjectCompany'), icon: '' },
+      { value: 'developer', label: this.translateText('contact.subjectDeveloper'), icon: '' },
+      { value: 'other', label: this.translateText('contact.subjectOther'), icon: '' }
+    ];
+  }
 
   toggleDropdown(event: Event) {
     event.stopPropagation();
@@ -49,17 +55,11 @@ export class Contact {
     this.isDropdownOpen = false;
   }
 
-  closeDropdown() {
-    this.isDropdownOpen = false;
+  private translateText(key: string): string {
+    return this.translationService.translate(key);
   }
 
-
   submit() {
-    if (!this.privacyAccepted) {
-      this.submitError = 'Bitte stimmen Sie der Datenschutzerklärung zu.';
-      return;
-    }
-
     this.isSubmitting = true;
     this.submitError = '';
     this.submitSuccess = false;
@@ -72,7 +72,7 @@ export class Contact {
       message: this.message
     };
 
-    this.http.post('http://localhost:8085/api/contact', payload).subscribe({
+    this.http.post('/api/contact', payload).subscribe({
       next: (response) => {
         this.isSubmitting = false;
         this.submitSuccess = true;
@@ -81,9 +81,9 @@ export class Contact {
       error: (error) => {
         this.isSubmitting = false;
         if (error.error && error.error.details) {
-          this.submitError = `Fehler: ${error.error.details}`;
+          this.submitError = this.translateText('contact.errorDetails') + error.error.details;
         } else {
-          this.submitError = 'Es gab einen Fehler beim Senden. Bitte versuchen Sie es später erneut.';
+          this.submitError = this.translateText('contact.errorGeneric');
         }
         console.error('Submission error:', error);
       }
@@ -96,7 +96,6 @@ export class Contact {
     this.phoneNumber = '';
     this.subject = '';
     this.message = '';
-    this.privacyAccepted = false;
     this.isDropdownOpen = false;
   }
 }

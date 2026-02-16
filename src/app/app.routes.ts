@@ -22,6 +22,22 @@ export const routes: Routes = [
         loadComponent: () => import('./features/contact/contact').then(m => m.Contact)
     },
     {
+        path: 'imprint',
+        loadComponent: () => import('./features/imprint/imprint').then(m => m.Imprint)
+    },
+    {
+        path: 'privacy',
+        loadComponent: () => import('./features/privacy/privacy').then(m => m.Privacy)
+    },
+    {
+        path: 'agb',
+        loadComponent: () => import('./features/agb/agb').then(m => m.Agb)
+    },
+    {
+        path: 'cookie-policy',
+        loadComponent: () => import('./features/cookie-policy/cookie-policy').then(m => m.CookiePolicy)
+    },
+    {
         path: '**',
         redirectTo: ''
     }

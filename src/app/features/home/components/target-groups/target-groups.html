@@ -1,37 +1,18 @@
-<section class="section target-groups-section">
+<section class="testimonials-section">
     <div class="container">
-        <div class="target-grid">
-            <!-- Companies Card -->
-            <div class="target-card companies-card">
-                <div class="card-image-wrapper">
-                    <div class="card-image-placeholder companies-bg">
-                        <span class="placeholder-icon">🏢</span>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h2 class="card-title">Für Unternehmen</h2>
-                    <p class="card-text">
-                        Skalierbare Lösungen für Ihr Business. Wir bieten erstklassige Entwicklungskapazitäten, die sich
-                        nahtlos in Ihre Prozesse integrieren.
-                    </p>
-                    <app-button variant="primary" routerLink="/companies">Mehr Erfahren</app-button>
-                </div>
-            </div>
+        <div class="testimonials-header text-center">
+            <p class="testimonials-label">{{ 'testimonials.label' | translate }}</p>
+            <h2 class="testimonials-title">{{ 'testimonials.title' | translate }}</h2>
+        </div>
 
-            <!-- Developers Card -->
-            <div class="target-card developers-card">
-                <div class="card-image-wrapper">
-                    <div class="card-image-placeholder developers-bg">
-                        <span class="placeholder-icon">👨‍💻</span>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <h2 class="card-title">Für Entwickler</h2>
-                    <p class="card-text">
-                        Arbeite remote mit uns an spannenden Projekten. Werde Teil eines Teams, das Wert auf
-                        Code-Qualität und persönliche Weiterentwicklung legt.
-                    </p>
-                    <app-button variant="white" routerLink="/developers" class="btn-dev">Jobs & Projekte</app-button>
+        <div class="testimonials-grid">
+            <div class="testimonial-card" *ngFor="let testimonial of testimonials">
+                <blockquote class="testimonial-quote">
+                    &ldquo;{{ testimonial.quote }}&rdquo;
+                </blockquote>
+                <div class="testimonial-author">
+                    <span class="author-name">{{ testimonial.name }}</span>
+                    <span class="author-role">{{ testimonial.role }}, {{ testimonial.company }}</span>
                 </div>
             </div>
         </div>

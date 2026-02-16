@@ -1,0 +1,3 @@
+ich habe datenschutz und impressum page in der footer auch verlinkt und auch agb gemacht und ich will jz cockies erstellen dialog und ich weiss nicht wie dass alles funktioneirt und was man dafur braucht mein backend liegt hier 
+/home/diyar/Nexora-Solutions/nexora
+ich glaube man muss uach den backend endpoint machen und dann den frontend connecten fur die coockies du kannst einfach mein ganzer projekt durchsuchen und es implementieren 

@@ -2,23 +2,24 @@
     <div class="container header-container">
         <!-- Logo -->
         <a routerLink="/" class="logo">
-            <span class="logo-text">NEXORA</span>
-            <span class="logo-suffix">SOLUTIONS</span>
+            <span class="logo-text">{{ 'footer.brand.name' | translate }}</span>
+            <span class="logo-suffix">{{ 'footer.brand.suffix' | translate }}</span>
         </a>
 
         <!-- Desktop Navigation -->
         <nav class="nav-desktop d-none d-md-flex">
-            <a routerLink="/companies" routerLinkActive="active" class="nav-link">Für Unternehmen</a>
-            <a routerLink="/developers" routerLinkActive="active" class="nav-link">Für Entwickler</a>
-            <a routerLink="/about" routerLinkActive="active" class="nav-link">Über uns</a>
-            <a routerLink="/contact" routerLinkActive="active" class="nav-link">Kontakt</a>
+            <a routerLink="/companies" routerLinkActive="active" class="nav-link">{{ 'nav.forCompanies' | translate }}</a>
+            <a routerLink="/developers" routerLinkActive="active" class="nav-link">{{ 'nav.forDevelopers' | translate }}</a>
+            <a routerLink="/about" routerLinkActive="active" class="nav-link">{{ 'nav.about' | translate }}</a>
+            <a routerLink="/contact" routerLinkActive="active" class="nav-link">{{ 'nav.contact' | translate }}</a>
         </nav>
 
         <!-- CTA & Mobile Menu Toggle -->
         <div class="header-actions">
-            <app-button class="d-none d-md-block" routerLink="/contact">Jetzt Anfragen</app-button>
+            <app-language-switcher class="d-none d-md-block"></app-language-switcher>
+            <app-button class="d-none d-md-block" routerLink="/contact">{{ 'nav.requestNow' | translate }}</app-button>
 
-            <button class="mobile-toggle d-md-none" (click)="toggleMenu()" aria-label="Menu">
+            <button class="mobile-toggle d-md-none" (click)="toggleMenu()" aria-label="{{ 'common.menu' | translate }}">
                 <span class="hamburger" [class.active]="isMenuOpen()"></span>
             </button>
         </div>
@@ -27,14 +28,13 @@
     <!-- Mobile Navigation -->
     <div class="mobile-menu" [class.open]="isMenuOpen()">
         <nav class="nav-mobile">
-            <a routerLink="/companies" (click)="closeMenu()" routerLinkActive="active" class="nav-link">Für
-                Unternehmen</a>
-            <a routerLink="/developers" (click)="closeMenu()" routerLinkActive="active" class="nav-link">Für
-                Entwickler</a>
-            <a routerLink="/about" (click)="closeMenu()" routerLinkActive="active" class="nav-link">Über uns</a>
-            <a routerLink="/contact" (click)="closeMenu()" routerLinkActive="active" class="nav-link">Kontakt</a>
+            <app-language-switcher class="mb-md"></app-language-switcher>
+            <a routerLink="/companies" (click)="closeMenu()" routerLinkActive="active" class="nav-link">{{ 'nav.forCompanies' | translate }}</a>
+            <a routerLink="/developers" (click)="closeMenu()" routerLinkActive="active" class="nav-link">{{ 'nav.forDevelopers' | translate }}</a>
+            <a routerLink="/about" (click)="closeMenu()" routerLinkActive="active" class="nav-link">{{ 'nav.about' | translate }}</a>
+            <a routerLink="/contact" (click)="closeMenu()" routerLinkActive="active" class="nav-link">{{ 'nav.contact' | translate }}</a>
             <div class="mt-md">
-                <app-button [fullWidth]="true" routerLink="/contact" (click)="closeMenu()">Jetzt Anfragen</app-button>
+                <app-button [fullWidth]="true" routerLink="/contact" (click)="closeMenu()">{{ 'nav.requestNow' | translate }}</app-button>
             </div>
         </nav>
     </div>

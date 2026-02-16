@@ -1,38 +1,43 @@
 .cta-section {
-    background-color: var(--color-primary-yellow);
-    color: var(--color-text-on-yellow);
+    background-color: var(--color-gray-900);
+    color: var(--color-white);
     padding: 6rem 0;
 }
 
 .cta-title {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--color-white);
     margin-bottom: 1rem;
-    color: var(--color-text-on-yellow);
 }
 
 .cta-subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 2.5rem;
-    opacity: 0.9;
-    color: var(--color-text-on-yellow);
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.1rem;
+    color: var(--color-gray-300);
+    max-width: 480px;
+    margin: 0 auto 2.5rem;
+    line-height: 1.6;
 }
 
-.cta-action {
-    display: flex;
-    justify-content: center;
-}
-
-/* Override button styles for this specific context */
-:host ::ng-deep .cta-btn button {
+.cta-button {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-gray-900);
+    font-weight: 600;
+    font-size: 1rem;
     padding: 1rem 2.5rem;
-    font-size: 1.125rem;
-    box-shadow: var(--shadow-md);
+    border-radius: var(--radius-md);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
 
     &:hover {
-        transform: translateY(-3px);
+        transform: translateY(-2px);
         box-shadow: var(--shadow-lg);
+        color: var(--color-gray-900);
     }
+}
+
+.cta-note {
+    font-size: 0.85rem;
+    color: var(--color-gray-500);
+    margin-top: 1rem;
 }

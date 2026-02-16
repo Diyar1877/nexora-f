@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SafeHtml, DomSanitizer } from '@angular/platform-browser';
+import { TranslatePipe } from '../../../../shared/pipes/translate.pipe';
 
 @Component({
     selector: 'app-technologies',
     standalone: true,
-    imports: [CommonModule],
+    imports: [CommonModule, TranslatePipe],
     templateUrl: './technologies.html',
     styleUrl: './technologies.scss'
 })
