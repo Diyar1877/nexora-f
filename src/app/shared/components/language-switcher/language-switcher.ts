@@ -1,24 +1,23 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslationService, LanguageOption } from '../../services/translation.service';
-import { KurdistanFlagComponent } from '../kurdistan-flag/kurdistan-flag.component';
 
 @Component({
   selector: 'app-language-switcher',
   standalone: true,
-  imports: [CommonModule, KurdistanFlagComponent],
+  imports: [CommonModule],
   templateUrl: './language-switcher.html',
   styleUrl: './language-switcher.scss'
 })
 export class LanguageSwitcher {
+
   private translationService = inject(TranslationService);
-  
+
   isOpen = false;
-  currentLanguage$ = this.translationService.getTranslations();
+
   languages = this.translationService.languages;
 
   constructor() {
-    // Close dropdown when clicking outside
     document.addEventListener('click', (event) => {
       if (!event.target || !(event.target as HTMLElement).closest('.language-switcher')) {
         this.isOpen = false;

@@ -1,7 +1,6 @@
 <div class="language-switcher">
   <button class="language-button" (click)="toggleDropdown()" aria-label="{{ translate('language.switch') }}">
     @if (getCurrentLanguage().flag === 'kurdistan') {
-      <app-kurdistan-flag></app-kurdistan-flag>
     } @else {
       <span class="flag">{{ getCurrentLanguage().flag }}</span>
     }
@@ -20,11 +19,8 @@
           (click)="selectLanguage(lang)"
           aria-label="{{ lang.name }}"
         >
-          @if (lang.flag === 'kurdistan') {
-            <app-kurdistan-flag></app-kurdistan-flag>
-          } @else {
             <span class="flag">{{ lang.flag }}</span>
-          }
+          
           <span class="language-info">
             <span class="native-name">{{ lang.nativeName }}</span>
             <span class="english-name">{{ lang.name }}</span>
