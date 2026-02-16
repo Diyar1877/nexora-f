@@ -39,7 +39,7 @@ import { Component } from '@angular/core';
         <polygon points="0,-70 8,-35 -8,-35" transform="rotate(342.857142)"/>
       </g>
 
-      <!-- Center circle -->
+
       <circle r="30" fill="#FCD116"/>
 
     </g>
