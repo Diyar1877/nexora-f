@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { FindOptionPipe } from '../../shared/pipes/find-option.pipe';
 import { TranslatePipe } from '../../shared/pipes/translate.pipe';
+import { TranslationService } from '../../shared/services/translation.service';
 
 @Component({
   selector: 'app-contact',
@@ -25,18 +26,24 @@ export class Contact {
 
   isDropdownOpen = false;
 
-  subjectOptions = [
-    { value: 'company', label: 'Projektanfrage (Unternehmen)', icon: '' },
-    { value: 'developer', label: 'Bewerbung (Entwickler)', icon: '' },
-    { value: 'other', label: 'Sonstiges', icon: '' }
-  ];
+  subjectOptions: { value: string; label: string; icon: string }[] = [];
+
+  constructor(private http: HttpClient, private translationService: TranslationService) { 
+    this.initializeSubjectOptions();
+  }
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
     this.isDropdownOpen = false;
   }
 
-  constructor(private http: HttpClient) { }
+  private initializeSubjectOptions(): void {
+    this.subjectOptions = [
+      { value: 'company', label: this.translateText('contact.subjectCompany'), icon: '' },
+      { value: 'developer', label: this.translateText('contact.subjectDeveloper'), icon: '' },
+      { value: 'other', label: this.translateText('contact.subjectOther'), icon: '' }
+    ];
+  }
 
   toggleDropdown(event: Event) {
     event.stopPropagation();
@@ -46,6 +53,10 @@ export class Contact {
   selectOption(value: string) {
     this.subject = value;
     this.isDropdownOpen = false;
+  }
+
+  private translateText(key: string): string {
+    return this.translationService.translate(key);
   }
 
   submit() {
@@ -70,9 +81,9 @@ export class Contact {
       error: (error) => {
         this.isSubmitting = false;
         if (error.error && error.error.details) {
-          this.submitError = `Fehler: ${error.error.details}`;
+          this.submitError = this.translateText('contact.errorDetails') + error.error.details;
         } else {
-          this.submitError = 'Es gab einen Fehler beim Senden. Bitte versuchen Sie es später erneut.';
+          this.submitError = this.translateText('contact.errorGeneric');
         }
         console.error('Submission error:', error);
       }

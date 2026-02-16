@@ -515,7 +515,29 @@ export const ku = {
   // Privacy Page - Company Information
   'privacy.companyAddress': 'مێستراسێ 123, 10115 بەرلین',
   'privacy.companyEmail': 'ئیمەیڵ: info@nexora-solutions.de',
-  'privacy.companyPhone': 'تەلەفۆن: +49 (0) 123 456 789'
+  'privacy.companyPhone': 'تەلەفۆن: +49 (0) 123 456 789',
   
-  
+  // Technology Names (Original English - displayed as is)
+  'tech.angular': 'Angular',
+  'tech.react': 'React',
+  'tech.symfony': 'Symfony',
+  'tech.nodejs': 'Node.js',
+  'tech.typescript': 'TypeScript',
+  'tech.mysql': 'MySQL',
+  'tech.docker': 'Docker',
+  'tech.aws': 'AWS',
+
+  // Job Tags
+  'job.tag.remote': 'لەدوور',
+  'job.tag.fullTime': 'کاتی تەواو',
+  'job.tag.partTime': 'کاتی پارچە',
+  'job.tag.germanEnglish': 'ئەڵمانی/ئینگلیزی',
+  'job.tag.english': 'ئینگلیزی',
+  'job.tag.partFullTime': 'پارچە/تەواو',
+
+  // Timeline
+  'timeline.today': 'ئەمڕۆ',
+
+  // Page Title
+  'page.title.home': 'نێکسۆرا سۆلوشنز - پەرەسەندنی لەدوور بۆ کۆمپانیاکانی ئەڵمانیا'
 };

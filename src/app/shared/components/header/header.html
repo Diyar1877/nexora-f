@@ -19,7 +19,7 @@
             <app-language-switcher class="d-none d-md-block"></app-language-switcher>
             <app-button class="d-none d-md-block" routerLink="/contact">{{ 'nav.requestNow' | translate }}</app-button>
 
-            <button class="mobile-toggle d-md-none" (click)="toggleMenu()" aria-label="Menu">
+            <button class="mobile-toggle d-md-none" (click)="toggleMenu()" aria-label="{{ 'common.menu' | translate }}">
                 <span class="hamburger" [class.active]="isMenuOpen()"></span>
             </button>
         </div>

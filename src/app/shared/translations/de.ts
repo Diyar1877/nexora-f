@@ -457,6 +457,11 @@ export const de = {
   'contact.phoneNumber': '+49 123 456789',
   'contact.address': 'Musterstraße 123, 10115 Berlin',
   'contact.mapLink': 'Größere Karte anzeigen',
+  'contact.subjectCompany': 'Projektanfrage (Unternehmen)',
+  'contact.subjectDeveloper': 'Bewerbung (Entwickler)',
+  'contact.subjectOther': 'Sonstiges',
+  'contact.errorDetails': 'Fehler: ',
+  'contact.errorGeneric': 'Es gab einen Fehler beim Senden. Bitte versuchen Sie es später erneut.',
 
   // Trust Section
   'contact.trust1Title': '100% Rechtssicher',
@@ -473,5 +478,77 @@ export const de = {
   'language.kurdish': 'کوردی سۆرانی',
   'language.arabic': 'العربية',
   'language.french': 'Français',
-  'language.spanish': 'Español'
+  'language.spanish': 'Español',
+
+  // Common UI Elements
+  'common.close': 'Schließen',
+  'common.menu': 'Menü',
+
+  // Social Media
+  'social.linkedin': 'LinkedIn',
+  'social.twitter': 'Twitter / X',
+  'social.instagram': 'Instagram',
+
+  // Footer Contact Information
+  'footer.address': 'Musterstraße 123<br>10115 Berlin',
+
+  // Imprint Additional Information
+  'imprint.companyName': 'Nexora Solutions UG (haftungsbeschränkt)',
+  'imprint.companyStreet': 'Musterstraße 123',
+  'imprint.companyCity': '10115 Berlin',
+  'imprint.companyCountry': 'Deutschland',
+  'imprint.phoneLabel': 'Telefon',
+  'imprint.phoneNumber': '+49 (0) 123 456 789',
+  'imprint.emailLabel': 'E-Mail',
+  'imprint.managementName': '[Name des Geschäftsführers]',
+  'imprint.registryCourt': 'Registergericht',
+  'imprint.registryCourtName': 'Amtsgericht Berlin-Charlottenburg',
+  'imprint.registryNumberLabel': 'Registernummer',
+  'imprint.registryNumber': 'HRB [Nummer]',
+  'imprint.vatNumber': 'DE [Nummer]',
+  'imprint.responsibleName': '[Name des Geschäftsführers]',
+  'imprint.responsibleCompany': 'Nexora Solutions UG (haftungsbeschränkt)',
+  'imprint.responsibleAddress': 'Musterstraße 123',
+  'imprint.responsibleCity': '10115 Berlin',
+  'imprint.responsibleCountry': 'Deutschland',
+
+  // Additional AGB Section
+  'agb.section4Title': '§ 4 Leistungen und Pflichten von Nexora',
+  'agb.section4Text1': '(1) Nexora verpflichtet sich, die vereinbarten Leistungen mit der gebotenen Sorgfalt und Fachkunde zu erbringen.',
+  'agb.section4Text2': '(2) Nexora stellt sicher, dass die vermittelten Entwickler über die vereinbarten Qualifikationen verfügen.',
+  'agb.section4Text3': '(3) Nexora behält sich vor, Aufträge ohne Angabe von Gründen abzulehnen.',
+  'agb.section11Title': '§ 11 Schlussbestimmungen',
+  'agb.section11Text1': 'Es gilt das Recht der Bundesrepublik Deutschland.',
+  'agb.section11Text2': 'Sollten einzelne Bestimmungen unwirksam sein, bleibt der Vertrag im Übrigen wirksam.',
+
+  // Additional Cookie Policy Section
+  'cookiePolicy.section2_4Title': '2.4 Funktionale Cookies',
+  'cookiePolicy.section2_4Text1': 'Diese Cookies ermöglichen erweiterte Funktionen und Personalisierungen, wie z.B. das Speichern von Benutzereinstellungen oder die Integration von Drittanbieter-Diensten.',
+  'cookiePolicy.section2_4Examples': 'Beispiele: Chat-Widgets, Video-Embeds, personalisierte Inhalte',
+  'cookiePolicy.section2_4Duration': 'Speicherdauer: Session bis zu 1 Jahr',
+  'cookiePolicy.section2_4Purpose': 'Zweck: Benutzererfahrung verbessern, personalisierte Funktionen',
+
+  // Technology Names (Original English - displayed as is)
+  'tech.angular': 'Angular',
+  'tech.react': 'React',
+  'tech.symfony': 'Symfony',
+  'tech.nodejs': 'Node.js',
+  'tech.typescript': 'TypeScript',
+  'tech.mysql': 'MySQL',
+  'tech.docker': 'Docker',
+  'tech.aws': 'AWS',
+
+  // Job Tags
+  'job.tag.remote': 'Remote',
+  'job.tag.fullTime': 'Full-time',
+  'job.tag.partTime': 'Part-time',
+  'job.tag.germanEnglish': 'Deutsch/Englisch',
+  'job.tag.english': 'Englisch',
+  'job.tag.partFullTime': 'Part-/Full-time',
+
+  // Timeline
+  'timeline.today': 'Heute',
+
+  // Page Title
+  'page.title.home': 'Nexora Solutions UG - Remote Development für deutsche Unternehmen'
 };

@@ -612,6 +612,14 @@ export const ar = {
   'tech.deployment': 'النشر',
   'tech.testing': 'الاختبار',
   'tech.documentation': 'التوثيق',
+  'tech.angular': 'Angular',
+  'tech.react': 'React',
+  'tech.symfony': 'Symfony',
+  'tech.nodejs': 'Node.js',
+  'tech.typescript': 'TypeScript',
+  'tech.mysql': 'MySQL',
+  'tech.docker': 'Docker',
+  'tech.aws': 'AWS',
   // Final Additional Keys
   'page.title.home': 'الرئيسية - نكسورا سولوشنز',
   'page.title.about': 'حولنا - نكسورا سولوشنز',
@@ -752,5 +760,16 @@ export const ar = {
   'privacy.section8Title': '8. التحليلات والإحصائيات',
   'privacy.section9Text1': '(1) يمكنك الاتصال بنا في أي وقت بخصوص بياناتك.',
   'privacy.section9Text2': '(2) وسنستجيب لطلبك خلال 30 يوماً.',
-  'privacy.section9Title': '9. جهة الاتصال لحماية البيانات'
+  'privacy.section9Title': '9. جهة الاتصال لحماية البيانات',
+
+  // Job Tags
+  'job.tag.remote': 'عن بعد',
+  'job.tag.fullTime': 'دوام كامل',
+  'job.tag.partTime': 'دوام جزئي',
+  'job.tag.germanEnglish': 'ألماني/إنجليزي',
+  'job.tag.english': 'إنجليزي',
+  'job.tag.partFullTime': 'دوام جزئي/كامل',
+
+  // Timeline
+  'timeline.today': 'اليوم'
 };

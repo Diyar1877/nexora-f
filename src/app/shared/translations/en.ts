@@ -457,13 +457,31 @@ export const en = {
   'privacy.companyName': 'Nexora Solutions UG (limited liability)',
   'privacy.companyAddress': 'Musterstraße 123, 10115 Berlin',
   'privacy.companyEmail': 'Email: info@nexora-solutions.de',
-  'privacy.companyPhone': 'Phone: +49 (0) 123 456 789'
+  'privacy.companyPhone': 'Phone: +49 (0) 123 456 789',
 
-  
-  
-  
-  
-  
-  
+  // Technology Names (Original English)
+  'tech.angular': 'Angular',
+  'tech.react': 'React',
+  'tech.symfony': 'Symfony',
+  'tech.nodejs': 'Node.js',
+  'tech.typescript': 'TypeScript',
+  'tech.mysql': 'MySQL',
+  'tech.docker': 'Docker',
+  'tech.aws': 'AWS',
+
+  // Job Tags
+  'job.tag.remote': 'Remote',
+  'job.tag.fullTime': 'Full-time',
+  'job.tag.partTime': 'Part-time',
+  'job.tag.germanEnglish': 'German/English',
+  'job.tag.english': 'English',
+  'job.tag.partFullTime': 'Part-/Full-time',
+
+  // Timeline
+  'timeline.today': 'Today',
+
+  // Page Title
+  'page.title.home': 'Nexora Solutions UG - Remote Development for German Companies',
+
   // Legal Pages
 };

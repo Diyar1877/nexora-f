@@ -102,5 +102,45 @@ export const es = {
   'language.kurdish': 'کوردی سۆرانی',
   'language.arabic': 'العربية',
   'language.french': 'Français',
-  'language.spanish': 'Español'
+  'language.spanish': 'Español',
+
+  // Additional AGB Section
+  'agb.section4Title': '§ 4 Servicios y Obligaciones de Nexora',
+  'agb.section4Text1': '(1) Nexora se compromete a proporcionar los servicios acordados con el cuidado y la pericia profesional debidos.',
+  'agb.section4Text2': '(2) Nexora asegura que los desarrolladores mediados tienen las cualificaciones acordadas.',
+  'agb.section4Text3': '(3) Nexora se reserva el derecho de rechazar pedidos sin dar razones.',
+  'agb.section11Title': '§ 11 Disposiciones Finales',
+  'agb.section11Text1': 'Se aplica la ley de la República Federal de Alemania.',
+  'agb.section11Text2': 'Si las disposiciones individuales son ineficaces, el resto del contrato sigue siendo efectivo.',
+
+  // Additional Cookie Policy Section
+  'cookiePolicy.section2_4Title': '2.4 Cookies Funcionales',
+  'cookiePolicy.section2_4Text1': 'Estas cookies permiten funciones mejoradas y personalizaciones, como guardar configuraciones de usuario o integrar servicios de terceros.',
+  'cookiePolicy.section2_4Examples': 'Ejemplos: Widgets de chat, incrustaciones de video, contenido personalizado',
+  'cookiePolicy.section2_4Duration': 'Duración del almacenamiento: Sesión hasta 1 año',
+  'cookiePolicy.section2_4Purpose': 'Propósito: Mejorar la experiencia del usuario, funciones personalizadas',
+
+  // Technology Names (Original English - displayed as is)
+  'tech.angular': 'Angular',
+  'tech.react': 'React',
+  'tech.symfony': 'Symfony',
+  'tech.nodejs': 'Node.js',
+  'tech.typescript': 'TypeScript',
+  'tech.mysql': 'MySQL',
+  'tech.docker': 'Docker',
+  'tech.aws': 'AWS',
+
+  // Job Tags
+  'job.tag.remote': 'Remoto',
+  'job.tag.fullTime': 'Tiempo completo',
+  'job.tag.partTime': 'Medio tiempo',
+  'job.tag.germanEnglish': 'Alemán/Inglés',
+  'job.tag.english': 'Inglés',
+  'job.tag.partFullTime': 'Medio/Tiempo completo',
+
+  // Timeline
+  'timeline.today': 'Hoy',
+
+  // Page Title
+  'page.title.home': 'Nexora Solutions UG - Desarrollo Remoto para Empresas Alemanas'
 };
