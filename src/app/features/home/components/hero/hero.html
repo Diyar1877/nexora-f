@@ -3,27 +3,22 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    Remote Development <br>
-                    <span class="text-highlight">für deutsche Unternehmen</span>
+                    {{ 'home.hero.title1' | translate }} <br>
+                    <span class="text-highlight">{{ 'home.hero.title2' | translate }}</span>
                 </h1>
                 <p class="hero-subtitle">
-                    Ihr Partner für Web & Software-Lösungen. Wir verbinden deutsche Qualitätsansprüche mit flexibler
-                    Remote-Expertise.
+                    {{ 'home.hero.subtitle' | translate }}
                 </p>
 
                 <div class="hero-actions">
-                    <app-button variant="primary" routerLink="/services">Unsere Leistungen</app-button>
-                    <app-button variant="secondary" routerLink="/contact">Kontaktieren Sie uns</app-button>
+                    <app-button variant="primary" routerLink="/services">{{ 'home.hero.ctaPrimary' | translate }}</app-button>
+                    <app-button variant="secondary" routerLink="/contact">{{ 'home.hero.ctaSecondary' | translate }}</app-button>
                 </div>
             </div>
 
             <div class="hero-visual">
-                <!-- Abstract Background Shapes -->
                 <div class="visual-bg"></div>
-
-                <!-- Illustration Container -->
                 <div class="illustration-container">
-                    <!-- Laptop Base -->
                     <div class="device laptop">
                         <div class="screen">
                             <div class="code-block">
@@ -35,8 +30,6 @@
                         </div>
                         <div class="keyboard"></div>
                     </div>
-
-                    <!-- Phone Base -->
                     <div class="device phone">
                         <div class="screen">
                             <div class="app-grid">
@@ -47,8 +40,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- Floating Elements -->
                     <div class="floating-icon icon-1"></div>
                     <div class="floating-icon icon-2"></div>
                 </div>

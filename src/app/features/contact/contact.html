@@ -4,9 +4,10 @@
         <!-- Header -->
         <div class="contact-header">
             <div class="contact-header__left">
-                <h1>Kontakt</h1>
-                <p class="subtitle-bold">Lassen Sie uns miteinander sprechen!</p>
-                <p class="subtitle">Wir freuen uns darauf, von Ihnen zu hören.</p>
+                <span class="badge">{{ 'contact.badge' | translate }}</span>
+                <h1>{{ 'contact.title' | translate }}</h1>
+                <p class="subtitle-bold">{{ 'contact.subtitleBold' | translate }}</p>
+                <p class="subtitle">{{ 'contact.subtitle' | translate }}</p>
             </div>
             <div class="contact-header__right">
                 <svg class="contact-illustration" viewBox="0 0 400 320" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,13 +58,13 @@
             <div class="contact-form-col">
                 <form (ngSubmit)="submit()" #contactForm="ngForm">
                     <div class="form-field">
-                        <input type="text" placeholder="Ihr Name*" name="name" [(ngModel)]="name" required>
+                        <input type="text" [placeholder]="'contact.form.name' | translate" name="name" [(ngModel)]="name" required>
                     </div>
                     <div class="form-field">
-                        <input type="email" placeholder="Ihre E-Mail-Adresse*" name="email" [(ngModel)]="email" required>
+                        <input type="email" [placeholder]="'contact.form.email' | translate" name="email" [(ngModel)]="email" required>
                     </div>
                     <div class="form-field">
-                        <input type="tel" placeholder="Ihre Telefonnummer*" name="phone" [(ngModel)]="phoneNumber">
+                        <input type="tel" [placeholder]="'contact.form.phone' | translate" name="phone" [(ngModel)]="phoneNumber">
                     </div>
                     <div class="form-field custom-select-wrapper" [class.open]="isDropdownOpen">
                         <div class="custom-select-trigger" (click)="toggleDropdown($event)">

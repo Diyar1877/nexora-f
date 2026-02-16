@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { FindOptionPipe } from '../../shared/pipes/find-option.pipe';
+import { TranslationService } from '../../core/services/translation.service';
+import { TranslatePipe } from '../../shared/pipes/translate.pipe';
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [CommonModule, FormsModule, FindOptionPipe],
+  imports: [CommonModule, FormsModule, FindOptionPipe, TranslatePipe],
   templateUrl: './contact.html',
   styleUrl: './contact.scss'
 })
@@ -24,18 +26,20 @@ export class Contact {
 
   isDropdownOpen = false;
 
-  subjectOptions = [
-    { value: 'company', label: 'Projektanfrage (Unternehmen)', icon: '' },
-    { value: 'developer', label: 'Bewerbung (Entwickler)', icon: '' },
-    { value: 'other', label: 'Sonstiges', icon: '' }
-  ];
+  constructor(private http: HttpClient, public t: TranslationService) { }
+
+  get subjectOptions() {
+    return [
+      { value: 'company', label: this.t.t('contact.form.subjectCompany'), icon: '' },
+      { value: 'developer', label: this.t.t('contact.form.subjectDeveloper'), icon: '' },
+      { value: 'other', label: this.t.t('contact.form.subjectOther'), icon: '' }
+    ];
+  }
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
     this.isDropdownOpen = false;
   }
-
-  constructor(private http: HttpClient) { }
 
   toggleDropdown(event: Event) {
     event.stopPropagation();
@@ -69,9 +73,9 @@ export class Contact {
       error: (error) => {
         this.isSubmitting = false;
         if (error.error && error.error.details) {
-          this.submitError = `Fehler: ${error.error.details}`;
+          this.submitError = `${this.t.t('contact.form.errorPrefix')} ${error.error.details}`;
         } else {
-          this.submitError = 'Es gab einen Fehler beim Senden. Bitte versuchen Sie es später erneut.';
+          this.submitError = this.t.t('contact.form.errorGeneric');
         }
         console.error('Submission error:', error);
       }

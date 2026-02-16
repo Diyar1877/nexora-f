@@ -8,15 +8,35 @@
 
         <!-- Desktop Navigation -->
         <nav class="nav-desktop d-none d-md-flex">
-            <a routerLink="/companies" routerLinkActive="active" class="nav-link">Für Unternehmen</a>
-            <a routerLink="/developers" routerLinkActive="active" class="nav-link">Für Entwickler</a>
-            <a routerLink="/about" routerLinkActive="active" class="nav-link">Über uns</a>
-            <a routerLink="/contact" routerLinkActive="active" class="nav-link">Kontakt</a>
+            <a routerLink="/companies" routerLinkActive="active" class="nav-link">{{ 'nav.companies' | translate }}</a>
+            <a routerLink="/developers" routerLinkActive="active" class="nav-link">{{ 'nav.developers' | translate }}</a>
+            <a routerLink="/about" routerLinkActive="active" class="nav-link">{{ 'nav.about' | translate }}</a>
+            <a routerLink="/contact" routerLinkActive="active" class="nav-link">{{ 'nav.contact' | translate }}</a>
         </nav>
 
-        <!-- CTA & Mobile Menu Toggle -->
+        <!-- CTA & Language Switcher & Mobile Menu Toggle -->
         <div class="header-actions">
-            <app-button class="d-none d-md-block" routerLink="/contact">Jetzt Anfragen</app-button>
+            <!-- Language Switcher -->
+            <div class="lang-switcher" [class.open]="isLangOpen()">
+                <button class="lang-btn" (click)="toggleLang($event)" [attr.aria-label]="'Switch language'">
+                    <span class="lang-flag">{{ t.getCurrentLanguageOption().flag }}</span>
+                    <span class="lang-code d-none d-md-inline">{{ t.getCurrentLanguageOption().code.toUpperCase() }}</span>
+                    <svg class="lang-arrow" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </button>
+                <div class="lang-dropdown">
+                    <button *ngFor="let lang of t.languages"
+                            class="lang-option"
+                            [class.active]="t.currentLang() === lang.code"
+                            (click)="setLang(lang.code)">
+                        <span class="lang-flag">{{ lang.flag }}</span>
+                        <span class="lang-label">{{ lang.label }}</span>
+                    </button>
+                </div>
+            </div>
+
+            <app-button class="d-none d-md-block" routerLink="/contact">{{ 'nav.cta' | translate }}</app-button>
 
             <button class="mobile-toggle d-md-none" (click)="toggleMenu()" aria-label="Menu">
                 <span class="hamburger" [class.active]="isMenuOpen()"></span>
@@ -27,14 +47,12 @@
     <!-- Mobile Navigation -->
     <div class="mobile-menu" [class.open]="isMenuOpen()">
         <nav class="nav-mobile">
-            <a routerLink="/companies" (click)="closeMenu()" routerLinkActive="active" class="nav-link">Für
-                Unternehmen</a>
-            <a routerLink="/developers" (click)="closeMenu()" routerLinkActive="active" class="nav-link">Für
-                Entwickler</a>
-            <a routerLink="/about" (click)="closeMenu()" routerLinkActive="active" class="nav-link">Über uns</a>
-            <a routerLink="/contact" (click)="closeMenu()" routerLinkActive="active" class="nav-link">Kontakt</a>
+            <a routerLink="/companies" (click)="closeMenu()" routerLinkActive="active" class="nav-link">{{ 'nav.companies' | translate }}</a>
+            <a routerLink="/developers" (click)="closeMenu()" routerLinkActive="active" class="nav-link">{{ 'nav.developers' | translate }}</a>
+            <a routerLink="/about" (click)="closeMenu()" routerLinkActive="active" class="nav-link">{{ 'nav.about' | translate }}</a>
+            <a routerLink="/contact" (click)="closeMenu()" routerLinkActive="active" class="nav-link">{{ 'nav.contact' | translate }}</a>
             <div class="mt-md">
-                <app-button [fullWidth]="true" routerLink="/contact" (click)="closeMenu()">Jetzt Anfragen</app-button>
+                <app-button [fullWidth]="true" routerLink="/contact" (click)="closeMenu()">{{ 'nav.cta' | translate }}</app-button>
             </div>
         </nav>
     </div>
