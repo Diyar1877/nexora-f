@@ -1,0 +1,14 @@
+# ngrok Konfiguration für Nexora
+# Anleitung:
+# 1. ngrok installieren: https://ngrok.com/download
+# 2. Authtoken setzen: ngrok config add-authtoken DEIN_TOKEN
+# 3. ngrok starten: ngrok start --config ngrok.yml frontend
+
+version: "3"
+
+tunnels:
+  frontend:
+    addr: 4200
+    proto: http
+    # Optional: feste Domain (nur mit ngrok Pro)
+    # domain: nexora.ngrok-free.app
