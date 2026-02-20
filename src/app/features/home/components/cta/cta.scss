@@ -2,6 +2,10 @@
     background-color: var(--color-gray-900);
     color: var(--color-white);
     padding: 6rem 0;
+
+    @media (max-width: 768px) {
+        padding: 4rem 0;
+    }
 }
 
 .cta-title {
@@ -14,30 +18,32 @@
 .cta-subtitle {
     font-size: 1.1rem;
     color: var(--color-gray-300);
-    max-width: 480px;
+    max-width: 540px;
     margin: 0 auto 2.5rem;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
 .cta-button {
     display: inline-block;
-    background: var(--color-white);
+    background: var(--color-primary-yellow);
     color: var(--color-gray-900);
-    font-weight: 600;
-    font-size: 1rem;
+    font-weight: 700;
+    font-size: 1.05rem;
     padding: 1rem 2.5rem;
     border-radius: var(--radius-md);
-    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    transition: transform var(--transition-base), box-shadow var(--transition-base), background var(--transition-base);
 
     &:hover {
         transform: translateY(-2px);
-        box-shadow: var(--shadow-lg);
+        box-shadow: 0 8px 20px rgba(255, 193, 7, 0.3);
+        background: var(--color-primary-yellow-dark);
         color: var(--color-gray-900);
     }
 }
 
 .cta-note {
-    font-size: 0.85rem;
-    color: var(--color-gray-500);
+    font-size: 0.875rem;
+    color: var(--color-gray-300);
     margin-top: 1rem;
+    opacity: 0.7;
 }

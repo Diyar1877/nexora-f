@@ -39,6 +39,18 @@ export class ForCompanies implements OnInit {
             {
                 question: this.translationService.translate('companies.faq5Question'),
                 answer: this.translationService.translate('companies.faq5Answer')
+            },
+            {
+                question: this.translationService.translate('companies.faq6Question'),
+                answer: this.translationService.translate('companies.faq6Answer')
+            },
+            {
+                question: this.translationService.translate('companies.faq7Question'),
+                answer: this.translationService.translate('companies.faq7Answer')
+            },
+            {
+                question: this.translationService.translate('companies.faq8Question'),
+                answer: this.translationService.translate('companies.faq8Answer')
             }
         ];
     }
